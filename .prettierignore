@@ -1,0 +1,11 @@
+.cache
+.github
+.idea
+.nyc_output
+build
+dist
+lib
+node_modules
+coverage
+package-lock.json
+static

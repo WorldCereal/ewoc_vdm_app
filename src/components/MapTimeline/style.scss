@@ -1,0 +1,145 @@
+@use "sass:math";
+@import "../../styles/_variables.scss";
+
+.ptr-maptimeline-scrollable{
+
+}
+
+.ptr-timeline-legend-placeholder{
+	flex: 0 1 auto;
+	display: flex;
+	flex-flow: column;
+	min-width: 16rem;
+}
+
+.ptr-maptimeline {
+	display: flex;
+	
+	.ptr-timeline{
+		display: flex;
+		overflow: hidden;
+		flex: 1 1 auto;
+	}
+}
+
+.ptr-maptimelinelegend {
+	flex: 0 1 auto;
+	display: flex;
+	flex-flow: column;
+	// uncomment
+	// line-height: $a1;
+	// font-size: $a1;
+	font-size: $b1;
+	line-height: $b1;
+	min-width: 16rem;
+	width: 16rem;
+
+	span{
+		height: 1rem;
+	}
+}
+
+.ptr-maptimeline-legenditem {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	padding: 0 1rem;
+	color: var(--base40);
+	font-size: $a0;
+}
+
+.ptr-maptimeline-legenditem > em {
+	color: var(--base10);
+	font-size: $b1;
+}
+
+
+g.ptr-timeline-year,
+.ptr-timeline-year > line,
+g.ptr-timeline-month,
+g.ptr-timeline-month > line,
+g.ptr-timeline-day,
+g.ptr-timeline-hour,
+g.ptr-timeline-hour > line,
+g.ptr-timeline-minute,
+g.ptr-timeline-minute > line {
+    stroke: var(--accent80);
+	fill: var(--base95);
+}
+
+g.ptr-timeline-year,
+.ptr-timeline-year > line {
+	stroke-width: 2px;
+	stroke: var(--accent65);
+}
+
+g.ptr-timeline-month.secondary > line {
+	stroke: var(--accent85);
+}
+
+
+.ptr-timeline-year-label,
+.ptr-timeline-month-label {
+	stroke: none;
+	fill: var(--accent30);
+	font-size: .85rem;
+}
+
+.ptr-timeline-month-label {
+	font-size: $a0;
+}
+
+.ptr-timeline-year-label {
+	font-weight: bold;
+}
+
+.ptr-timeline-tooltip-time{
+	white-space: nowrap;
+
+	:first-child{
+		margin-left: m(1);
+	}
+}
+
+.ptr-timeline-tooltip-layer {
+	white-space: nowrap;
+	margin: 2px 0;
+	display: flex;
+	width: 100%;
+}
+.ptr-timeline-tooltip-layer > div {
+	flex-grow: 1;
+}
+.ptr-timeline-tooltip-layer > div:first-child {
+	margin-right: m(math.div(1,3));
+	position: relative;
+	width: m(math.div(2,3));
+	flex-grow: 0;
+}
+
+
+.ptr-timeline-tooltip-layer span.dot {
+	height: 10px;
+	width: 10px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+}
+.ptr-timeline-tooltip-layer > div:nth-child(2){
+	display: flex;
+	flex-flow: column;
+	font-size: $a0;
+	color: var(--base60);
+	 em {
+		color: var(--base100);
+		font-size: $b1;
+	}
+}
+
+.ptr-timeline-overlay rect {
+	cursor: pointer;
+}
+
+.ptr-timeline-overlay text {
+	cursor: pointer;
+}

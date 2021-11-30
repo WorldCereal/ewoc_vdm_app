@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+
+.ptr-PageSwitcher {
+  color: var(--base100);
+  display: flex;
+}
+
+.ptr-PageSwitcherMenu {
+
+}
+
+.ptr-PageSwitcherMenuItem {
+  cursor: pointer;
+}
+
+.ptr-PageSwitcherMenuItem:hover {
+  background: var(--base20);
+}
+
+.ptr-PageSwitcherMenuItem.is-active {
+  background: var(--accent65);
+  color: var(--accent10);
+}
+
+.ptr-PageSwitcherMenuItem.is-disabled {
+  color: var(--base30);
+  pointer-events: none;
+}

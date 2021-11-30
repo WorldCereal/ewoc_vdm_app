@@ -1,0 +1,29 @@
+@import '../../../styles/variables';
+
+.ptr-StatusLabel {
+  display: flex;
+  background: var(--base50);
+  color: var(--base10);
+  font-style: italic;
+  border-radius: .15rem;
+  cursor: default;
+  padding: .15rem .5rem;
+}
+
+.ptr-StatusLabel.is-small {
+  font-size: $b1;
+}
+
+.ptr-StatusLabel.is-warning {
+  color: #fff3e3;
+  background: #c28903;
+}
+
+.ptr-StatusLabel.is-error {
+  color: #ffe9ea;
+  background: #c91726;
+}
+
+.ptr-StatusLabel.is-floating {
+  box-shadow: 0 0 5px rgba(0,0,0,.7);
+}

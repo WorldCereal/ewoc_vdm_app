@@ -1,0 +1,34 @@
+@import '../../styles/variables';
+
+.worldCereal-MapWrapper {
+  position: relative;
+}
+
+.ptr-map-wrapper.worldCereal-MapWrapper.active::after {
+  border: 2px dashed var(--accent50);
+}
+
+.worldCereal-MapProductLabelContainer {
+  position: absolute;
+  top: .4rem;
+  left: .4rem;
+  z-index: 2;
+  max-width: calc(100% - 2rem);
+}
+
+.worldCereal-MapTools {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  grid-gap: .05rem;
+  background: var(--base50);
+  box-shadow: 0 0 5px rgba(var(--base100rgb), .5);
+}
+
+.worldCereal-MapToolsButton.ptr-button {
+  padding: 0 .15rem;
+  border-radius: 0;
+  background: var(--accent30);
+}

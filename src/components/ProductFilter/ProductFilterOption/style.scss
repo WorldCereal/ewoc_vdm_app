@@ -1,0 +1,24 @@
+@import '../../../styles/variables';
+
+.worldCereal-ProductFilterOption {
+  display: flex;
+  align-items: center;
+  margin: 0 .5rem .25rem 0;
+}
+
+.worldCereal-ProductFilterOption input{
+  margin-right: .25rem;
+}
+
+.worldCereal-ProductFilterOption input:disabled+label {
+  color: var(--base30);
+}
+
+.worldCereal-ProductFilterOption label span {
+  font-size: $b1;
+  color: var(--base60);
+}
+
+.worldCereal-ProductFilterOption input:disabled+label span {
+  color: var(--base30);
+}

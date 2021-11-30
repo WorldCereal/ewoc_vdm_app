@@ -1,0 +1,102 @@
+@import '../../../styles/variables';
+
+$background: rgba(var(--base0rgb), .8);
+$opaqueBackground: var(--base0);
+$borderRadius: .25rem;
+$boxShadowSpread: 3px;
+$boxShadow: 0 0 $boxShadowSpread rgba(0,0,0,.3);
+
+.ptr-RetractableWindow {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  transition: top .5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  border-radius: $borderRadius $borderRadius 0 0;
+  align-items: flex-start;
+  pointer-events: none;
+}
+
+// Control bar
+.ptr-RetractableWindowControlBar {
+  pointer-events: initial;
+  position: relative;
+  z-index: 2;
+  background: $opaqueBackground;
+  border-radius: $borderRadius $borderRadius 0 0;
+  box-shadow: $boxShadow;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ptr-RetractableWindowControlBar.is-centered {
+  align-self: center;
+}
+
+.ptr-dark .ptr-RetractableWindowControlBar {
+  background: $background;
+}
+
+.ptr-RetractableWindowControlBar:after {
+  content: "";
+  width: calc(100% + #{$boxShadowSpread} + 1px);
+  max-width: 100%;
+  height: calc(#{$boxShadowSpread} + 1px);
+  position: absolute;
+  bottom: calc(-#{$boxShadowSpread} - 1px);
+  left: 0;
+  background: var(--base0);
+}
+
+.ptr-dark .ptr-RetractableWindowControlBar:after {
+  background: transparent;
+}
+
+.ptr-RetractableWindowControlBar .ptr-icon .line {
+  fill: var(--base90);
+}
+
+.ptr-RetractableWindow .ptr-RetractableWindowControlBar .ptr-icon.retract {
+  width: 1.75rem;
+  height: 1.75rem;
+  transform: rotate(270deg);
+  transition: transform .5s ease-in-out;
+  padding: 0 .5rem;
+  cursor: pointer;
+}
+
+.ptr-RetractableWindow.is-retracted .ptr-RetractableWindowControlBar .ptr-icon.retract {
+  transform: rotate(90deg);
+}
+
+.ptr-RetractableWindowControlBar > div {
+  flex: 1;
+}
+
+// Body
+.ptr-RetractableWindowBody {
+  pointer-events: initial;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background: $opaqueBackground;
+  border-top-right-radius: $borderRadius;
+  box-shadow: $boxShadow;
+  transition: box-shadow .1s ease-in-out;
+  overflow-y: auto;
+}
+
+.ptr-RetractableWindowBody.is-centered {
+  border-top-left-radius: $borderRadius;
+}
+
+.ptr-dark .ptr-RetractableWindowBody {
+  background: $background;
+}
+
+.ptr-RetractableWindow.is-retracted .ptr-RetractableWindowBody {
+  box-shadow: none;
+  transition: box-shadow .1s .4s ease-in-out;
+}

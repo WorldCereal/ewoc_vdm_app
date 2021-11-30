@@ -1,0 +1,51 @@
+@import '../../styles/variables';
+
+.worldCereal-Header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  height: 4.5rem;
+  padding: 0 .5rem;
+  background: var(--base95);
+  box-shadow: 0 0 5px rgba(var(--base100rgb), .25);
+}
+
+.worldCereal-Header-logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.worldCereal-Header-logo > div {
+  display: flex;
+  align-items: center;
+}
+
+.worldCereal-Header-logo img {
+  height: 2.25rem;
+}
+
+.worldCereal-Header-logo h1 {
+  margin: 0;
+  color: var(--accent30);
+  font-size: 1.125rem;
+  font-weight: normal;
+  letter-spacing: .5px;
+}
+
+.worldCereal-Header-logo h1 span {
+  padding: 0 .5rem;
+}
+
+.worldCereal-Header-logo h1 span:first-child {
+  border-right: 2px solid var(--base40);
+  color: var(--base10);
+}
+
+.worldCereal-Header-tools {
+  display: flex;
+  grid-gap: 1rem;
+  color: var(--base10);
+  align-items: center;
+}

@@ -1,0 +1,70 @@
+@import '~@gisatcz/ptr-core/lib/styles/_variables';
+
+@function hexToRGB($color) {
+    // @return rgb(red($color), green($color), blue($color))
+    @return red($color), green($color), blue($color);
+}
+
+@mixin disabledOverlay {
+    color: var(--accent30);
+    cursor: default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,0,.75);
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+$a0: .6875rem;
+$b0: .5625rem;
+
+$lightAccent0: hsl(40, 100%, 99.41%);
+$lightAccent05: hsl(42.5, 85.71%, 94.51%);
+$lightAccent10: hsl(44, 84.91%, 89.61%);
+$lightAccent15: hsl(44.31, 82.28%, 84.51%);
+$lightAccent20: hsl(43.95, 82.69%, 79.61%);
+$lightAccent25: hsl(44.3, 82.95%, 74.71%);
+$lightAccent30: hsl(44.06, 83.12%, 69.8%);
+$lightAccent35: hsl(43.89, 83.24%, 64.9%);
+$lightAccent40: hsl(44.12, 83.33%, 60%);
+$lightAccent45: hsl(44.21, 82.61%, 54.9%);
+$lightAccent50: hsl(44.08, 82.75%, 50%);
+$lightAccent55: hsl(44.21, 82.61%, 45.1%);
+$lightAccent60: hsl(44.02, 82.44%, 40.2%);
+$lightAccent65: hsl(44.3, 83.24%, 35.1%);
+$lightAccent70: hsl(44.19, 83.23%, 30.39%);
+$lightAccent75: hsl(43.89, 83.08%, 25.49%);
+$lightAccent80: hsl(44.14, 82.86%, 20.59%);
+$lightAccent85: hsl(43.64, 82.5%, 15.69%);
+$lightAccent90: hsl(44.35, 85.19%, 10.59%);
+$lightAccent95: hsl(43.2, 86.21%, 5.69%);
+$lightAccent100: hsl(45, 100%, 0.78%);
+
+$darkAccent0: hsl(45, 100%, 0.78%);
+$darkAccent05: hsl(43.2, 86.21%, 5.69%);
+$darkAccent10: hsl(44.35, 85.19%, 10.59%);
+$darkAccent15: hsl(43.64, 82.5%, 15.69%);
+$darkAccent20: hsl(44.14, 82.86%, 20.59%);
+$darkAccent25: hsl(43.89, 83.08%, 25.49%);
+$darkAccent30: hsl(44.19, 83.23%, 30.39%);
+$darkAccent35: hsl(44.3, 83.24%, 35.1%);
+$darkAccent40: hsl(44.02, 82.44%, 40.2%);
+$darkAccent45: hsl(44.21, 82.61%, 45.1%);
+$darkAccent50: hsl(44.08, 82.75%, 50%);
+$darkAccent55: hsl(44.21, 82.61%, 54.9%);
+$darkAccent60: hsl(44.12, 83.33%, 60%);
+$darkAccent65: hsl(43.89, 83.24%, 64.9%);
+$darkAccent70: hsl(44.06, 83.12%, 69.8%);
+$darkAccent75: hsl(44.3, 82.95%, 74.71%);
+$darkAccent80: hsl(43.95, 82.69%, 79.61%);
+$darkAccent85: hsl(44.31, 82.28%, 84.51%);
+$darkAccent90: hsl(44, 84.91%, 89.61%);
+$darkAccent95: hsl(42.5, 85.71%, 94.51%);
+$darkAccent100: hsl(40, 100%, 99.41%);

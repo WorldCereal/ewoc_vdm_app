@@ -1,0 +1,30 @@
+@use 'sass:math';
+@import '../../styles/variables';
+
+.worldCereal-ProductViewer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.worldCereal-ProductViewer .ptr-map-set {
+  position: relative;
+  z-index: 2;
+}
+
+.worldCereal-MapScale {
+  bottom: 1.25rem;
+}
+
+.worldCereal-MapScale .ptr-MapScale-content {
+  background: rgba(var(--base0rgb), .5);
+  border: 2px solid var(--base80);
+  border-top: 0;
+}
+
+.worldCereal-MapScale .ptr-MapScale-content > span {
+  color: var(--base90);
+}
