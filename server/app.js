@@ -1,5 +1,4 @@
 import path from 'path';
-import React from 'react';
 import {createReactAppExpress} from '@cra-express/core';
 import {Provider, initialStates} from '@gisatcz/ptr-state';
 import createStore from '../src/state/Store';
@@ -7,7 +6,7 @@ import {UIDReset} from 'react-uid';
 import {createRenderFn} from '@gisatcz/ptr-core';
 import Loadable from 'react-loadable';
 
-const App = require('../src/app').App;
+let App = require('../src/app').App;
 const clientBuildPath = path.resolve(__dirname, '../client');
 
 function handleUniversalRender(req, res) {
@@ -23,12 +22,15 @@ function handleUniversalRender(req, res) {
 		...initialStates.users,
 		activeKey: xUserInfo,
 	};
-	
-	const {store, requestCounter} = createStore({
-		absPath,
-		currentUrl: req.url,
-		navHandler,
-	}, {users: userInitialState});
+
+	const {store, requestCounter} = createStore(
+		{
+			absPath,
+			currentUrl: req.url,
+			navHandler,
+		},
+		{users: userInitialState}
+	);
 	req.store = store;
 
 	const createElFn = () => {
@@ -62,7 +64,7 @@ function handleUniversalRender(req, res) {
 	//temporary hack
 	// wait 500ms until store is updated
 	return requestCounter.createReadyP().then(() => {
-		const p = new Promise((resolve, reject) => {
+		const p = new Promise(resolve => {
 			setTimeout(() => {
 				resolve(renderFn());
 			}, 500);
@@ -72,7 +74,7 @@ function handleUniversalRender(req, res) {
 	});
 }
 
-function resolveHtmlFilenameByRequest(req) {
+function resolveHtmlFilenameByRequest() {
 	return process.env.PUBLIC_URL;
 }
 
@@ -80,7 +82,7 @@ const app = createReactAppExpress({
 	clientBuildPath,
 	resolveHtmlFilenameByRequest,
 	universalRender: handleUniversalRender,
-	handleRender(req, res, data, rawTemplateHtml, options) {
+	handleRender(req, res, data, rawTemplateHtml) {
 		const state = req.store.getState();
 
 		const templateHtml = rawTemplateHtml.replace(

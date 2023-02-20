@@ -9,6 +9,7 @@
   right: 0;
   bottom: 0;
   background-color: rgba(var(--base100rgb), .65);
+  @include frozenGlassEffect();
   display: flex;
   align-items: center;
   justify-content: center;

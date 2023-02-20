@@ -1,0 +1,9 @@
+// Filter window
+.ptr-RetractableWindow.worldCereal-FilterWindow {
+  max-width: 60rem;
+  z-index: 3;
+}
+
+.ptr-RetractableWindow.worldCereal-FilterWindow.is-hidden {
+  display: none;
+}

@@ -1,0 +1,7 @@
+@use 'sass:math';
+@import '../../../styles/variables';
+
+.ptr-ReactSelect {
+  color: var(--base80);
+  box-shadow: $floatingElementShadow;
+}

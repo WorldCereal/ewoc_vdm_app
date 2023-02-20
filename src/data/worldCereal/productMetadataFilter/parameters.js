@@ -15,16 +15,12 @@ export default {
 		orderDirection: 'asc',
 		options: [
 			'annualcropland',
-			'wheat',
+			'wintercereals',
+			'springcereals',
 			'maize',
+			'irrigation',
 			'activecropland',
-			'irrigation-v2',
-			'cereals',
 			// ???
-			// 'springcereals',
-			// 'wintercereals',
-			// 'springwheat',
-			// 'winterwheat',
 			// 'irrigation-v1',
 			// 'irrigation-v2',
 		],
@@ -34,6 +30,6 @@ export default {
 		name: 'Season',
 		type: 'checkbox',
 		orderDirection: 'asc',
-		options: ['annual', 'summer1', 'summer2', 'winter'],
+		options: ['annual', 'winter', 'summer1', 'summer2'],
 	},
 };

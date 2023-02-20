@@ -1,0 +1,21 @@
+@use 'sass:math';
+@import '../../styles/variables';
+
+.worldCereal-IntroOverlay {
+  background: var(--base05);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease-in-out;
+}
+
+.worldCereal-IntroOverlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity .2s ease-in-out;
+}

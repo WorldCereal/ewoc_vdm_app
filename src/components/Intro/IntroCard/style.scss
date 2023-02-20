@@ -1,0 +1,53 @@
+@use 'sass:math';
+@import '../../../styles/variables';
+
+.worldCereal-IntroCard {
+  background: rgba(255,255,255,.65);
+  @include frozenGlassEffect();
+  padding: m(1);
+  width: 20rem;
+  height: 11rem;
+  font-family: "Sen" , "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  cursor: pointer;
+  border-bottom: 5px solid var(--accent55);
+}
+
+.worldCereal-IntroCard.is-disabled {
+  pointer-events: none;
+  background: rgba(155,155,155,.75);
+  border-bottom: 5px solid var(--base55);
+}
+
+.worldCereal-IntroCard:hover {
+  background: rgba(var(--accent50rgb), .65);
+}
+
+.worldCereal-IntroCard-title {
+  margin: .75rem 0 0;
+  font-weight: 700;
+  color: var(--base90);
+  letter-spacing: -.5px;
+}
+
+.worldCereal-IntroCard:hover .worldCereal-IntroCard-title {
+  color: var(--base10);
+}
+
+.worldCereal-IntroCard.is-disabled .worldCereal-IntroCard-title {
+  color: var(--base70);
+}
+
+.worldCereal-IntroCard-text {
+  color: var(--base70);
+}
+
+.worldCereal-IntroCard:hover .worldCereal-IntroCard-text {
+  color: var(--base25);
+}
+
+.worldCereal-IntroCard.is-disabled .worldCereal-IntroCard-text {
+  color: var(--base65);
+}

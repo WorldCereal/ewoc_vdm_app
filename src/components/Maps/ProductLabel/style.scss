@@ -1,0 +1,147 @@
+@import '../../../styles/variables';
+
+.worldCereal-ProductLabel {
+  background: var(--accent30);
+  min-width: 12rem;
+
+  &.worldCereal-LayerLabel .ptr-ExpandableLabelHeader > div > div.ptr-button{
+    min-height: unset;
+  }
+}
+
+// Header
+.worldCereal-ProductLabelHeader {
+  display: flex;
+  font-size: $b1;
+  border-right: 1px solid rgba(var(--base50rgb), .25);
+}
+
+.worldCereal-ProductLabelHeader-color {
+  width: 5px;
+  background: var(--base50);
+  border-top-left-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+}
+
+.ptr-ExpandableLabel.is-expanded .worldCereal-ProductLabelHeader-color {
+  border-bottom-left-radius: 0;
+}
+
+.worldCereal-ProductLabelHeader-body {
+  padding: .25rem .75rem .25rem .5rem;
+}
+
+.worldCereal-ProductLabelHeader-title {
+  display: flex;
+  align-items: center;
+}
+
+.worldCereal-ProductLabelHeader-product {
+  margin-right: .25rem;
+  font-weight: bold;
+  font-size: $b1;
+}
+
+.worldCereal-ProductLabelHeader-period {
+  font-size: $a0;
+  line-height: 1rem;
+}
+
+.worldCereal-ProductLabelHeader-zone {
+  font-size: $a0;
+}
+
+.worldCereal-ProductLabelHeader-productsCount {
+  line-height: 1rem;
+}
+
+.worldCereal-ProductLabelHeader-productsCount em {
+  font-weight: bold;
+}
+
+// Content
+.worldCereal-ProductLabelBody {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: rgba(var(--base100rgb), .75);
+  @include frozenGlassEffect();
+}
+
+.worldCereal-ProductLabelBodyItem {
+  display: flex;
+  height: 2rem;
+  font-size: $b1;
+  align-items: center;
+  padding: 0 .5rem;
+  color: var(--base10);
+  border-top: 1px solid var(--base80);
+}
+
+.worldCereal-ProductLabelBodyItem:last-of-type {
+  border-bottom: 1px solid var(--base80);
+}
+
+.worldCereal-ProductLabelBodyItem.is-hoverable {
+  cursor: pointer;
+}
+
+.worldCereal-ProductLabelBodyItem.is-hoverable:hover {
+  background: rgba(var(--base50rgb), .5);
+}
+
+.worldCereal-ProductLabelBodyItem.is-dangerous {
+  color: #c12123;
+}
+
+.worldCereal-ProductLabelBodyItem.is-dangerous:hover {
+  background: #f1d7d8;
+}
+
+.worldCereal-ProductLabelBodyItem-title {
+  flex: 1;
+}
+
+.worldCereal-ProductLabelBodyItem-tool {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.worldCereal-ProductLabelBodyItem .ptr-icon {
+  width: 1rem;
+  height: 100%;
+}
+
+.worldCereal-ProductLabelBodyItem .ptr-icon .line {
+  fill: var(--base20);
+}
+
+.worldCereal-ProductLabelBodyItem.is-dangerous .ptr-icon .line {
+  fill: #c12123;
+}
+
+// legend
+.worldCereal-ProductLabelLegend {
+  background: var(--base75);
+  height: 3.5rem;
+  padding: .5rem;
+  border-top: 1px solid var(--base80);
+}
+
+.worldCereal-ProductLabelLegendItem {
+  font-size: $b1;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  color: var(--base10);
+}
+
+.worldCereal-ProductLabelLegendItem > div {
+  width: 1.25rem;
+  height: 1rem;
+  margin-right: .35rem;
+  border: 1px solid var(--base50);
+  border-radius: .15rem;
+}

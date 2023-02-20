@@ -1,0 +1,128 @@
+@use 'sass:math';
+@import '../../../styles/variables';
+
+.worldCereal-LayerControls.open .ptr-IconTool{
+	background: var(--accent50);
+    color: var(--base100);
+	path{
+		fill: var(--base100);
+	}
+}
+.worldCereal-LayerControls .line {
+	fill: var(--base60);
+}
+
+// menu
+.worldCereal-LayerControls-menu {
+	right: calc(100% + 1.5rem);
+	bottom: 4.5rem;
+	position: absolute;
+	border-radius: 0.25rem 0.25rem 0 0.25rem;
+	width: 0;
+	height: 2rem;
+	background: var(--base05);
+	transition: width 0.15s ease-in-out 0.15s, height 0.15s ease-in-out, border-radius 0s;
+	filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.2));
+}
+
+.worldCereal-LayerControls-layersContent {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.worldCereal-LayerControls-section-label {
+	margin: 1.5rem 1.9rem .15rem;
+	text-transform: uppercase;
+	font-size: $b1;
+	font-weight: bold;
+	color: var(--base50);
+}
+
+.worldCereal-LayerControls-menu.open {
+	width: 34rem;
+	height: 20rem;
+	transition: width 0.15s ease-in-out, height 0.15s ease-in-out 0.15s, border-radius 0s ease-in-out 0.3s;
+}
+
+.worldCereal-LayerControls-menu:after {
+	border-left: 0 solid var(--base05);
+	right: -1rem;
+	border-bottom: 0 solid transparent;
+    border-top: 0 solid transparent;
+    bottom: 0;
+    content: "";
+    position: absolute;
+	transition: border-bottom-width 0s ease-in-out 0.3s, border-top-width 0s ease-in-out 0.3s,
+		border-left-width 0s ease-in-out 0.3s;
+}
+
+.worldCereal-LayerControls-menu.open:after {
+	transition: border-bottom-width 0s,border-top-width 0s,border-left-width 0s;
+	border-width: 1rem;
+}
+
+.worldCereal-LayerControls-menu:not(.open) {
+	border-top-right-radius: 0;
+}
+
+//layers
+
+.worldCereal-LayersControl-layers {
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	grid-gap: 15px;
+	flex-wrap: wrap;
+  }
+  
+  /* Layer tile */
+  .worldCereal-LayersControl-layerTile {
+	background-image: none;
+	background-size: cover;
+	border: 0;
+	border-radius: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	cursor: pointer;
+	max-width: 6rem;
+  }
+  
+  .worldCereal-LayersControl-layerTile.active {
+	border: 0;
+  }
+  
+  .worldCereal-LayersControl-layerName {
+	color: var(--base50);
+	background: inherit;
+	font-size: $b1;
+	width: 100%;
+	text-align: center;
+	padding: 0.25rem 0 0 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+  }
+  
+  .worldCereal-LayersControl-layerTile.active .worldCereal-LayersControl-layerName {
+	background: inherit;
+	color: var(--accent50);
+	font-weight: bold;
+  }
+  
+  .worldCereal-LayersControl-layerPreview {
+	box-shadow: 0 0 0 2px var(--base50);
+	border-radius: .05rem;
+	object-fit: cover;
+	align-self: stretch;
+  }
+  
+  .worldCereal-LayersControl-layerTile.active .worldCereal-LayersControl-layerPreview {
+	box-shadow: 0 0 0 3px var(--accent50);
+  }

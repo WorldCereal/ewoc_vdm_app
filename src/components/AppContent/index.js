@@ -1,16 +1,16 @@
 import {connect} from '@gisatcz/ptr-state';
+import Select from '../../state/Select';
 
 import Presentation from './presentation';
-import Select from '../../state/Select';
-import {mapSetKey} from '../../constants/app';
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = state => {
 	return {
-		viewLimits: Select.maps.getMapSetViewLimits(state, mapSetKey),
+		open: Select.components.get(state, 'IntroOverlay', 'open'),
+		activeView: Select.views.getActive(state),
 	};
 };
 
-const mapDispatchToProps = (dispatch, ownProps) => {
+const mapDispatchToProps = () => {
 	return {};
 };
 

@@ -1,0 +1,16 @@
+@use 'sass:math';
+@import '../../../../../styles/variables';
+
+.worldCereal-Visualizations {
+  color: var(--base100);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  grid-gap: 1rem;
+}
+
+.worldCereal-Visualizations-noDataInfo {
+  text-align: center;
+  color: var(--base70);
+}
+

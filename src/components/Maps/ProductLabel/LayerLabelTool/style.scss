@@ -1,0 +1,52 @@
+@use 'sass:math';
+@import '../../../../styles/variables';
+
+.ptr-LayerLabelTool {
+  display: flex;
+  height: 2rem;
+  font-size: $b1;
+  align-items: center;
+  padding: 0 .5rem;
+  color: var(--base10);
+  border-top: 1px solid var(--base80);
+  text-decoration: none;
+}
+
+.ptr-LayerLabelTool:first-child {
+  border-top: 0;
+}
+
+.ptr-LayerLabelTool.is-hoverable {
+  cursor: pointer;
+}
+
+.ptr-LayerLabelTool.is-hoverable:hover,
+a.ptr-LayerLabelTool.is-hoverable:hover {
+  background: rgba(var(--base50rgb), .5);
+  color: $baseTextColor;
+}
+
+.ptr-LayerLabelTool.is-dangerous {
+  color: #c12123;
+}
+
+.ptr-LayerLabelTool.is-dangerous:hover {
+  background: #f1d7d8;
+}
+
+.ptr-LayerLabelTool.is-disabled {
+  color: $disabledTextColor;
+  pointer-events: none;
+}
+
+.ptr-LayerLabelTool-title {
+  flex: 1;
+  white-space: nowrap;
+  color: var(--base10);
+}
+
+.ptr-LayerLabelTool-control {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}

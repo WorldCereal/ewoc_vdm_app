@@ -1,0 +1,19 @@
+@use 'sass:math';
+@import '../../../../../styles/variables';
+
+.ptr-button.small.worldCereal-Product {
+  min-height: 1.2rem;
+  background: var(--base60);
+  color: var(--base0);
+  transition: background-color 0s, color 0s;
+}
+
+.ptr-button.small.primary.worldCereal-Product {
+  background: var(--accent40);
+  color: var(--base100);
+}
+
+.ptr-button.small.worldCereal-Product .ptr-button-caption {
+  padding: .2rem 0 0;
+  font-size: .75rem;
+}

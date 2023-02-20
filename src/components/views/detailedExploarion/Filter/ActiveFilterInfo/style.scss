@@ -1,0 +1,43 @@
+@import '../../../../../styles/variables';
+
+.worldCereal-ActiveFilterInfo {
+  display: flex;
+  align-items: center;
+  min-height: 2.05rem;
+  position: relative;
+}
+
+.worldCereal-ActiveFilterInfo.disabled:after {
+  content: "";
+  @include disabledOverlay();
+}
+
+.worldCereal-ActiveFilterInfo-summary {
+  font-size: $b1;
+  color: var(--accent70);
+  margin: 0 .5rem 0 .15rem;
+  white-space: nowrap;
+}
+
+.worldCereal-ActiveFilterInfo-summary em {
+  font-weight: bold;
+  font-size: $a1;
+}
+
+.worldCereal-ActiveFilterInfo-filters {
+  margin: .35rem;
+}
+
+.worldCereal-ActiveFilterInfo-clearAllButton.small  {
+  height: 1.35rem;
+  min-height: auto;
+}
+
+.worldCereal-ActiveFilterInfo-clearAllButton.small .ptr-button-caption {
+  padding: 0;
+  line-height: 1.35rem;
+}
+
+.worldCereal-ActiveFilterInfo-clearAllButton.small .ptr-icon {
+  margin: .15rem 0;
+}

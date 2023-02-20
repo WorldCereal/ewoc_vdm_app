@@ -1,0 +1,18 @@
+@use 'sass:math';
+@import '../../../../../styles/variables';
+
+.worldCereal-StatisticsConfigurationItem {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.worldCereal-StatisticsConfigurationItem-label {
+  font-family: "Sen" , "Roboto", sans-serif;
+  font-size: $b1;
+  line-height: 1.5;
+  letter-spacing: .5px;
+  font-weight: bold;
+  color: var(--base45);
+  text-transform: uppercase;
+}

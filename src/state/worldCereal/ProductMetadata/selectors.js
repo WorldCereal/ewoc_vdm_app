@@ -17,7 +17,6 @@ const getActiveTiles = state => state.worldCereal.productMetadata.activeTiles;
 // helpers ----------------------------------------------
 
 /**
- * TODO move to ptr-state
  * Return active map view as polygon feature
  * @param {Object} state
  * @return {GeoJSON.Feature|null}
@@ -63,7 +62,7 @@ const getModelsByMapKey = createCachedSelector(
 	[getAllAsObject, getKeysByMapKey],
 	(models, keys) => {
 		if (keys?.length && models) {
-			return keys.map(key => models[key]);
+			return keys.map(key => models[key]).filter(i => i);
 		} else {
 			return null;
 		}

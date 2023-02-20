@@ -10,21 +10,11 @@
   overflow: hidden;
 }
 
-.worldCereal-ProductViewer .ptr-map-set {
-  position: relative;
-  z-index: 2;
+.worldCereal-statistics {
+  display: flex;
+  height: 100%;
 }
 
-.worldCereal-MapScale {
-  bottom: 1.25rem;
-}
-
-.worldCereal-MapScale .ptr-MapScale-content {
-  background: rgba(var(--base0rgb), .5);
-  border: 2px solid var(--base80);
-  border-top: 0;
-}
-
-.worldCereal-MapScale .ptr-MapScale-content > span {
-  color: var(--base90);
+.worldCereal-statistics > .ptr-map-set {
+  flex: 1;
 }

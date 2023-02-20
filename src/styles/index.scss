@@ -1,9 +1,3 @@
-@import '~@gisatcz/ptr-core/lib/styles/_variables';
-@import '~@gisatcz/ptr-maps';
-@import '~@gisatcz/ptr-components';
-@import '~@gisatcz/ptr-atoms';
-@import '~@gisatcz/ptr-core';
-@import '~@gisatcz/ptr-timeline';
 @import 'variables';
 
 .ptr-light {
@@ -96,23 +90,28 @@
 	--accent100rgb: #{hexToRGB($darkAccent100)};
 }
 
-
-$mapBorder: 0.05rem solid var(--base50); // the width in rem fixes the ugly white space between border and content in Chrome
-
-.ptr-map-grid .ptr-map-grid-cell .ptr-map {
-	border: 0;
+input {
+	accent-color: var(--accent60);
 }
 
-.ptr-map-grid .ptr-map-grid-cell:not(.row1) .ptr-map {
-	border-top: $mapBorder;
+// custom scrollbar
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
 }
 
-.ptr-map-grid .ptr-map-grid-cell:not(.col1) .ptr-map {
-	border-left: $mapBorder;
+/* Track */
+::-webkit-scrollbar-track {
+	background: transparent;
 }
 
-// Filter window
-.ptr-RetractableWindow.worldCereal-FilterWindow {
-	max-width: 60rem;
-	z-index: 3;
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--base40);
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: var(--base50);
 }

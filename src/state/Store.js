@@ -17,8 +17,10 @@ import {
 } from '@gisatcz/ptr-core';
 import {initApp} from '../app';
 
+import configuration from './worldCereal/configuration/reducers';
 import productMetadata from './worldCereal/ProductMetadata/reducers';
 import productMetadataFilter from './worldCereal/ProductMetadataFilter/reducers';
+import globalProductMetadata from './worldCereal/GlobalProductMetadata/reducers';
 
 export const history = isServer
 	? createMemoryHistory()
@@ -41,8 +43,10 @@ function createMiddleware(requestCounter, withoutLogger) {
 
 function createReducer() {
 	const reducers = combineReducers({
+		configuration,
 		productMetadata,
 		productMetadataFilter,
+		globalProductMetadata,
 	});
 
 	return combineReducers({
@@ -56,7 +60,6 @@ const composeEnhancers =
 		window?.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__?.({})) ||
 	compose;
 
-// TODO why request counter?
 function createEnhancer(requestCounter) {
 	return composeEnhancers(
 		reduxBatch,
@@ -74,7 +77,9 @@ function createEnhancer(requestCounter) {
  */
 function createAppStore(options, pregeneratedState = {}) {
 	const isPreloaded = !isServer && window.__PRELOADED_STATE__ != null;
-	const initialState = isPreloaded ? window.__PRELOADED_STATE__ : {...pregeneratedState};
+	const initialState = isPreloaded
+		? window.__PRELOADED_STATE__
+		: {...pregeneratedState};
 	if (isPreloaded) {
 		delete window.__PRELOADED_STATE__;
 	}

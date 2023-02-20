@@ -1,0 +1,75 @@
+@use 'sass:math';
+@import '../../../../styles/variables';
+
+.worldCereal-MapLegends {
+  position: absolute;
+  bottom: 2.2rem;
+  right: .7rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.worldCereal-MapLegends.is-left {
+  right: auto;
+  left: .7rem
+}
+
+// components
+.worldCereal-ColorClasses {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.worldCereal-ColorClassesBar {
+  height: .5rem;
+  padding: 0 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.worldCereal-ColorClassesBarItem {
+  flex: 1;
+}
+
+.worldCereal-ColorClassesValues {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: .1rem 0 0 .3rem;
+}
+
+.worldCereal-ColorClassesValues.is-firstAndLast {
+  justify-content: space-between;
+}
+
+.worldCereal-ColorClassesValues.without-unit .worldCereal-ColorClassesValue:last-child {
+  padding: 0;
+  flex: 0.5;
+}
+
+.worldCereal-ColorClassesValue,
+.worldCereal-ColorClassesValuesUnit {
+  flex: 1;
+  font-size: $b1;
+  color: var(--base50);
+  text-align: center;
+  padding-left: .3rem;
+  display: flex;
+}
+
+.worldCereal-ColorClassesValue:last-child {
+  padding-left: 0;
+  flex: 0;
+}
+
+.worldCereal-ColorClassesValues.is-firstAndLast .worldCereal-ColorClassesValue {
+  flex: 0;
+}
+
+.worldCereal-ColorClassesValuesUnit {
+  font-size: $b1;
+  color: var(--base50);
+}

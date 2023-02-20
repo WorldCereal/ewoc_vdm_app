@@ -1,0 +1,14 @@
+@use 'sass:math';
+@import '../../../../../styles/variables';
+
+.worldCereal-GlobalProductsCell {
+  height: 1.75rem;
+  color: var(--base0);
+  font-size: $b1;
+  display: flex;
+  align-items: center;
+}
+
+.worldCereal-GlobalProductsCell:nth-child(even) {
+  background: var(--base90);
+}

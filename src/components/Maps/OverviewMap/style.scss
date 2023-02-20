@@ -1,0 +1,15 @@
+@use 'sass:math';
+@import '../../../styles/variables';
+
+// Overview map
+.ptr-OverviewMap {
+  width: 10rem;
+  height: 6rem;
+  z-index: 2;
+  box-shadow: $floatingElementShadow;
+  border-radius: .5rem;
+  border: 0;
+  margin: .25rem;
+  overflow: hidden;
+  pointer-events: all;
+}

@@ -1,0 +1,4741 @@
+{
+	"application": {
+		"applications": [
+			{
+				"key": "esaWorldCerealProductViewer",
+				"data": {
+					"name": "esaWorldCerealProductViewer",
+					"nameInternal": "esaWorldCerealProductViewer"
+				}
+			}
+		],
+		"configurations": [
+			{
+				"key": "3bb19ea5-a2c9-415d-91c8-0774ce3a5594",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"data": {
+						"nameAttributeKey": "5f6a119b-addf-467e-ab1f-e07e4cdf79a6",
+						"unavailablePeriodKeys": [
+							"1f5cf9d2-58cc-4463-8ef7-bcc0c4932a08",
+							"2a293769-d7ba-4c83-800e-8184b457ac85",
+							"df428b66-5a83-4943-93b2-56dea2805509"
+						],
+						"configByCaseKey": {
+							"577b253f-754f-421e-94a2-092f092b4947": {
+								"name": "Annual cropland",
+								"styleKey": "af4c5310-405f-426d-9bbd-098593ea2ac4",
+								"absoluteAttributeKey": "4fb212bb-ff1a-46d7-8fce-e341e7f08376",
+								"relativeAttributeKey": "73e3bd86-8701-47e4-b27b-9d2555d68304",
+								"availablePeriodKeys": ["6a7a4193-1339-4172-b54d-817c3e8cd6f7"]
+							},
+							"66f490a6-d8df-45a3-adcb-d3648715ddd5": {
+								"name": "Active irrigation",
+								"styleKey": "da1a27e1-a718-4a9a-b054-c7d94328f1a9",
+								"absoluteAttributeKey": "901ff005-2a62-41d4-afc4-e8d1b1f5d088",
+								"relativeAttributeKey": "934a9fa2-ddb9-49a8-b4b2-170e39ef531e",
+								"availablePeriodKeys": ["f3293b7c-4725-49a6-beeb-19718083ab6c"]
+							},
+							"33caa296-cf88-4d5c-a67d-ffba11376d4a": {
+								"name": "Maize",
+								"styleKey": "7ae3bcd9-aa57-4fb1-9b6f-5b909d392328",
+								"absoluteAttributeKey": "55cb5a4a-8ce3-40a1-9f12-1a6b211f4255",
+								"relativeAttributeKey": "8e71e4da-5a90-4222-9350-f1c1f1bad5c5",
+								"availablePeriodKeys": ["f3293b7c-4725-49a6-beeb-19718083ab6c"]
+							},
+							"d439a6db-8f7b-4123-9e93-3892cad157f7": {
+								"name": "Cereals",
+								"styleKey": "2afcdbd6-fdc8-4756-a96b-0bf7d07637b0",
+								"absoluteAttributeKey": "6c8e8332-b01b-4c56-bf8e-2025a5abc465",
+								"relativeAttributeKey": "eb9dce86-39c6-480b-b7e3-2fac2101eac0",
+								"availablePeriodKeys": [
+									"f3293b7c-4725-49a6-beeb-19718083ab6c",
+									"d93a6ec5-e6e2-4f9a-a368-8a8f2aa8c0fe"
+								]
+							}
+						},
+						"componentSetByLevelKeyBySelectedFeaturesCountByCaseKey": {
+							"a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47": {
+								"no-selected": "GlobalNoSelected",
+								"one-selected": {
+									"577b253f-754f-421e-94a2-092f092b4947": "GlobalOneSelectedAnnualCropland",
+									"66f490a6-d8df-45a3-adcb-d3648715ddd5": "GlobalOneSelected",
+									"33caa296-cf88-4d5c-a67d-ffba11376d4a": "GlobalOneSelected",
+									"d439a6db-8f7b-4123-9e93-3892cad157f7": "GlobalOneSelected"
+								},
+								"multiple-selected": "GlobalMultipleSelected"
+							},
+							"b8a2f8d0-41b6-4afc-ba3f-a0df21632975": {
+								"no-selected": "CountryNoSelectedRegion",
+								"one-selected": {
+									"577b253f-754f-421e-94a2-092f092b4947": "CountryOneSelectedRegionAnnualCropland",
+									"66f490a6-d8df-45a3-adcb-d3648715ddd5": "CountryOneSelectedRegion",
+									"33caa296-cf88-4d5c-a67d-ffba11376d4a": "CountryOneSelectedRegion",
+									"d439a6db-8f7b-4123-9e93-3892cad157f7": "CountryOneSelectedRegion"
+								},
+								"multiple-selected": "CountryMultipleSelectedRegions"
+							}
+						},
+						"selectionByAreaTreeLevelKey": {
+							"a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47": "764ff34a-2eee-4d82-8ffe-87da6ed1a3f7",
+							"b8a2f8d0-41b6-4afc-ba3f-a0df21632975": "b35beddf-0656-4294-acef-e8af91e86fa3"
+						},
+						"placeKeyByCountryFeatureKey": {
+							"ABW": "43cc706b-1f34-4952-a7d2-6fa9f96adc8e",
+							"AFG": "9a1a14d8-1fb3-4d98-982c-f86246b11046",
+							"AGO": "effe18d9-b929-4472-99b8-3103095527fd",
+							"ALA": "6f2b3b8d-e357-4192-9690-dfda24059a85",
+							"ALB": "61f87367-db88-4c41-b8b9-0c138ed34e19",
+							"AND": "99cbeea4-66ea-46c5-ad57-599e9ccb9675",
+							"ARE": "59db08ce-b722-45f5-89ed-ef6d89e70658",
+							"ARG": "4bd3aafb-5204-47b7-b5a5-298e9ca992be",
+							"ARM": "9aadf48f-c3f9-4aca-ae80-f9d73a5f041f",
+							"ASM": "f4b57d16-8f06-4fbb-966f-c83f56b917f3",
+							"ATA": "9f7fdeca-8c26-4ce8-9ef9-8b0892603bcf",
+							"ATF": "e48922fe-fa1d-4045-9485-fa676559ed2b",
+							"ATG": "712195f2-0996-4bdd-8b22-079f663085da",
+							"AUS": "95134efd-eabc-4432-bd46-900276d8427d",
+							"AUT": "4a36017f-ab0e-4d02-bda1-ee0f8c9bf465",
+							"AZE": "8f06ae16-a84a-4cba-9263-4407f72aa8ed",
+							"BDI": "07f751d5-2ded-4de1-8427-f10fd831b148",
+							"BEL": "6d68793b-cf63-4ed0-a424-7acb30da045f",
+							"BEN": "0183b602-5c79-4db6-8b10-f8f753c1f086",
+							"BES": "d5bd1a73-c781-4578-a1b0-a3a3e983ec15",
+							"BFA": "44355273-86b0-4f27-80d2-36b01d1d469b",
+							"BGD": "dd3096bf-6671-434b-af01-d211d0da0a8e",
+							"BGR": "0c1b4595-5e2b-474a-a302-cbbad38f1d70",
+							"BHR": "53e81058-0d9b-44b9-a3ba-2f3ba4884e06",
+							"BHS": "cc2507eb-5647-4fa4-a8a7-f267d592510e",
+							"BIH": "7e26216a-9097-4301-8438-7a171234023c",
+							"BLR": "2b1662b1-ae61-41ae-96fd-f3e66df4e490",
+							"BLZ": "57c088da-389c-44b6-a7eb-5601e8918b7b",
+							"BOL": "a8d6c170-9cc5-4d3c-9dda-7955faf8f1e8",
+							"BRA": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+							"BRB": "bc04920f-ca16-484f-b970-1b41f15667b8",
+							"BRN": "824991cb-d241-4951-83ce-88fd8a03d047",
+							"BTN": "1bbdd0d9-ec6b-4816-b314-febbd869ccf9",
+							"BVT": "f0758a61-9cb5-4957-8221-94dfef6795c8",
+							"BWA": "65d5f03f-5839-4a0f-bad7-eecaf75803b7",
+							"CAF": "0d42b896-196e-4d95-b827-01e51f23efb4",
+							"CAN": "6841ff56-bb61-4730-b694-3f09c484c448",
+							"CIV": "103957d0-10a0-4f5d-8f61-4e941fc8fc2c",
+							"CMR": "fc4c7293-a644-484b-aa7c-6bb8ade9595c",
+							"COD": "3d91d438-2a03-46f7-a9d1-a022d6ccf208",
+							"COG": "61e35587-5029-4edb-9e31-753a122a72f3",
+							"COK": "ea814de1-4a8b-4b8d-9f7d-404215ab68cb",
+							"COL": "70954135-bd3b-453e-8c51-68c570ab6399",
+							"COM": "eaa2e105-6bf4-457a-afbe-43dd88f32d36",
+							"CPV": "bf3d0abe-6c59-4999-9aa0-0f43e610195f",
+							"CRI": "89746a4c-7ad8-49d7-8fa8-bb702f13d25a",
+							"CUB": "974d0224-d45b-4185-8c62-05bb76041420",
+							"CUW": "3788b179-bddb-44e7-86be-af949a34d80c",
+							"CYM": "3ef3110d-ed85-4903-ad75-f3fdd3ac1491",
+							"CYP": "9232fdce-585c-41be-8785-421775c3b2ae",
+							"CZE": "431357a4-4216-463e-b787-3e231539e983",
+							"DEU": "a605279e-de9e-4bc5-8841-ae1dd3f03c5c",
+							"DJI": "215f2707-386f-4570-a033-19be2ed1dd09",
+							"DMA": "63cc3795-ca8f-4af5-a0aa-b527fa64f3d4",
+							"DNK": "e816b32c-8c2c-4d42-9d0e-0cd12a2e2b39",
+							"DOM": "4b78fba3-ad3d-409b-bb45-9b664b8c83f3",
+							"DZA": "e6abb100-c908-4548-8e4b-e1fbbc935ae8",
+							"ECU": "fe4124f8-e378-46b7-ba92-584af8c71128",
+							"EGY": "0577c335-bf69-4d21-99c7-7ae4f5fbbd04",
+							"ERI": "a514cb79-5e63-4014-98bd-859d1397ae36",
+							"ESH": "58777e68-6ddd-4f15-b106-fb558a4cb3c2",
+							"ESP": "e9610e06-c5eb-4133-84de-d2cf7afe6f9d",
+							"EST": "c7de06be-48ae-4546-8d6c-7f4d632c7343",
+							"ETH": "307722aa-a233-49b5-a039-819252de0964",
+							"FIN": "477c11a7-a5bc-44bf-9c71-121564b12bdd",
+							"FJI": "92c2c817-558a-44dc-a454-8d5c3fa8f7f5",
+							"FLK": "1fb99658-e228-41f9-a294-840d68e02c7c",
+							"FRA": "56d6ac6c-8476-4e75-acbf-026b2383627d",
+							"FRO": "984a8579-65bd-423d-b8cd-789e309dca1c",
+							"FSM": "96f3c274-3097-458e-8ddf-e2e7fba4b1bc",
+							"GAB": "dd83c399-4f26-465f-a1ea-8de48e80a183",
+							"GBR": "67c7db8d-080b-4f96-bace-211ee569bcb2",
+							"GEO": "136885d6-8f27-4a50-9ea7-b5987ce0ee4d",
+							"GGY": "735c2a0d-5af8-4b2f-bdcc-b12900cd0a31",
+							"GHA": "d047e177-64f0-4d42-824e-3f948789b740",
+							"GIN": "75599a4b-e2f2-4bb8-ac20-c99653f74ea8",
+							"GLP": "04a37d79-5841-4969-babf-7c3e43e1209e",
+							"GMB": "c3a36c9e-037d-484d-a863-93c08c1fbab7",
+							"GNB": "9eea78d5-cb42-4965-bacf-27e162b542d6",
+							"GNQ": "eb2a9bd2-f222-4728-a53c-38860214a0a5",
+							"GRC": "94aaef7e-a458-4dc4-bba7-172a4362aa68",
+							"GRD": "5c98c4e3-28af-4ff1-aa5a-68284ed00749",
+							"GRL": "eabc41f3-2876-497d-a4f7-1f74ba08f759",
+							"GTM": "9be82fa4-d581-46c8-afd5-d391b1a6419e",
+							"GUF": "724372f1-755a-4738-a02b-d821e8b42aac",
+							"GUM": "e1daec67-029f-4d30-a0fc-3ccbbfb4e51e",
+							"GUY": "d870e279-7590-41e8-acbc-256e4ec59052",
+							"HMD": "61f0415d-e7d8-4957-adbb-79e2f73b6dcf",
+							"HND": "660ffa5a-7f76-4115-8f24-170085afa8c3",
+							"HRV": "19267c0d-18ae-4eb2-8739-d44b0d5509c2",
+							"HTI": "87755dc6-f42c-4885-923d-4bdb38bc0899",
+							"HUN": "5f518ff4-0801-46a8-b004-4120a178ad39",
+							"CHE": "a6d973c5-6e18-49c1-8057-99a95720e4a7",
+							"CHL": "288dae19-4bbe-4f0f-bca7-fa923222dc09",
+							"CHN": "7643d7e7-58b5-4a15-a8a9-2abb591d4b5a",
+							"IDN": "8c2a55ff-46f7-4f12-ad01-cc27115bc633",
+							"IMN": "5fc17dcd-4a32-4e07-9806-7c105c26846c",
+							"IND": "da5f48c2-9eb2-4921-b470-c4b9b614d59b",
+							"IRL": "4babc9e7-45d1-47a6-a282-4d0d7b877607",
+							"IRN": "33a2ef21-88fa-4e09-8927-095a96a26d8b",
+							"IRQ": "ccc6ee99-1ac1-4705-a490-a5e5967a3d68",
+							"ISL": "1973281b-9026-4046-abc9-b4d936d104f2",
+							"ISR": "d642c37a-baf2-4523-be5c-5bb7cff6a6be",
+							"ITA": "809e6761-8568-4ea1-a798-9138ba3c414a",
+							"JAM": "a2a51f48-8efc-4f4a-8147-24c267409cbd",
+							"JEY": "8fa27f52-c391-4ba0-a9df-c95f834405c4",
+							"JOR": "2d2e9a00-af61-4584-a745-4c99730b5379",
+							"JPN": "a976858a-06ab-494e-874e-1db5d7f0092c",
+							"KAZ": "fba26392-4ae5-4012-a89b-38cee34be419",
+							"KEN": "d5194d4c-e2e9-4274-a280-813cce0295db",
+							"KGZ": "c92ff694-8ffe-467e-9dce-c6fc34608833",
+							"KHM": "0c0cdd04-c753-4901-b157-dc647dd53124",
+							"KIR": "ac0116c9-2dc2-4843-81eb-0864adc75089",
+							"KNA": "92691524-d91a-486e-bf2b-7d4ff490ed46",
+							"KOR": "07da9357-43d0-4f68-bc45-476cad7aa655",
+							"KWT": "b77e0afa-13da-42e9-b8cd-f860bccc9a54",
+							"LAO": "19056204-fd04-4799-9a06-e541d20af6cb",
+							"LBN": "472bd3fc-0eb2-4c21-853d-9db435292af4",
+							"LBR": "44691837-d5f4-4b32-8862-7f16dfc84a3a",
+							"LBY": "dad80a00-edef-4c61-826e-384ccfcb5c57",
+							"LCA": "841ef74e-2392-4fd1-abf1-d0fee2572874",
+							"LIE": "47a8597b-bf41-48ce-8aa3-aae9582e25ce",
+							"LKA": "9f53e10f-a8bc-404e-95bc-a1356ea5ec22",
+							"LSO": "9e99c0ee-7aa3-485b-aed2-d6c42fd6a412",
+							"LTU": "5d1e31b1-962e-474b-997d-8f4a452ca19b",
+							"LUX": "f783e402-96f6-4dab-a531-361b5489dd8e",
+							"LVA": "33b36081-562e-4f70-810d-f9391318ed08",
+							"MAF": "8748d181-d58e-4239-958c-ec0bc4492382",
+							"MAR": "dfab147b-6ed7-45b6-b57c-7c74e4025bbc",
+							"MDA": "9071ec82-24ba-4465-9e54-0212f53deab1",
+							"MDG": "929e8778-dd0b-4ae4-ab26-38a567521df5",
+							"MEX": "a6af2223-627c-491e-ad8f-ea02c1f4fb7a",
+							"MKD": "b15bc397-d328-4b73-b265-ca66c0ee87c0",
+							"MLI": "7e61cf07-32fe-423b-a2e8-f35aa4070a25",
+							"MLT": "c9c8d51c-b751-4780-8782-348bd1282449",
+							"MMR": "1b8b1a0b-6587-4504-b2ca-4fae5447e031",
+							"MNE": "480a52a7-17b0-400f-abbf-41c36046a87f",
+							"MNG": "24f4092d-d845-40d4-a8b6-208b09bcada4",
+							"MNP": "896fb50f-b68d-438a-b5c3-d8ee5c82b6f0",
+							"MOZ": "87c83729-0dac-47bf-9e0c-0d2061ca1ccd",
+							"MRT": "5bc222c2-f6a2-47dc-9540-e5d2f4685465",
+							"MSR": "c935d155-c99c-4bed-a5f7-568cff572abf",
+							"MTQ": "00518e62-0685-4073-b9dd-1b29612d0748",
+							"MUS": "da0cc71d-d352-4346-9df0-2259dce62df4",
+							"MWI": "4ff3bf79-2c1a-4ea2-962f-aec5070b60e7",
+							"MYS": "cc000c98-016c-4921-a4df-422588e5aad8",
+							"MYT": "ee9c8efa-e89f-4dbe-92f0-16bcf785123d",
+							"NAM": "e62298aa-89c8-4972-a4c7-2a80e0daddca",
+							"NCL": "1bb470fc-a23f-4357-9b04-8440ae4400cf",
+							"NER": "16a5d24f-67e0-4241-9c69-eea6f9cd8b5f",
+							"NGA": "971994cf-4671-4f42-bc90-f9ed19e4cce0",
+							"NIC": "c6023509-733f-4646-a096-4fd5bcacdeb1",
+							"NIU": "f3e7fd2e-85f3-4951-af89-c6714e13a1ee",
+							"NLD": "699f796a-9985-4a78-afaf-d5283fb4742c",
+							"NOR": "356bff51-d9df-4966-b2fe-ef70c1d81590",
+							"NPL": "cbb4c962-804f-47df-9276-a1de8bc9d5bc",
+							"NZL": "3d0fde5d-bd56-4a89-bb8c-d2421e00468e",
+							"OMN": "cd3e2149-844c-4315-abc5-330952fe8c69",
+							"PAK": "e0da8d0b-5e8e-43d4-b65b-dbe7102b524c",
+							"PAN": "b5129f51-514b-474d-9932-7f853a2151e1",
+							"PER": "6d9a0a1b-33d7-408b-8784-b3c8accd6b82",
+							"PHL": "698f45f7-59d2-4392-ad41-65f33226c479",
+							"PLW": "67865d84-7048-48cc-93fb-7c00a9108c14",
+							"PNG": "c7ceeb17-119d-4713-9797-907c6e054683",
+							"POL": "adb2c151-b939-48b3-a7ae-8a40afec55c0",
+							"PRI": "e8ab4a04-9e4d-4e48-94e4-0c38f17b7bdd",
+							"PRK": "355ca73b-e454-4c10-b952-3bf71ae49524",
+							"PRT": "a7b5577b-2e9a-4883-ad38-bf0a4d81c55d",
+							"PRY": "28af898d-41d7-486e-b194-99ba717d95cc",
+							"PSE": "e0fe2076-faf3-4de4-9645-b1ecd9de73da",
+							"PYF": "2d429caa-3980-4f6c-86d3-bd198622cc9e",
+							"QAT": "6adedeae-24a9-46b2-98a9-76a3dd222bc9",
+							"REU": "f6182ed1-e67a-4cb5-8478-d8227fd269d2",
+							"ROU": "2ba16887-198e-47df-b557-b11a5aef082a",
+							"RUS": "7aa0e072-9493-40e6-91b5-d9d9eff30d12",
+							"RWA": "6f617b8e-c04d-4d70-8acd-e059f5d4d8b3",
+							"SAU": "9286997d-0e37-4677-9862-994c02a06a28",
+							"SDN": "71205281-6de4-4170-9f53-a8e9db742242",
+							"SEN": "7686f02d-dc7f-482c-826f-d224a24fb311",
+							"SGP": "95dd69b7-76e2-4987-b4c8-183fa9eaf511",
+							"SGS": "a1be9b24-e5bb-4cb5-940c-e79b0eecddca",
+							"SHN": "c901180d-5954-4084-bf26-4bbd896db203",
+							"SJM": "3b3908ec-6d06-49d8-b4a1-3dbec0abd31d",
+							"SLB": "99b9d43e-288d-4286-b28c-8887129753af",
+							"SLE": "481dff16-0544-4a71-b09a-e1ebb7de2a1a",
+							"SLV": "a216cac7-e243-4046-83ca-06958091b1c7",
+							"SMR": "721e6efb-90e4-4863-a598-8768eb97d189",
+							"SOM": "6f5f67e7-197f-435f-b8fc-dcc62a724e0f",
+							"SPM": "bdf214e2-60ed-4dd0-b80b-9a80c7f94244",
+							"SRB": "1eb7f757-47c2-484c-93ae-e99a7279ddc1",
+							"SSD": "51724566-46d2-417c-9829-9ec7bbb8b6b8",
+							"STP": "13745f11-52b9-43d9-a39a-e3f18fe91289",
+							"SUR": "a6c6b04f-145c-4acb-abf9-33401a34b816",
+							"SVK": "35f3fa32-388c-4b08-be7a-2a98782a6702",
+							"SVN": "a5ccbefd-950c-489c-96d1-fb520ce01c2c",
+							"SWE": "82c731ac-8af9-46c7-9cfa-70d6c5ce5d17",
+							"SWZ": "5fc873c4-5250-4178-9b2b-7ea7607fc6d3",
+							"SXM": "29f7a042-b345-4c02-8d78-a2183a99557d",
+							"SYC": "1f77f799-29d1-4783-be10-7c2c190704de",
+							"SYR": "f53a74ad-4951-41ee-a405-87634fab6535",
+							"TCA": "811f5ad6-5554-4967-ae70-205ffc1bc8e4",
+							"TCD": "068741da-6b31-4856-89e4-90ca8aaad2d4",
+							"TGO": "0fbef86c-88a1-48d8-86f1-83f325d1d501",
+							"THA": "b00a4fa8-9887-4043-adb6-549e62b60173",
+							"TJK": "4ae063fb-5237-46ec-9355-63c07e3a05fe",
+							"TKM": "d2cfd6ee-b901-41a8-8e82-bedadf4d0fec",
+							"TLS": "eb0d2178-4f42-43e9-bc08-ec9872b9898f",
+							"TON": "d37618b3-40a1-499c-a137-c9e20dd562c0",
+							"TTO": "3e2fc121-85b7-4c80-a60f-a769cb6d599f",
+							"TUN": "997b8db9-10bc-48c7-9c84-b07b88143f47",
+							"TUR": "9d0c6f9d-57ea-44ce-9669-81536a326c7d",
+							"TWN": "850b3223-c6d1-457c-8ed0-3c0f388d18e5",
+							"TZA": "47980e07-1c87-40d4-96b1-890fe6363909",
+							"UGA": "6a6e2eed-ea4a-4c85-8e5a-54ef22a3e3c9",
+							"UKR": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+							"URY": "e79cb672-b2c9-43ef-ba7c-224274ac79c5",
+							"USA": "97b3d5a9-0300-4dc1-be16-fd57e9847318",
+							"UZB": "2f3256ca-0315-4a15-b871-c408bd67d9fa",
+							"VCT": "48a873d1-319c-4701-86d9-5822aaebe50b",
+							"VEN": "b995b1ba-06ab-417f-be78-0d51934515e6",
+							"VGB": "6b444110-e3f9-49a9-a735-1035102323e6",
+							"VIR": "844bee6c-9be3-4136-a4e2-622d75dc35d2",
+							"VNM": "935d5d16-5f0c-4ff2-8f18-c24e8ae39b6e",
+							"VUT": "719d34bb-4531-413b-aeda-a85646bf8bc6",
+							"WLF": "49d2a714-23df-4c76-901e-af1c3b14bdc7",
+							"WSM": "f3d7eb8b-c2f0-493c-b889-ad784b94328d",
+							"XAD": "9ff796f5-90af-434e-9b31-3ab1bff1553d",
+							"XCA": "c4c3efd4-e8a6-4089-bc28-ed9b7fbd2aba",
+							"XKO": "d8d8a4a2-9537-4b2c-a4c0-6125b1326f6f",
+							"YEM": "d008f82b-3fde-4756-a8cc-4473c7765f71",
+							"ZAF": "313d6496-68e9-42cf-b6b5-27cba5be7cc8",
+							"ZMB": "23c2e926-ed09-4f32-93e1-3988d6e46cf6",
+							"ZNC": "96c708f3-e854-45d7-b086-1d6dc62b2bd2",
+							"ZWE": "71eb4895-0733-4f25-ab6d-40b0abd0d5bd"
+						},
+						"availableCountryLevelForPlaceKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89"
+					}
+				}
+			}
+		]
+	},
+	"metadata": {
+		"scopes": [
+			{
+				"key": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"nameInternal": "scope_statistics",
+					"nameDisplay": "Statistics"
+				}
+			}
+		],
+		"areaTrees": [
+			{
+				"key": "79b65d72-9d4c-4959-a7fa-579c3a372406",
+				"data": {
+					"nameInternal": "areaTree_levels",
+					"nameDisplay": "Levels",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			}
+		],
+		"areaTreeLevels": [
+			{
+				"key": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+				"data": {
+					"nameInternal": "areaTreeLevel_global",
+					"nameDisplay": "Global",
+					"level": 1,
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"applicationKey": "esaWorldCerealProductViewer",
+					"areaTreeKey": "79b65d72-9d4c-4959-a7fa-579c3a372406"
+				}
+			},
+			{
+				"key": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+				"data": {
+					"nameInternal": "areaTreeLevel_country",
+					"nameDisplay": "Country",
+					"level": 2,
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"applicationKey": "esaWorldCerealProductViewer",
+					"areaTreeKey": "79b65d72-9d4c-4959-a7fa-579c3a372406"
+				}
+			}
+		],
+		"attributes": [
+			{
+				"key": "5f6a119b-addf-467e-ab1f-e07e4cdf79a6",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"nameInternal": "attribute_name",
+					"nameDisplay": "Name",
+					"type": "text",
+					"unit": null
+				}
+			},
+			{
+				"key": "4fb212bb-ff1a-46d7-8fce-e341e7f08376",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"nameInternal": "attribute_annualCroplandArea",
+					"nameDisplay": "Total cropland area",
+					"type": "number",
+					"unit": "ha",
+					"color": "#e41a1c"
+				}
+			},
+			{
+				"key": "73e3bd86-8701-47e4-b27b-9d2555d68304",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"nameInternal": "attribute_annualCroplandShare",
+					"nameDisplay": "Share of cropland area in total area",
+					"type": "number",
+					"unit": "%",
+					"color": "#e41a1c"
+				}
+			},
+			{
+				"key": "d6556335-a2cd-4401-9cfe-ab5a5bbb8a5a",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"nameInternal": "attribute_area",
+					"nameDisplay": "Area",
+					"type": "number",
+					"unit": "ha"
+				}
+			},
+			{
+				"key": "901ff005-2a62-41d4-afc4-e8d1b1f5d088",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"nameInternal": "attribute_annualIrrigationArea",
+					"nameDisplay": "Total irrigation area",
+					"type": "number",
+					"unit": "ha"
+				}
+			},
+			{
+				"key": "934a9fa2-ddb9-49a8-b4b2-170e39ef531e",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"nameInternal": "attribute_annualIrrigationShare",
+					"nameDisplay": "Share of irrigation area in total cropland area",
+					"type": "number",
+					"unit": "%"
+				}
+			},
+			{
+				"key": "55cb5a4a-8ce3-40a1-9f12-1a6b211f4255",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"nameInternal": "attribute_annualMaizeArea",
+					"nameDisplay": "Total maize area",
+					"type": "number",
+					"unit": "ha"
+				}
+			},
+			{
+				"key": "8e71e4da-5a90-4222-9350-f1c1f1bad5c5",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"nameInternal": "attribute_annualMaizeShare",
+					"nameDisplay": "Share of maize area in total cropland area",
+					"type": "number",
+					"unit": "%"
+				}
+			},
+			{
+				"key": "6c8e8332-b01b-4c56-bf8e-2025a5abc465",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"nameInternal": "attribute_springWheatArea",
+					"nameDisplay": "Total cereals area",
+					"type": "number",
+					"unit": "ha"
+				}
+			},
+			{
+				"key": "eb9dce86-39c6-480b-b7e3-2fac2101eac0",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"nameInternal": "attribute_springWheatShare",
+					"nameDisplay": "Share of cereals area in total cropland area",
+					"type": "number",
+					"unit": "%"
+				}
+			}
+		],
+		"cases": [
+			{
+				"key": "577b253f-754f-421e-94a2-092f092b4947",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"nameInternal": "case_annualCropland",
+					"nameDisplay": "Annual cropland",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3"
+				}
+			},
+			{
+				"key": "66f490a6-d8df-45a3-adcb-d3648715ddd5",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"nameInternal": "case_activeIrrigation",
+					"nameDisplay": "Active irrigation",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3"
+				}
+			},
+			{
+				"key": "33caa296-cf88-4d5c-a67d-ffba11376d4a",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"nameInternal": "case_maize",
+					"nameDisplay": "Maize",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3"
+				}
+			},
+			{
+				"key": "d439a6db-8f7b-4123-9e93-3892cad157f7",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"nameInternal": "case_cereals_summer",
+					"nameDisplay": "Cereals",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3"
+				}
+			}
+		],
+		"periods": [
+			{
+				"key": "1f5cf9d2-58cc-4463-8ef7-bcc0c4932a08",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "period_2019annual",
+					"nameDisplay": "2019",
+					"period": "2019"
+				}
+			},
+			{
+				"key": "2a293769-d7ba-4c83-800e-8184b457ac85",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "period_2019summer1",
+					"nameDisplay": "2019 - summer1",
+					"period": "2019"
+				}
+			},
+			{
+				"key": "df428b66-5a83-4943-93b2-56dea2805509",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "period_2019winter",
+					"nameDisplay": "2019 - winter",
+					"period": "2019"
+				}
+			},
+			{
+				"key": "6a7a4193-1339-4172-b54d-817c3e8cd6f7",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "period_2020annual",
+					"nameDisplay": "2020",
+					"period": "2020"
+				}
+			},
+			{
+				"key": "f3293b7c-4725-49a6-beeb-19718083ab6c",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "period_2020summer1",
+					"nameDisplay": "2020 - summer1",
+					"period": "2020"
+				}
+			},
+			{
+				"key": "d93a6ec5-e6e2-4f9a-a368-8a8f2aa8c0fe",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "period_2020winter",
+					"nameDisplay": "2020 - winter",
+					"period": "2020"
+				}
+			}
+		],
+		"places": [
+			{
+				"key": "43cc706b-1f34-4952-a7d2-6fa9f96adc8e",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_ABW",
+					"nameDisplay": "Aruba"
+				}
+			},
+			{
+				"key": "9a1a14d8-1fb3-4d98-982c-f86246b11046",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_AFG",
+					"nameDisplay": "Afghanistan"
+				}
+			},
+			{
+				"key": "effe18d9-b929-4472-99b8-3103095527fd",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_AGO",
+					"nameDisplay": "Angola"
+				}
+			},
+			{
+				"key": "6f2b3b8d-e357-4192-9690-dfda24059a85",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_ALA",
+					"nameDisplay": "Aland"
+				}
+			},
+			{
+				"key": "61f87367-db88-4c41-b8b9-0c138ed34e19",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_ALB",
+					"nameDisplay": "Albania"
+				}
+			},
+			{
+				"key": "99cbeea4-66ea-46c5-ad57-599e9ccb9675",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_AND",
+					"nameDisplay": "Andorra"
+				}
+			},
+			{
+				"key": "59db08ce-b722-45f5-89ed-ef6d89e70658",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_ARE",
+					"nameDisplay": "United Arab Emirates"
+				}
+			},
+			{
+				"key": "4bd3aafb-5204-47b7-b5a5-298e9ca992be",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_ARG",
+					"nameDisplay": "Argentina"
+				}
+			},
+			{
+				"key": "9aadf48f-c3f9-4aca-ae80-f9d73a5f041f",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_ARM",
+					"nameDisplay": "Armenia"
+				}
+			},
+			{
+				"key": "f4b57d16-8f06-4fbb-966f-c83f56b917f3",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_ASM",
+					"nameDisplay": "American Samoa"
+				}
+			},
+			{
+				"key": "9f7fdeca-8c26-4ce8-9ef9-8b0892603bcf",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_ATA",
+					"nameDisplay": "Antarctica"
+				}
+			},
+			{
+				"key": "e48922fe-fa1d-4045-9485-fa676559ed2b",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_ATF",
+					"nameDisplay": "French Southern Territories"
+				}
+			},
+			{
+				"key": "712195f2-0996-4bdd-8b22-079f663085da",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_ATG",
+					"nameDisplay": "Antigua and Barbuda"
+				}
+			},
+			{
+				"key": "95134efd-eabc-4432-bd46-900276d8427d",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_AUS",
+					"nameDisplay": "Australia"
+				}
+			},
+			{
+				"key": "4a36017f-ab0e-4d02-bda1-ee0f8c9bf465",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_AUT",
+					"nameDisplay": "Austria"
+				}
+			},
+			{
+				"key": "8f06ae16-a84a-4cba-9263-4407f72aa8ed",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_AZE",
+					"nameDisplay": "Azerbaijan"
+				}
+			},
+			{
+				"key": "07f751d5-2ded-4de1-8427-f10fd831b148",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_BDI",
+					"nameDisplay": "Burundi"
+				}
+			},
+			{
+				"key": "6d68793b-cf63-4ed0-a424-7acb30da045f",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_BEL",
+					"nameDisplay": "Belgium"
+				}
+			},
+			{
+				"key": "0183b602-5c79-4db6-8b10-f8f753c1f086",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_BEN",
+					"nameDisplay": "Benin"
+				}
+			},
+			{
+				"key": "d5bd1a73-c781-4578-a1b0-a3a3e983ec15",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_BES",
+					"nameDisplay": "Bonaire, Sint Eustatius and Saba"
+				}
+			},
+			{
+				"key": "44355273-86b0-4f27-80d2-36b01d1d469b",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_BFA",
+					"nameDisplay": "Burkina Faso"
+				}
+			},
+			{
+				"key": "dd3096bf-6671-434b-af01-d211d0da0a8e",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_BGD",
+					"nameDisplay": "Bangladesh"
+				}
+			},
+			{
+				"key": "0c1b4595-5e2b-474a-a302-cbbad38f1d70",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_BGR",
+					"nameDisplay": "Bulgaria"
+				}
+			},
+			{
+				"key": "53e81058-0d9b-44b9-a3ba-2f3ba4884e06",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_BHR",
+					"nameDisplay": "Bahrain"
+				}
+			},
+			{
+				"key": "cc2507eb-5647-4fa4-a8a7-f267d592510e",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_BHS",
+					"nameDisplay": "Bahamas"
+				}
+			},
+			{
+				"key": "7e26216a-9097-4301-8438-7a171234023c",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_BIH",
+					"nameDisplay": "Bosnia and Herzegovina"
+				}
+			},
+			{
+				"key": "2b1662b1-ae61-41ae-96fd-f3e66df4e490",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_BLR",
+					"nameDisplay": "Belarus"
+				}
+			},
+			{
+				"key": "57c088da-389c-44b6-a7eb-5601e8918b7b",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_BLZ",
+					"nameDisplay": "Belize"
+				}
+			},
+			{
+				"key": "a8d6c170-9cc5-4d3c-9dda-7955faf8f1e8",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_BOL",
+					"nameDisplay": "Bolivia"
+				}
+			},
+			{
+				"key": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_BRA",
+					"nameDisplay": "Brazil",
+					"bbox": {
+						"coordinates": [
+							[
+								[-33.630787104309235, 6.349926576018717],
+								[-74.41203710430955, 6.349926576018717],
+								[-74.41203710430955, -34.71297793996753],
+								[-33.630787104309235, -34.71297793996753],
+								[-33.630787104309235, 6.349926576018717]
+							]
+						],
+						"type": "Polygon"
+					}
+				}
+			},
+			{
+				"key": "bc04920f-ca16-484f-b970-1b41f15667b8",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_BRB",
+					"nameDisplay": "Barbados"
+				}
+			},
+			{
+				"key": "824991cb-d241-4951-83ce-88fd8a03d047",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_BRN",
+					"nameDisplay": "Brunei"
+				}
+			},
+			{
+				"key": "1bbdd0d9-ec6b-4816-b314-febbd869ccf9",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_BTN",
+					"nameDisplay": "Bhutan"
+				}
+			},
+			{
+				"key": "f0758a61-9cb5-4957-8221-94dfef6795c8",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_BVT",
+					"nameDisplay": "Bouvet Island"
+				}
+			},
+			{
+				"key": "65d5f03f-5839-4a0f-bad7-eecaf75803b7",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_BWA",
+					"nameDisplay": "Botswana"
+				}
+			},
+			{
+				"key": "0d42b896-196e-4d95-b827-01e51f23efb4",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_CAF",
+					"nameDisplay": "Central African Republic"
+				}
+			},
+			{
+				"key": "6841ff56-bb61-4730-b694-3f09c484c448",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_CAN",
+					"nameDisplay": "Canada"
+				}
+			},
+			{
+				"key": "103957d0-10a0-4f5d-8f61-4e941fc8fc2c",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_CIV",
+					"nameDisplay": "Côte d'Ivoire"
+				}
+			},
+			{
+				"key": "fc4c7293-a644-484b-aa7c-6bb8ade9595c",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_CMR",
+					"nameDisplay": "Cameroon"
+				}
+			},
+			{
+				"key": "3d91d438-2a03-46f7-a9d1-a022d6ccf208",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_COD",
+					"nameDisplay": "Democratic Republic of the Congo"
+				}
+			},
+			{
+				"key": "61e35587-5029-4edb-9e31-753a122a72f3",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_COG",
+					"nameDisplay": "Republic of the Congo"
+				}
+			},
+			{
+				"key": "ea814de1-4a8b-4b8d-9f7d-404215ab68cb",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_COK",
+					"nameDisplay": "Cook Islands"
+				}
+			},
+			{
+				"key": "70954135-bd3b-453e-8c51-68c570ab6399",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_COL",
+					"nameDisplay": "Colombia"
+				}
+			},
+			{
+				"key": "eaa2e105-6bf4-457a-afbe-43dd88f32d36",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_COM",
+					"nameDisplay": "Comoros"
+				}
+			},
+			{
+				"key": "bf3d0abe-6c59-4999-9aa0-0f43e610195f",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_CPV",
+					"nameDisplay": "Cabo Verde"
+				}
+			},
+			{
+				"key": "89746a4c-7ad8-49d7-8fa8-bb702f13d25a",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_CRI",
+					"nameDisplay": "Costa Rica"
+				}
+			},
+			{
+				"key": "974d0224-d45b-4185-8c62-05bb76041420",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_CUB",
+					"nameDisplay": "Cuba"
+				}
+			},
+			{
+				"key": "3788b179-bddb-44e7-86be-af949a34d80c",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_CUW",
+					"nameDisplay": "Curaçao"
+				}
+			},
+			{
+				"key": "3ef3110d-ed85-4903-ad75-f3fdd3ac1491",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_CYM",
+					"nameDisplay": "Cayman Islands"
+				}
+			},
+			{
+				"key": "9232fdce-585c-41be-8785-421775c3b2ae",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_CYP",
+					"nameDisplay": "Cyprus"
+				}
+			},
+			{
+				"key": "431357a4-4216-463e-b787-3e231539e983",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_CZE",
+					"nameDisplay": "Czechia"
+				}
+			},
+			{
+				"key": "a605279e-de9e-4bc5-8841-ae1dd3f03c5c",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_DEU",
+					"nameDisplay": "Germany"
+				}
+			},
+			{
+				"key": "215f2707-386f-4570-a033-19be2ed1dd09",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_DJI",
+					"nameDisplay": "Djibouti"
+				}
+			},
+			{
+				"key": "63cc3795-ca8f-4af5-a0aa-b527fa64f3d4",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_DMA",
+					"nameDisplay": "Dominica"
+				}
+			},
+			{
+				"key": "e816b32c-8c2c-4d42-9d0e-0cd12a2e2b39",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_DNK",
+					"nameDisplay": "Denmark"
+				}
+			},
+			{
+				"key": "4b78fba3-ad3d-409b-bb45-9b664b8c83f3",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_DOM",
+					"nameDisplay": "Dominican Republic"
+				}
+			},
+			{
+				"key": "e6abb100-c908-4548-8e4b-e1fbbc935ae8",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_DZA",
+					"nameDisplay": "Algeria"
+				}
+			},
+			{
+				"key": "fe4124f8-e378-46b7-ba92-584af8c71128",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_ECU",
+					"nameDisplay": "Ecuador"
+				}
+			},
+			{
+				"key": "0577c335-bf69-4d21-99c7-7ae4f5fbbd04",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_EGY",
+					"nameDisplay": "Egypt"
+				}
+			},
+			{
+				"key": "a514cb79-5e63-4014-98bd-859d1397ae36",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_ERI",
+					"nameDisplay": "Eritrea"
+				}
+			},
+			{
+				"key": "58777e68-6ddd-4f15-b106-fb558a4cb3c2",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_ESH",
+					"nameDisplay": "Western Sahara"
+				}
+			},
+			{
+				"key": "e9610e06-c5eb-4133-84de-d2cf7afe6f9d",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_ESP",
+					"nameDisplay": "Spain"
+				}
+			},
+			{
+				"key": "c7de06be-48ae-4546-8d6c-7f4d632c7343",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_EST",
+					"nameDisplay": "Estonia"
+				}
+			},
+			{
+				"key": "307722aa-a233-49b5-a039-819252de0964",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_ETH",
+					"nameDisplay": "Ethiopia"
+				}
+			},
+			{
+				"key": "477c11a7-a5bc-44bf-9c71-121564b12bdd",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_FIN",
+					"nameDisplay": "Finland"
+				}
+			},
+			{
+				"key": "92c2c817-558a-44dc-a454-8d5c3fa8f7f5",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_FJI",
+					"nameDisplay": "Fiji"
+				}
+			},
+			{
+				"key": "1fb99658-e228-41f9-a294-840d68e02c7c",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_FLK",
+					"nameDisplay": "Falkland Islands"
+				}
+			},
+			{
+				"key": "56d6ac6c-8476-4e75-acbf-026b2383627d",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_FRA",
+					"nameDisplay": "France"
+				}
+			},
+			{
+				"key": "984a8579-65bd-423d-b8cd-789e309dca1c",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_FRO",
+					"nameDisplay": "Faroe Islands"
+				}
+			},
+			{
+				"key": "96f3c274-3097-458e-8ddf-e2e7fba4b1bc",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_FSM",
+					"nameDisplay": "Micronesia"
+				}
+			},
+			{
+				"key": "dd83c399-4f26-465f-a1ea-8de48e80a183",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_GAB",
+					"nameDisplay": "Gabon"
+				}
+			},
+			{
+				"key": "67c7db8d-080b-4f96-bace-211ee569bcb2",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_GBR",
+					"nameDisplay": "United Kingdom"
+				}
+			},
+			{
+				"key": "136885d6-8f27-4a50-9ea7-b5987ce0ee4d",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_GEO",
+					"nameDisplay": "Georgia"
+				}
+			},
+			{
+				"key": "735c2a0d-5af8-4b2f-bdcc-b12900cd0a31",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_GGY",
+					"nameDisplay": "Guernsey"
+				}
+			},
+			{
+				"key": "d047e177-64f0-4d42-824e-3f948789b740",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_GHA",
+					"nameDisplay": "Ghana"
+				}
+			},
+			{
+				"key": "75599a4b-e2f2-4bb8-ac20-c99653f74ea8",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_GIN",
+					"nameDisplay": "Guinea"
+				}
+			},
+			{
+				"key": "04a37d79-5841-4969-babf-7c3e43e1209e",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_GLP",
+					"nameDisplay": "Guadeloupe"
+				}
+			},
+			{
+				"key": "c3a36c9e-037d-484d-a863-93c08c1fbab7",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_GMB",
+					"nameDisplay": "Gambia"
+				}
+			},
+			{
+				"key": "9eea78d5-cb42-4965-bacf-27e162b542d6",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_GNB",
+					"nameDisplay": "Guinea-Bissau"
+				}
+			},
+			{
+				"key": "eb2a9bd2-f222-4728-a53c-38860214a0a5",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_GNQ",
+					"nameDisplay": "Equatorial Guinea"
+				}
+			},
+			{
+				"key": "94aaef7e-a458-4dc4-bba7-172a4362aa68",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_GRC",
+					"nameDisplay": "Greece"
+				}
+			},
+			{
+				"key": "5c98c4e3-28af-4ff1-aa5a-68284ed00749",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_GRD",
+					"nameDisplay": "Grenada"
+				}
+			},
+			{
+				"key": "eabc41f3-2876-497d-a4f7-1f74ba08f759",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_GRL",
+					"nameDisplay": "Greenland"
+				}
+			},
+			{
+				"key": "9be82fa4-d581-46c8-afd5-d391b1a6419e",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_GTM",
+					"nameDisplay": "Guatemala"
+				}
+			},
+			{
+				"key": "724372f1-755a-4738-a02b-d821e8b42aac",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_GUF",
+					"nameDisplay": "French Guiana"
+				}
+			},
+			{
+				"key": "e1daec67-029f-4d30-a0fc-3ccbbfb4e51e",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_GUM",
+					"nameDisplay": "Guam"
+				}
+			},
+			{
+				"key": "d870e279-7590-41e8-acbc-256e4ec59052",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_GUY",
+					"nameDisplay": "Guyana"
+				}
+			},
+			{
+				"key": "61f0415d-e7d8-4957-adbb-79e2f73b6dcf",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_HMD",
+					"nameDisplay": "Heard Island and McDonald Island"
+				}
+			},
+			{
+				"key": "660ffa5a-7f76-4115-8f24-170085afa8c3",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_HND",
+					"nameDisplay": "Honduras"
+				}
+			},
+			{
+				"key": "19267c0d-18ae-4eb2-8739-d44b0d5509c2",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_HRV",
+					"nameDisplay": "Croatia"
+				}
+			},
+			{
+				"key": "87755dc6-f42c-4885-923d-4bdb38bc0899",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_HTI",
+					"nameDisplay": "Haiti"
+				}
+			},
+			{
+				"key": "5f518ff4-0801-46a8-b004-4120a178ad39",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_HUN",
+					"nameDisplay": "Hungary"
+				}
+			},
+			{
+				"key": "a6d973c5-6e18-49c1-8057-99a95720e4a7",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_CHE",
+					"nameDisplay": "Switzerland"
+				}
+			},
+			{
+				"key": "288dae19-4bbe-4f0f-bca7-fa923222dc09",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_CHL",
+					"nameDisplay": "Chile"
+				}
+			},
+			{
+				"key": "7643d7e7-58b5-4a15-a8a9-2abb591d4b5a",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_CHN",
+					"nameDisplay": "China"
+				}
+			},
+			{
+				"key": "8c2a55ff-46f7-4f12-ad01-cc27115bc633",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_IDN",
+					"nameDisplay": "Indonesia"
+				}
+			},
+			{
+				"key": "5fc17dcd-4a32-4e07-9806-7c105c26846c",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_IMN",
+					"nameDisplay": "Isle of Man"
+				}
+			},
+			{
+				"key": "da5f48c2-9eb2-4921-b470-c4b9b614d59b",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_IND",
+					"nameDisplay": "India"
+				}
+			},
+			{
+				"key": "4babc9e7-45d1-47a6-a282-4d0d7b877607",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_IRL",
+					"nameDisplay": "Ireland"
+				}
+			},
+			{
+				"key": "33a2ef21-88fa-4e09-8927-095a96a26d8b",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_IRN",
+					"nameDisplay": "Iran"
+				}
+			},
+			{
+				"key": "ccc6ee99-1ac1-4705-a490-a5e5967a3d68",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_IRQ",
+					"nameDisplay": "Iraq"
+				}
+			},
+			{
+				"key": "1973281b-9026-4046-abc9-b4d936d104f2",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_ISL",
+					"nameDisplay": "Iceland"
+				}
+			},
+			{
+				"key": "d642c37a-baf2-4523-be5c-5bb7cff6a6be",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_ISR",
+					"nameDisplay": "Israel"
+				}
+			},
+			{
+				"key": "809e6761-8568-4ea1-a798-9138ba3c414a",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_ITA",
+					"nameDisplay": "Italy"
+				}
+			},
+			{
+				"key": "a2a51f48-8efc-4f4a-8147-24c267409cbd",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_JAM",
+					"nameDisplay": "Jamaica"
+				}
+			},
+			{
+				"key": "8fa27f52-c391-4ba0-a9df-c95f834405c4",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_JEY",
+					"nameDisplay": "Jersey"
+				}
+			},
+			{
+				"key": "2d2e9a00-af61-4584-a745-4c99730b5379",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_JOR",
+					"nameDisplay": "Jordan"
+				}
+			},
+			{
+				"key": "a976858a-06ab-494e-874e-1db5d7f0092c",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_JPN",
+					"nameDisplay": "Japan"
+				}
+			},
+			{
+				"key": "fba26392-4ae5-4012-a89b-38cee34be419",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_KAZ",
+					"nameDisplay": "Kazakhstan"
+				}
+			},
+			{
+				"key": "d5194d4c-e2e9-4274-a280-813cce0295db",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_KEN",
+					"nameDisplay": "Kenya"
+				}
+			},
+			{
+				"key": "c92ff694-8ffe-467e-9dce-c6fc34608833",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_KGZ",
+					"nameDisplay": "Kyrgyzstan"
+				}
+			},
+			{
+				"key": "0c0cdd04-c753-4901-b157-dc647dd53124",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_KHM",
+					"nameDisplay": "Cambodia"
+				}
+			},
+			{
+				"key": "ac0116c9-2dc2-4843-81eb-0864adc75089",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_KIR",
+					"nameDisplay": "Kiribati"
+				}
+			},
+			{
+				"key": "92691524-d91a-486e-bf2b-7d4ff490ed46",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_KNA",
+					"nameDisplay": "Saint Kitts and Nevis"
+				}
+			},
+			{
+				"key": "07da9357-43d0-4f68-bc45-476cad7aa655",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_KOR",
+					"nameDisplay": "South Korea"
+				}
+			},
+			{
+				"key": "b77e0afa-13da-42e9-b8cd-f860bccc9a54",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_KWT",
+					"nameDisplay": "Kuwait"
+				}
+			},
+			{
+				"key": "19056204-fd04-4799-9a06-e541d20af6cb",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_LAO",
+					"nameDisplay": "Laos"
+				}
+			},
+			{
+				"key": "472bd3fc-0eb2-4c21-853d-9db435292af4",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_LBN",
+					"nameDisplay": "Lebanon"
+				}
+			},
+			{
+				"key": "44691837-d5f4-4b32-8862-7f16dfc84a3a",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_LBR",
+					"nameDisplay": "Liberia"
+				}
+			},
+			{
+				"key": "dad80a00-edef-4c61-826e-384ccfcb5c57",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_LBY",
+					"nameDisplay": "Libya"
+				}
+			},
+			{
+				"key": "841ef74e-2392-4fd1-abf1-d0fee2572874",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_LCA",
+					"nameDisplay": "Saint Lucia"
+				}
+			},
+			{
+				"key": "47a8597b-bf41-48ce-8aa3-aae9582e25ce",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_LIE",
+					"nameDisplay": "Liechtenstein"
+				}
+			},
+			{
+				"key": "9f53e10f-a8bc-404e-95bc-a1356ea5ec22",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_LKA",
+					"nameDisplay": "Sri Lanka"
+				}
+			},
+			{
+				"key": "9e99c0ee-7aa3-485b-aed2-d6c42fd6a412",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_LSO",
+					"nameDisplay": "Lesotho"
+				}
+			},
+			{
+				"key": "5d1e31b1-962e-474b-997d-8f4a452ca19b",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_LTU",
+					"nameDisplay": "Lithuania"
+				}
+			},
+			{
+				"key": "f783e402-96f6-4dab-a531-361b5489dd8e",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_LUX",
+					"nameDisplay": "Luxembourg"
+				}
+			},
+			{
+				"key": "33b36081-562e-4f70-810d-f9391318ed08",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_LVA",
+					"nameDisplay": "Latvia"
+				}
+			},
+			{
+				"key": "8748d181-d58e-4239-958c-ec0bc4492382",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_MAF",
+					"nameDisplay": "Saint-Martin"
+				}
+			},
+			{
+				"key": "dfab147b-6ed7-45b6-b57c-7c74e4025bbc",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_MAR",
+					"nameDisplay": "Morocco"
+				}
+			},
+			{
+				"key": "9071ec82-24ba-4465-9e54-0212f53deab1",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_MDA",
+					"nameDisplay": "Moldova"
+				}
+			},
+			{
+				"key": "929e8778-dd0b-4ae4-ab26-38a567521df5",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_MDG",
+					"nameDisplay": "Madagascar"
+				}
+			},
+			{
+				"key": "a6af2223-627c-491e-ad8f-ea02c1f4fb7a",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_MEX",
+					"nameDisplay": "México"
+				}
+			},
+			{
+				"key": "b15bc397-d328-4b73-b265-ca66c0ee87c0",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_MKD",
+					"nameDisplay": "North Macedonia"
+				}
+			},
+			{
+				"key": "7e61cf07-32fe-423b-a2e8-f35aa4070a25",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_MLI",
+					"nameDisplay": "Mali"
+				}
+			},
+			{
+				"key": "c9c8d51c-b751-4780-8782-348bd1282449",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_MLT",
+					"nameDisplay": "Malta"
+				}
+			},
+			{
+				"key": "1b8b1a0b-6587-4504-b2ca-4fae5447e031",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_MMR",
+					"nameDisplay": "Myanmar"
+				}
+			},
+			{
+				"key": "480a52a7-17b0-400f-abbf-41c36046a87f",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_MNE",
+					"nameDisplay": "Montenegro"
+				}
+			},
+			{
+				"key": "24f4092d-d845-40d4-a8b6-208b09bcada4",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_MNG",
+					"nameDisplay": "Mongolia"
+				}
+			},
+			{
+				"key": "896fb50f-b68d-438a-b5c3-d8ee5c82b6f0",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_MNP",
+					"nameDisplay": "Northern Mariana Islands"
+				}
+			},
+			{
+				"key": "87c83729-0dac-47bf-9e0c-0d2061ca1ccd",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_MOZ",
+					"nameDisplay": "Mozambique"
+				}
+			},
+			{
+				"key": "5bc222c2-f6a2-47dc-9540-e5d2f4685465",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_MRT",
+					"nameDisplay": "Mauritania"
+				}
+			},
+			{
+				"key": "c935d155-c99c-4bed-a5f7-568cff572abf",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_MSR",
+					"nameDisplay": "Montserrat"
+				}
+			},
+			{
+				"key": "00518e62-0685-4073-b9dd-1b29612d0748",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_MTQ",
+					"nameDisplay": "Martinique"
+				}
+			},
+			{
+				"key": "da0cc71d-d352-4346-9df0-2259dce62df4",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_MUS",
+					"nameDisplay": "Mauritius"
+				}
+			},
+			{
+				"key": "4ff3bf79-2c1a-4ea2-962f-aec5070b60e7",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_MWI",
+					"nameDisplay": "Malawi"
+				}
+			},
+			{
+				"key": "cc000c98-016c-4921-a4df-422588e5aad8",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_MYS",
+					"nameDisplay": "Malaysia"
+				}
+			},
+			{
+				"key": "ee9c8efa-e89f-4dbe-92f0-16bcf785123d",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_MYT",
+					"nameDisplay": "Mayotte"
+				}
+			},
+			{
+				"key": "e62298aa-89c8-4972-a4c7-2a80e0daddca",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_NAM",
+					"nameDisplay": "Namibia"
+				}
+			},
+			{
+				"key": "1bb470fc-a23f-4357-9b04-8440ae4400cf",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_NCL",
+					"nameDisplay": "New Caledonia"
+				}
+			},
+			{
+				"key": "16a5d24f-67e0-4241-9c69-eea6f9cd8b5f",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_NER",
+					"nameDisplay": "Niger"
+				}
+			},
+			{
+				"key": "971994cf-4671-4f42-bc90-f9ed19e4cce0",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_NGA",
+					"nameDisplay": "Nigeria"
+				}
+			},
+			{
+				"key": "c6023509-733f-4646-a096-4fd5bcacdeb1",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_NIC",
+					"nameDisplay": "Nicaragua"
+				}
+			},
+			{
+				"key": "f3e7fd2e-85f3-4951-af89-c6714e13a1ee",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_NIU",
+					"nameDisplay": "Niue"
+				}
+			},
+			{
+				"key": "699f796a-9985-4a78-afaf-d5283fb4742c",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_NLD",
+					"nameDisplay": "Netherlands"
+				}
+			},
+			{
+				"key": "356bff51-d9df-4966-b2fe-ef70c1d81590",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_NOR",
+					"nameDisplay": "Norway"
+				}
+			},
+			{
+				"key": "cbb4c962-804f-47df-9276-a1de8bc9d5bc",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_NPL",
+					"nameDisplay": "Nepal"
+				}
+			},
+			{
+				"key": "3d0fde5d-bd56-4a89-bb8c-d2421e00468e",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_NZL",
+					"nameDisplay": "New Zealand"
+				}
+			},
+			{
+				"key": "cd3e2149-844c-4315-abc5-330952fe8c69",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_OMN",
+					"nameDisplay": "Oman"
+				}
+			},
+			{
+				"key": "e0da8d0b-5e8e-43d4-b65b-dbe7102b524c",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_PAK",
+					"nameDisplay": "Pakistan"
+				}
+			},
+			{
+				"key": "b5129f51-514b-474d-9932-7f853a2151e1",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_PAN",
+					"nameDisplay": "Panama"
+				}
+			},
+			{
+				"key": "6d9a0a1b-33d7-408b-8784-b3c8accd6b82",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_PER",
+					"nameDisplay": "Peru"
+				}
+			},
+			{
+				"key": "698f45f7-59d2-4392-ad41-65f33226c479",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_PHL",
+					"nameDisplay": "Philippines"
+				}
+			},
+			{
+				"key": "67865d84-7048-48cc-93fb-7c00a9108c14",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_PLW",
+					"nameDisplay": "Palau"
+				}
+			},
+			{
+				"key": "c7ceeb17-119d-4713-9797-907c6e054683",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_PNG",
+					"nameDisplay": "Papua New Guinea"
+				}
+			},
+			{
+				"key": "adb2c151-b939-48b3-a7ae-8a40afec55c0",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_POL",
+					"nameDisplay": "Poland"
+				}
+			},
+			{
+				"key": "e8ab4a04-9e4d-4e48-94e4-0c38f17b7bdd",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_PRI",
+					"nameDisplay": "Puerto Rico"
+				}
+			},
+			{
+				"key": "355ca73b-e454-4c10-b952-3bf71ae49524",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_PRK",
+					"nameDisplay": "North Korea"
+				}
+			},
+			{
+				"key": "a7b5577b-2e9a-4883-ad38-bf0a4d81c55d",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_PRT",
+					"nameDisplay": "Portugal"
+				}
+			},
+			{
+				"key": "28af898d-41d7-486e-b194-99ba717d95cc",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_PRY",
+					"nameDisplay": "Paraguay"
+				}
+			},
+			{
+				"key": "e0fe2076-faf3-4de4-9645-b1ecd9de73da",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_PSE",
+					"nameDisplay": "Palestine"
+				}
+			},
+			{
+				"key": "2d429caa-3980-4f6c-86d3-bd198622cc9e",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_PYF",
+					"nameDisplay": "French Polynesia"
+				}
+			},
+			{
+				"key": "6adedeae-24a9-46b2-98a9-76a3dd222bc9",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_QAT",
+					"nameDisplay": "Qatar"
+				}
+			},
+			{
+				"key": "f6182ed1-e67a-4cb5-8478-d8227fd269d2",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_REU",
+					"nameDisplay": "Réunion"
+				}
+			},
+			{
+				"key": "2ba16887-198e-47df-b557-b11a5aef082a",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_ROU",
+					"nameDisplay": "Romania"
+				}
+			},
+			{
+				"key": "7aa0e072-9493-40e6-91b5-d9d9eff30d12",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_RUS",
+					"nameDisplay": "Russia"
+				}
+			},
+			{
+				"key": "6f617b8e-c04d-4d70-8acd-e059f5d4d8b3",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_RWA",
+					"nameDisplay": "Rwanda"
+				}
+			},
+			{
+				"key": "9286997d-0e37-4677-9862-994c02a06a28",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_SAU",
+					"nameDisplay": "Saudi Arabia"
+				}
+			},
+			{
+				"key": "71205281-6de4-4170-9f53-a8e9db742242",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_SDN",
+					"nameDisplay": "Sudan"
+				}
+			},
+			{
+				"key": "7686f02d-dc7f-482c-826f-d224a24fb311",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_SEN",
+					"nameDisplay": "Senegal"
+				}
+			},
+			{
+				"key": "95dd69b7-76e2-4987-b4c8-183fa9eaf511",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_SGP",
+					"nameDisplay": "Singapore"
+				}
+			},
+			{
+				"key": "a1be9b24-e5bb-4cb5-940c-e79b0eecddca",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_SGS",
+					"nameDisplay": "South Georgia and the South Sand"
+				}
+			},
+			{
+				"key": "c901180d-5954-4084-bf26-4bbd896db203",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_SHN",
+					"nameDisplay": "Saint Helena, Ascension and Tris"
+				}
+			},
+			{
+				"key": "3b3908ec-6d06-49d8-b4a1-3dbec0abd31d",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_SJM",
+					"nameDisplay": "Svalbard and Jan Mayen"
+				}
+			},
+			{
+				"key": "99b9d43e-288d-4286-b28c-8887129753af",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_SLB",
+					"nameDisplay": "Solomon Islands"
+				}
+			},
+			{
+				"key": "481dff16-0544-4a71-b09a-e1ebb7de2a1a",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_SLE",
+					"nameDisplay": "Sierra Leone"
+				}
+			},
+			{
+				"key": "a216cac7-e243-4046-83ca-06958091b1c7",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_SLV",
+					"nameDisplay": "El Salvador"
+				}
+			},
+			{
+				"key": "721e6efb-90e4-4863-a598-8768eb97d189",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_SMR",
+					"nameDisplay": "San Marino"
+				}
+			},
+			{
+				"key": "6f5f67e7-197f-435f-b8fc-dcc62a724e0f",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_SOM",
+					"nameDisplay": "Somalia"
+				}
+			},
+			{
+				"key": "bdf214e2-60ed-4dd0-b80b-9a80c7f94244",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_SPM",
+					"nameDisplay": "Saint Pierre and Miquelon"
+				}
+			},
+			{
+				"key": "1eb7f757-47c2-484c-93ae-e99a7279ddc1",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_SRB",
+					"nameDisplay": "Serbia"
+				}
+			},
+			{
+				"key": "51724566-46d2-417c-9829-9ec7bbb8b6b8",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_SSD",
+					"nameDisplay": "South Sudan"
+				}
+			},
+			{
+				"key": "13745f11-52b9-43d9-a39a-e3f18fe91289",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_STP",
+					"nameDisplay": "Sao Tomé and Príncipe"
+				}
+			},
+			{
+				"key": "a6c6b04f-145c-4acb-abf9-33401a34b816",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_SUR",
+					"nameDisplay": "Suriname"
+				}
+			},
+			{
+				"key": "35f3fa32-388c-4b08-be7a-2a98782a6702",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_SVK",
+					"nameDisplay": "Slovakia"
+				}
+			},
+			{
+				"key": "a5ccbefd-950c-489c-96d1-fb520ce01c2c",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_SVN",
+					"nameDisplay": "Slovenia"
+				}
+			},
+			{
+				"key": "82c731ac-8af9-46c7-9cfa-70d6c5ce5d17",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_SWE",
+					"nameDisplay": "Sweden"
+				}
+			},
+			{
+				"key": "5fc873c4-5250-4178-9b2b-7ea7607fc6d3",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_SWZ",
+					"nameDisplay": "Swaziland"
+				}
+			},
+			{
+				"key": "29f7a042-b345-4c02-8d78-a2183a99557d",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_SXM",
+					"nameDisplay": "Sint Maarten"
+				}
+			},
+			{
+				"key": "1f77f799-29d1-4783-be10-7c2c190704de",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_SYC",
+					"nameDisplay": "Seychelles"
+				}
+			},
+			{
+				"key": "f53a74ad-4951-41ee-a405-87634fab6535",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_SYR",
+					"nameDisplay": "Syria"
+				}
+			},
+			{
+				"key": "811f5ad6-5554-4967-ae70-205ffc1bc8e4",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_TCA",
+					"nameDisplay": "Turks and Caicos Islands"
+				}
+			},
+			{
+				"key": "068741da-6b31-4856-89e4-90ca8aaad2d4",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_TCD",
+					"nameDisplay": "Chad"
+				}
+			},
+			{
+				"key": "0fbef86c-88a1-48d8-86f1-83f325d1d501",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_TGO",
+					"nameDisplay": "Togo"
+				}
+			},
+			{
+				"key": "b00a4fa8-9887-4043-adb6-549e62b60173",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_THA",
+					"nameDisplay": "Thailand"
+				}
+			},
+			{
+				"key": "4ae063fb-5237-46ec-9355-63c07e3a05fe",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_TJK",
+					"nameDisplay": "Tajikistan"
+				}
+			},
+			{
+				"key": "d2cfd6ee-b901-41a8-8e82-bedadf4d0fec",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_TKM",
+					"nameDisplay": "Turkmenistan"
+				}
+			},
+			{
+				"key": "eb0d2178-4f42-43e9-bc08-ec9872b9898f",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_TLS",
+					"nameDisplay": "Timor-Leste"
+				}
+			},
+			{
+				"key": "d37618b3-40a1-499c-a137-c9e20dd562c0",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_TON",
+					"nameDisplay": "Tonga"
+				}
+			},
+			{
+				"key": "3e2fc121-85b7-4c80-a60f-a769cb6d599f",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_TTO",
+					"nameDisplay": "Trinidad and Tobago"
+				}
+			},
+			{
+				"key": "997b8db9-10bc-48c7-9c84-b07b88143f47",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_TUN",
+					"nameDisplay": "Tunisia"
+				}
+			},
+			{
+				"key": "9d0c6f9d-57ea-44ce-9669-81536a326c7d",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_TUR",
+					"nameDisplay": "Turkey"
+				}
+			},
+			{
+				"key": "850b3223-c6d1-457c-8ed0-3c0f388d18e5",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_TWN",
+					"nameDisplay": "Taiwan"
+				}
+			},
+			{
+				"key": "47980e07-1c87-40d4-96b1-890fe6363909",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_TZA",
+					"nameDisplay": "Tanzania"
+				}
+			},
+			{
+				"key": "6a6e2eed-ea4a-4c85-8e5a-54ef22a3e3c9",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_UGA",
+					"nameDisplay": "Uganda"
+				}
+			},
+			{
+				"key": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_UKR",
+					"nameDisplay": "Ukraine"
+				}
+			},
+			{
+				"key": "e79cb672-b2c9-43ef-ba7c-224274ac79c5",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_URY",
+					"nameDisplay": "Uruguay"
+				}
+			},
+			{
+				"key": "97b3d5a9-0300-4dc1-be16-fd57e9847318",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_USA",
+					"nameDisplay": "United States"
+				}
+			},
+			{
+				"key": "2f3256ca-0315-4a15-b871-c408bd67d9fa",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_UZB",
+					"nameDisplay": "Uzbekistan"
+				}
+			},
+			{
+				"key": "48a873d1-319c-4701-86d9-5822aaebe50b",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_VCT",
+					"nameDisplay": "Saint Vincent and the Grenadines"
+				}
+			},
+			{
+				"key": "b995b1ba-06ab-417f-be78-0d51934515e6",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_VEN",
+					"nameDisplay": "Venezuela"
+				}
+			},
+			{
+				"key": "6b444110-e3f9-49a9-a735-1035102323e6",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_VGB",
+					"nameDisplay": "British Virgin Islands"
+				}
+			},
+			{
+				"key": "844bee6c-9be3-4136-a4e2-622d75dc35d2",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_VIR",
+					"nameDisplay": "Virgin Islands, U.S."
+				}
+			},
+			{
+				"key": "935d5d16-5f0c-4ff2-8f18-c24e8ae39b6e",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_VNM",
+					"nameDisplay": "Vietnam"
+				}
+			},
+			{
+				"key": "719d34bb-4531-413b-aeda-a85646bf8bc6",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_VUT",
+					"nameDisplay": "Vanuatu"
+				}
+			},
+			{
+				"key": "49d2a714-23df-4c76-901e-af1c3b14bdc7",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_WLF",
+					"nameDisplay": "Wallis and Futuna"
+				}
+			},
+			{
+				"key": "f3d7eb8b-c2f0-493c-b889-ad784b94328d",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_WSM",
+					"nameDisplay": "Samoa"
+				}
+			},
+			{
+				"key": "9ff796f5-90af-434e-9b31-3ab1bff1553d",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_XAD",
+					"nameDisplay": "Akrotiri and Dhekelia"
+				}
+			},
+			{
+				"key": "c4c3efd4-e8a6-4089-bc28-ed9b7fbd2aba",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_XCA",
+					"nameDisplay": "Caspian Sea"
+				}
+			},
+			{
+				"key": "d8d8a4a2-9537-4b2c-a4c0-6125b1326f6f",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_XKO",
+					"nameDisplay": "Kosovo"
+				}
+			},
+			{
+				"key": "d008f82b-3fde-4756-a8cc-4473c7765f71",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_YEM",
+					"nameDisplay": "Yemen"
+				}
+			},
+			{
+				"key": "313d6496-68e9-42cf-b6b5-27cba5be7cc8",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_ZAF",
+					"nameDisplay": "South Africa"
+				}
+			},
+			{
+				"key": "23c2e926-ed09-4f32-93e1-3988d6e46cf6",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_ZMB",
+					"nameDisplay": "Zambia"
+				}
+			},
+			{
+				"key": "96c708f3-e854-45d7-b086-1d6dc62b2bd2",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_ZNC",
+					"nameDisplay": "Northern Cyprus"
+				}
+			},
+			{
+				"key": "71eb4895-0733-4f25-ab6d-40b0abd0d5bd",
+				"data": {
+					"applicationKey": "esaWorldCerealProductViewer",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"nameInternal": "place_ZWE",
+					"nameDisplay": "Zimbabwe"
+				}
+			}
+		],
+		"styles": [
+			{
+				"key": "af4c5310-405f-426d-9bbd-098593ea2ac4",
+				"data": {
+					"nameDisplay": "style_annualCropland",
+					"nameInternal": "style_annualCropland",
+					"definition": {
+						"rules": [
+							{
+								"styles": [
+									{
+										"fill": "rgb(150,150,150)",
+										"fillOpacity": 0.8,
+										"outlineColor": "#232323",
+										"outlineWidth": 1,
+										"outlineOpacity": 1
+									},
+									{
+										"attributeKey": "73e3bd86-8701-47e4-b27b-9d2555d68304",
+										"attributeClasses": []
+									}
+								]
+							}
+						]
+					},
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "da1a27e1-a718-4a9a-b054-c7d94328f1a9",
+				"data": {
+					"nameDisplay": "style_activeIrrigation",
+					"nameInternal": "style_activeIrrigation",
+					"definition": {
+						"rules": [
+							{
+								"styles": [
+									{
+										"fill": "rgb(150,150,150)",
+										"fillOpacity": 0.8,
+										"outlineColor": "#232323",
+										"outlineWidth": 1,
+										"outlineOpacity": 1
+									},
+									{
+										"attributeKey": "934a9fa2-ddb9-49a8-b4b2-170e39ef531e",
+										"attributeClasses": []
+									}
+								]
+							}
+						]
+					},
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "7ae3bcd9-aa57-4fb1-9b6f-5b909d392328",
+				"data": {
+					"nameDisplay": "style_maize",
+					"nameInternal": "style_maize",
+					"definition": {
+						"rules": [
+							{
+								"styles": [
+									{
+										"fill": "rgb(150,150,150)",
+										"fillOpacity": 0.8,
+										"outlineColor": "#232323",
+										"outlineWidth": 1,
+										"outlineOpacity": 1
+									},
+									{
+										"attributeKey": "8e71e4da-5a90-4222-9350-f1c1f1bad5c5",
+										"attributeClasses": []
+									}
+								]
+							}
+						]
+					},
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "2afcdbd6-fdc8-4756-a96b-0bf7d07637b0",
+				"data": {
+					"nameDisplay": "style_cereals",
+					"nameInternal": "style_cereals",
+					"definition": {
+						"rules": [
+							{
+								"styles": [
+									{
+										"fill": "rgb(150,150,150)",
+										"fillOpacity": 0.8,
+										"outlineColor": "#232323",
+										"outlineWidth": 1,
+										"outlineOpacity": 1
+									},
+									{
+										"attributeKey": "eb9dce86-39c6-480b-b7e3-2fac2101eac0",
+										"attributeClasses": []
+									}
+								]
+							}
+						]
+					},
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			}
+		]
+	},
+	"dataSources": {
+		"spatial": [
+			{
+				"key": "3ff59d73-9915-4e5d-9410-a7d298195f7a",
+				"data": {
+					"nameInternal": "dataSource_spatial_global",
+					"tableName": "global",
+					"fidColumnName": "GID_0",
+					"geometryColumnName": "geom",
+					"type": "vector"
+				}
+			},
+			{
+				"key": "63383601-cc3d-41a9-90db-f27112f562da",
+				"data": {
+					"nameInternal": "dataSource_spatial_brazil",
+					"tableName": "brazil",
+					"fidColumnName": "GID_1",
+					"geometryColumnName": "geom",
+					"type": "vector"
+				}
+			},
+			{
+				"key": "0089d271-854a-443d-86c2-86d663a7deb5",
+				"data": {
+					"nameInternal": "dataSource_spatial_ukraine",
+					"tableName": "ukraine",
+					"fidColumnName": "GID_1",
+					"geometryColumnName": "geom",
+					"type": "vector"
+				}
+			}
+		],
+		"attribute": [
+			{
+				"key": "5fdd5dd1-4eff-4322-a7cc-10ec78712b17",
+				"data": {
+					"nameInternal": "dataSource_attribute_global-name",
+					"tableName": "global",
+					"columnName": "COUNTRY",
+					"fidColumnName": "GID_0"
+				}
+			},
+			{
+				"key": "5f23c32f-c035-4cb6-8fa4-50f88545e3ff",
+				"data": {
+					"nameInternal": "dataSource_attribute_ukraine-name",
+					"tableName": "ukraine",
+					"columnName": "NAME_1",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "18f4a5cd-cd00-4fb8-b033-078dd09ba3a4",
+				"data": {
+					"nameInternal": "dataSource_attribute_brazil-name",
+					"tableName": "brazil",
+					"columnName": "NAME_1",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "263e28d1-9690-414b-a1c9-4d42f302d796",
+				"data": {
+					"nameInternal": "dataSource_attribute_global-area",
+					"tableName": "global",
+					"columnName": "Area",
+					"fidColumnName": "GID_0"
+				}
+			},
+			{
+				"key": "8c463224-55f7-43ed-8073-4235e70c753e",
+				"data": {
+					"nameInternal": "dataSource_attribute_brazil-area",
+					"tableName": "brazil",
+					"columnName": "Area",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "e3176441-8dbe-4919-a8ed-a97dcd45ec77",
+				"data": {
+					"nameInternal": "dataSource_attribute_ukraine-area",
+					"tableName": "ukraine",
+					"columnName": "Area",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "a2f8cd85-8aa9-4965-849a-48428d5817da",
+				"data": {
+					"nameInternal": "dataSource_attribute_global_-Crop_19-absolute",
+					"tableName": "global",
+					"columnName": "Crop_19",
+					"fidColumnName": "GID_0"
+				}
+			},
+			{
+				"key": "34721403-3ffd-4845-b6d4-da3593181604",
+				"data": {
+					"nameInternal": "dataSource_attribute_global_-Crop_19-relative",
+					"tableName": "global",
+					"columnName": "Crop_19p",
+					"fidColumnName": "GID_0"
+				}
+			},
+			{
+				"key": "516f0956-f2a4-4f76-998f-eaffbed2cbc7",
+				"data": {
+					"nameInternal": "dataSource_attribute_global_-Irig_19-absolute",
+					"tableName": "global",
+					"columnName": "Irig_19",
+					"fidColumnName": "GID_0"
+				}
+			},
+			{
+				"key": "da3bd541-1f9d-46e1-a9db-45d7c6f7b32d",
+				"data": {
+					"nameInternal": "dataSource_attribute_global_-Irig_19-relative",
+					"tableName": "global",
+					"columnName": "Irig_19p",
+					"fidColumnName": "GID_0"
+				}
+			},
+			{
+				"key": "79443846-6a34-4e36-a452-fd2747c46169",
+				"data": {
+					"nameInternal": "dataSource_attribute_global_-Maize_19-absolute",
+					"tableName": "global",
+					"columnName": "Maize_19",
+					"fidColumnName": "GID_0"
+				}
+			},
+			{
+				"key": "f0dfa5a3-8d30-46a5-ab6e-82a64e68dbb7",
+				"data": {
+					"nameInternal": "dataSource_attribute_global_-Maize_19-relative",
+					"tableName": "global",
+					"columnName": "Maize_19p",
+					"fidColumnName": "GID_0"
+				}
+			},
+			{
+				"key": "c580256a-79be-4733-98a5-933ce79a36d9",
+				"data": {
+					"nameInternal": "dataSource_attribute_global_-Spring_19-absolute",
+					"tableName": "global",
+					"columnName": "Spring_19",
+					"fidColumnName": "GID_0"
+				}
+			},
+			{
+				"key": "c188f093-2a9a-4f75-88c4-e952ef267da0",
+				"data": {
+					"nameInternal": "dataSource_attribute_global_-Spring_19-relative",
+					"tableName": "global",
+					"columnName": "Spring_19p",
+					"fidColumnName": "GID_0"
+				}
+			},
+			{
+				"key": "db8605ce-7344-45da-90e0-a2b9c0781155",
+				"data": {
+					"nameInternal": "dataSource_attribute_global_-Winter_19-absolute",
+					"tableName": "global",
+					"columnName": "Winter_19",
+					"fidColumnName": "GID_0"
+				}
+			},
+			{
+				"key": "0013ed09-cbdc-4a35-ad6f-608fcc715784",
+				"data": {
+					"nameInternal": "dataSource_attribute_global_-Winter_19-relative",
+					"tableName": "global",
+					"columnName": "Winter_19p",
+					"fidColumnName": "GID_0"
+				}
+			},
+			{
+				"key": "724cbcea-6742-47db-8e3a-e8752a5275f4",
+				"data": {
+					"nameInternal": "dataSource_attribute_global_-Crop_20-absolute",
+					"tableName": "global",
+					"columnName": "Crop_20",
+					"fidColumnName": "GID_0"
+				}
+			},
+			{
+				"key": "a6bccd1d-3d2e-421c-97c9-0442b8a1c8ab",
+				"data": {
+					"nameInternal": "dataSource_attribute_global_-Crop_20-relative",
+					"tableName": "global",
+					"columnName": "Crop_20p",
+					"fidColumnName": "GID_0"
+				}
+			},
+			{
+				"key": "1adfe220-3eb5-44da-8389-0898c07dfb81",
+				"data": {
+					"nameInternal": "dataSource_attribute_global_-Irig_20-absolute",
+					"tableName": "global",
+					"columnName": "Irig_20",
+					"fidColumnName": "GID_0"
+				}
+			},
+			{
+				"key": "6a37851f-9e02-4856-b959-d7cce7b0b560",
+				"data": {
+					"nameInternal": "dataSource_attribute_global_-Irig_20-relative",
+					"tableName": "global",
+					"columnName": "Irig_20p",
+					"fidColumnName": "GID_0"
+				}
+			},
+			{
+				"key": "3f973b4b-6003-45d6-bb9d-1607d6e9176f",
+				"data": {
+					"nameInternal": "dataSource_attribute_global_-Maize_20-absolute",
+					"tableName": "global",
+					"columnName": "Maize_20",
+					"fidColumnName": "GID_0"
+				}
+			},
+			{
+				"key": "d8b50bf5-0b53-40ae-89a5-413671b300b8",
+				"data": {
+					"nameInternal": "dataSource_attribute_global_-Maize_20-relative",
+					"tableName": "global",
+					"columnName": "Maize_20p",
+					"fidColumnName": "GID_0"
+				}
+			},
+			{
+				"key": "889995e0-90c2-4838-b902-ff3c8241304b",
+				"data": {
+					"nameInternal": "dataSource_attribute_global_-Spring_20-absolute",
+					"tableName": "global",
+					"columnName": "Spring_20",
+					"fidColumnName": "GID_0"
+				}
+			},
+			{
+				"key": "70d05f14-3a11-415d-89cf-85fc2f1baaca",
+				"data": {
+					"nameInternal": "dataSource_attribute_global_-Spring_20-relative",
+					"tableName": "global",
+					"columnName": "Spring_20p",
+					"fidColumnName": "GID_0"
+				}
+			},
+			{
+				"key": "c8f44ea7-30ab-49a4-935d-06ee9be2bbf1",
+				"data": {
+					"nameInternal": "dataSource_attribute_global_-Winter_20-absolute",
+					"tableName": "global",
+					"columnName": "Winter_20",
+					"fidColumnName": "GID_0"
+				}
+			},
+			{
+				"key": "301a57bc-9357-4044-a354-e41c09b43b15",
+				"data": {
+					"nameInternal": "dataSource_attribute_global_-Winter_20-relative",
+					"tableName": "global",
+					"columnName": "Winter_20p",
+					"fidColumnName": "GID_0"
+				}
+			},
+			{
+				"key": "bf8712af-780e-42d7-8a4c-c85de5147807",
+				"data": {
+					"nameInternal": "dataSource_attribute_brazil_-Crop_19-absolute",
+					"tableName": "brazil",
+					"columnName": "Crop_19",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "80666a5c-90b3-479d-b4ba-84fd8b6f7827",
+				"data": {
+					"nameInternal": "dataSource_attribute_brazil_-Crop_19-relative",
+					"tableName": "brazil",
+					"columnName": "Crop_19p",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "6933796f-bd1a-46b7-b249-72a7e1da3713",
+				"data": {
+					"nameInternal": "dataSource_attribute_brazil_-Irig_19-absolute",
+					"tableName": "brazil",
+					"columnName": "Irig_19",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "7e52faef-0e21-46d9-9cc6-236e13fe0e77",
+				"data": {
+					"nameInternal": "dataSource_attribute_brazil_-Irig_19-relative",
+					"tableName": "brazil",
+					"columnName": "Irig_19p",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "3be7d1ce-b9af-403a-904a-280f3ab8a848",
+				"data": {
+					"nameInternal": "dataSource_attribute_brazil_-Maize_19-absolute",
+					"tableName": "brazil",
+					"columnName": "Maize_19",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "6848a697-c202-40f5-8f88-66811b95c20b",
+				"data": {
+					"nameInternal": "dataSource_attribute_brazil_-Maize_19-relative",
+					"tableName": "brazil",
+					"columnName": "Maize_19p",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "e2a0cc17-6a67-4a91-9513-2773b34a9bd5",
+				"data": {
+					"nameInternal": "dataSource_attribute_brazil_-Spring_19-absolute",
+					"tableName": "brazil",
+					"columnName": "Spring_19",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "108512cf-d3c4-402a-bde4-ba2807ca6867",
+				"data": {
+					"nameInternal": "dataSource_attribute_brazil_-Spring_19-relative",
+					"tableName": "brazil",
+					"columnName": "Spring_19p",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "401463f4-dc31-4446-93a9-ee03196bbe7b",
+				"data": {
+					"nameInternal": "dataSource_attribute_brazil_-Winter_19-absolute",
+					"tableName": "brazil",
+					"columnName": "Winter_19",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "2b4ee5e7-4a71-4255-b0fa-15cd34890dcf",
+				"data": {
+					"nameInternal": "dataSource_attribute_brazil_-Winter_19-relative",
+					"tableName": "brazil",
+					"columnName": "Winter_19p",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "0bc4870a-a177-4212-8094-09bbf1b4b365",
+				"data": {
+					"nameInternal": "dataSource_attribute_brazil_-Crop_20-absolute",
+					"tableName": "brazil",
+					"columnName": "Crop_20",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "2df4eff3-966d-4098-a713-365a9a7f5d23",
+				"data": {
+					"nameInternal": "dataSource_attribute_brazil_-Crop_20-relative",
+					"tableName": "brazil",
+					"columnName": "Crop_20p",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "7b5eda6a-8fe0-4fd0-8004-757143b511f5",
+				"data": {
+					"nameInternal": "dataSource_attribute_brazil_-Irig_20-absolute",
+					"tableName": "brazil",
+					"columnName": "Irig_20",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "c5dba55c-6c7d-4eb0-95e5-b7bbfbe7fa1c",
+				"data": {
+					"nameInternal": "dataSource_attribute_brazil_-Irig_20-relative",
+					"tableName": "brazil",
+					"columnName": "Irig_20p",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "d967b16b-ad5a-4689-89b3-e3a2cc631883",
+				"data": {
+					"nameInternal": "dataSource_attribute_brazil_-Maize_20-absolute",
+					"tableName": "brazil",
+					"columnName": "Maize_20",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "de3a341b-6f68-4fc5-8651-4ee754a9b73a",
+				"data": {
+					"nameInternal": "dataSource_attribute_brazil_-Maize_20-relative",
+					"tableName": "brazil",
+					"columnName": "Maize_20p",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "fac79097-ed39-44ce-af05-1f1926b36b06",
+				"data": {
+					"nameInternal": "dataSource_attribute_brazil_-Spring_20-absolute",
+					"tableName": "brazil",
+					"columnName": "Spring_20",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "b84ad176-ba50-4e48-97cb-243876071817",
+				"data": {
+					"nameInternal": "dataSource_attribute_brazil_-Spring_20-relative",
+					"tableName": "brazil",
+					"columnName": "Spring_20p",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "800e7234-9fbb-49ad-9ac7-eeeea061db0b",
+				"data": {
+					"nameInternal": "dataSource_attribute_brazil_-Winter_20-absolute",
+					"tableName": "brazil",
+					"columnName": "Winter_20",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "121852f2-0fa3-486c-ba6b-318d43b52c59",
+				"data": {
+					"nameInternal": "dataSource_attribute_brazil_-Winter_20-relative",
+					"tableName": "brazil",
+					"columnName": "Winter_20p",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "968fe184-247d-4996-83f1-effa5d326b01",
+				"data": {
+					"nameInternal": "dataSource_attribute_ukraine_-Crop_19-absolute",
+					"tableName": "ukraine",
+					"columnName": "Crop_19",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "3ead00ba-8325-4069-a3e9-cdbc852974ee",
+				"data": {
+					"nameInternal": "dataSource_attribute_ukraine_-Crop_19-relative",
+					"tableName": "ukraine",
+					"columnName": "Crop_19p",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "1b688dd8-d4f4-48fb-a139-f2ecbbca4bf6",
+				"data": {
+					"nameInternal": "dataSource_attribute_ukraine_-Irig_19-absolute",
+					"tableName": "ukraine",
+					"columnName": "Irig_19",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "46bab1e7-b5d6-428a-b584-ffeb4eca1230",
+				"data": {
+					"nameInternal": "dataSource_attribute_ukraine_-Irig_19-relative",
+					"tableName": "ukraine",
+					"columnName": "Irig_19p",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "00caeefe-7caa-4972-9b21-02b7cb72f397",
+				"data": {
+					"nameInternal": "dataSource_attribute_ukraine_-Maize_19-absolute",
+					"tableName": "ukraine",
+					"columnName": "Maize_19",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "b92b5142-87da-4798-9bfb-875dab1e769d",
+				"data": {
+					"nameInternal": "dataSource_attribute_ukraine_-Maize_19-relative",
+					"tableName": "ukraine",
+					"columnName": "Maize_19p",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "bf2cc395-614e-41f3-920c-983ae29e0f5b",
+				"data": {
+					"nameInternal": "dataSource_attribute_ukraine_-Spring_19-absolute",
+					"tableName": "ukraine",
+					"columnName": "Spring_19",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "5ced8cef-9eec-42f2-942a-307788e368a0",
+				"data": {
+					"nameInternal": "dataSource_attribute_ukraine_-Spring_19-relative",
+					"tableName": "ukraine",
+					"columnName": "Spring_19p",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "9546a29b-d9e2-4d09-8c11-8ccc8a63d270",
+				"data": {
+					"nameInternal": "dataSource_attribute_ukraine_-Winter_19-absolute",
+					"tableName": "ukraine",
+					"columnName": "Winter_19",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "709b0d99-b690-452c-a0ad-8d419b904410",
+				"data": {
+					"nameInternal": "dataSource_attribute_ukraine_-Winter_19-relative",
+					"tableName": "ukraine",
+					"columnName": "Winter_19p",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "0ea96fec-1e70-44ca-abd9-967e8cb90954",
+				"data": {
+					"nameInternal": "dataSource_attribute_ukraine_-Crop_20-absolute",
+					"tableName": "ukraine",
+					"columnName": "Crop_20",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "256020f4-6d3e-4064-8dc9-5c3b809bf07a",
+				"data": {
+					"nameInternal": "dataSource_attribute_ukraine_-Crop_20-relative",
+					"tableName": "ukraine",
+					"columnName": "Crop_20p",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "9f4d4028-01e0-4484-8bc1-38c2f461b2fe",
+				"data": {
+					"nameInternal": "dataSource_attribute_ukraine_-Irig_20-absolute",
+					"tableName": "ukraine",
+					"columnName": "Irig_20",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "45c611ec-cbbc-4310-be5e-327f29b9e60f",
+				"data": {
+					"nameInternal": "dataSource_attribute_ukraine_-Irig_20-relative",
+					"tableName": "ukraine",
+					"columnName": "Irig_20p",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "abf4d633-2f61-46fe-b881-7bda3f0bba4c",
+				"data": {
+					"nameInternal": "dataSource_attribute_ukraine_-Maize_20-absolute",
+					"tableName": "ukraine",
+					"columnName": "Maize_20",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "45f4a2d3-4512-4a86-8f9f-6ce7e7abd5b9",
+				"data": {
+					"nameInternal": "dataSource_attribute_ukraine_-Maize_20-relative",
+					"tableName": "ukraine",
+					"columnName": "Maize_20p",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "3842cd78-0991-41d2-9073-5a87d2675c08",
+				"data": {
+					"nameInternal": "dataSource_attribute_ukraine_-Spring_20-absolute",
+					"tableName": "ukraine",
+					"columnName": "Spring_20",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "8f1c86d9-4362-4382-8012-46049189db3f",
+				"data": {
+					"nameInternal": "dataSource_attribute_ukraine_-Spring_20-relative",
+					"tableName": "ukraine",
+					"columnName": "Spring_20p",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "7ef6e078-ea79-4740-a349-6b7d0dd6bb4f",
+				"data": {
+					"nameInternal": "dataSource_attribute_ukraine_-Winter_20-absolute",
+					"tableName": "ukraine",
+					"columnName": "Winter_20",
+					"fidColumnName": "GID_1"
+				}
+			},
+			{
+				"key": "20144815-0533-454d-99e4-6756e939be63",
+				"data": {
+					"nameInternal": "dataSource_attribute_ukraine_-Winter_20-relative",
+					"tableName": "ukraine",
+					"columnName": "Winter_20p",
+					"fidColumnName": "GID_1"
+				}
+			}
+		]
+	},
+	"relations": {
+		"area": [
+			{
+				"key": "bbcb6660-dda0-4cba-8115-aecd59838b08",
+				"data": {
+					"nameInternal": "relation_area_global_2019annual",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"spatialDataSourceKey": "3ff59d73-9915-4e5d-9410-a7d298195f7a",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"placeKey": null,
+					"periodKey": "1f5cf9d2-58cc-4463-8ef7-bcc0c4932a08",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "0c66321e-d925-4844-9fa8-4c12ba6e9a87",
+				"data": {
+					"nameInternal": "relation_area_global_2020annual",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"spatialDataSourceKey": "3ff59d73-9915-4e5d-9410-a7d298195f7a",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"placeKey": null,
+					"periodKey": "6a7a4193-1339-4172-b54d-817c3e8cd6f7",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "2cda4eab-2c72-4e0b-ad9b-82be81537461",
+				"data": {
+					"nameInternal": "relation_area_brazil",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"spatialDataSourceKey": "63383601-cc3d-41a9-90db-f27112f562da",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"periodKey": "6a7a4193-1339-4172-b54d-817c3e8cd6f7",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "e59efff3-4076-4cc4-97ee-3b040cc9e917",
+				"data": {
+					"nameInternal": "relation_area_brazil_2020_anual",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"spatialDataSourceKey": "63383601-cc3d-41a9-90db-f27112f562da",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"periodKey": "1f5cf9d2-58cc-4463-8ef7-bcc0c4932a08",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "fce02b7a-fa89-4254-8bf4-ed1b17608f3a",
+				"data": {
+					"nameInternal": "relation_area_ukraine",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"spatialDataSourceKey": "0089d271-854a-443d-86c2-86d663a7deb5",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"periodKey": null,
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "ec1893dc-44d0-4649-a38e-0d9234760aa3",
+				"data": {
+					"nameInternal": "relation_area_global_2019_spring",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"spatialDataSourceKey": "3ff59d73-9915-4e5d-9410-a7d298195f7a",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"placeKey": null,
+					"periodKey": "2a293769-d7ba-4c83-800e-8184b457ac85",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "1dd9321e-aff6-44c9-90b5-6979f28e7a9f",
+				"data": {
+					"nameInternal": "relation_area_global_2019_winter",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"spatialDataSourceKey": "3ff59d73-9915-4e5d-9410-a7d298195f7a",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"placeKey": null,
+					"periodKey": "df428b66-5a83-4943-93b2-56dea2805509",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "952dd2ba-97d6-4ff6-a011-41cbb6b2d015",
+				"data": {
+					"nameInternal": "relation_area_global_2020_spring",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"spatialDataSourceKey": "3ff59d73-9915-4e5d-9410-a7d298195f7a",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"placeKey": null,
+					"periodKey": "f3293b7c-4725-49a6-beeb-19718083ab6c",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "b7e89baf-d9bc-4413-9fae-6bec9a0700e3",
+				"data": {
+					"nameInternal": "relation_area_global_2020_winter",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"spatialDataSourceKey": "3ff59d73-9915-4e5d-9410-a7d298195f7a",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"placeKey": null,
+					"periodKey": "d93a6ec5-e6e2-4f9a-a368-8a8f2aa8c0fe",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "14872f9c-85dd-4fe6-8398-c398561ef548",
+				"data": {
+					"nameInternal": "relation_area_brazil_2019_spring",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"spatialDataSourceKey": "63383601-cc3d-41a9-90db-f27112f562da",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"periodKey": "2a293769-d7ba-4c83-800e-8184b457ac85",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "8f74b590-c9be-4817-87a3-781bfb65ded0",
+				"data": {
+					"nameInternal": "relation_area_brazil_2019_winter",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"spatialDataSourceKey": "63383601-cc3d-41a9-90db-f27112f562da",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"periodKey": "df428b66-5a83-4943-93b2-56dea2805509",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "5b96990f-279c-4225-8eb6-bc1a871e0e52",
+				"data": {
+					"nameInternal": "relation_area_brazil_2020_spring",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"spatialDataSourceKey": "63383601-cc3d-41a9-90db-f27112f562da",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"periodKey": "f3293b7c-4725-49a6-beeb-19718083ab6c",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "762f9225-835b-4978-9625-cbd06229f874",
+				"data": {
+					"nameInternal": "relation_area_brazil_2020_winter",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"spatialDataSourceKey": "63383601-cc3d-41a9-90db-f27112f562da",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"periodKey": "d93a6ec5-e6e2-4f9a-a368-8a8f2aa8c0fe",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "18ae96b9-fb23-4e5d-b636-ecec886d8df9",
+				"data": {
+					"nameInternal": "relation_area_ukraine_2019_annual",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"spatialDataSourceKey": "0089d271-854a-443d-86c2-86d663a7deb5",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"periodKey": "1f5cf9d2-58cc-4463-8ef7-bcc0c4932a08",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "f93fb252-97ab-4c39-9001-df8a10e0d690",
+				"data": {
+					"nameInternal": "relation_area_ukraine_2019_spring",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"spatialDataSourceKey": "0089d271-854a-443d-86c2-86d663a7deb5",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"periodKey": "2a293769-d7ba-4c83-800e-8184b457ac85",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "2a919a5e-0918-4620-ae22-fc517253e382",
+				"data": {
+					"nameInternal": "relation_area_ukraine_2019_winter",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"spatialDataSourceKey": "0089d271-854a-443d-86c2-86d663a7deb5",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"periodKey": "df428b66-5a83-4943-93b2-56dea2805509",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "44514ce6-44ac-4120-8491-a8b76407b040",
+				"data": {
+					"nameInternal": "relation_area_ukraine_2020_annual",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"spatialDataSourceKey": "0089d271-854a-443d-86c2-86d663a7deb5",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"periodKey": "6a7a4193-1339-4172-b54d-817c3e8cd6f7",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "6a6b0a07-12b3-47d6-9c7c-9df929924614",
+				"data": {
+					"nameInternal": "relation_area_ukraine_2020_spring",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"spatialDataSourceKey": "0089d271-854a-443d-86c2-86d663a7deb5",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"periodKey": "f3293b7c-4725-49a6-beeb-19718083ab6c",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "3c523f72-e275-44c5-8edb-3a9f92965b83",
+				"data": {
+					"nameInternal": "relation_area_ukraine_2020_winter",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"spatialDataSourceKey": "0089d271-854a-443d-86c2-86d663a7deb5",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"periodKey": "d93a6ec5-e6e2-4f9a-a368-8a8f2aa8c0fe",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			}
+		],
+		"attribute": [
+			{
+				"key": "f4515b34-4afe-48b1-82fa-c89220a3f8ef",
+				"data": {
+					"nameInternal": "relation_attribute_global-name",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": null,
+					"placeKey": null,
+					"attributeDataSourceKey": "5fdd5dd1-4eff-4322-a7cc-10ec78712b17",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": null,
+					"attributeSetKey": null,
+					"attributeKey": "5f6a119b-addf-467e-ab1f-e07e4cdf79a6",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "3114282b-d669-47a0-97e0-875c71c2faf5",
+				"data": {
+					"nameInternal": "relation_attribute_ukraine-name",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": null,
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"attributeDataSourceKey": "5f23c32f-c035-4cb6-8fa4-50f88545e3ff",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": null,
+					"attributeSetKey": null,
+					"attributeKey": "5f6a119b-addf-467e-ab1f-e07e4cdf79a6",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "333456a0-e1c5-440a-88e2-5661b8503997",
+				"data": {
+					"nameInternal": "relation_attribute_brazil-name",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": null,
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"attributeDataSourceKey": "18f4a5cd-cd00-4fb8-b033-078dd09ba3a4",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": null,
+					"attributeSetKey": null,
+					"attributeKey": "5f6a119b-addf-467e-ab1f-e07e4cdf79a6",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "fac13167-e0a2-4b8e-be70-c07970ff4f25",
+				"data": {
+					"nameInternal": "relation_attribute_global-Crop_19",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "1f5cf9d2-58cc-4463-8ef7-bcc0c4932a08",
+					"placeKey": null,
+					"attributeDataSourceKey": "a2f8cd85-8aa9-4965-849a-48428d5817da",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "577b253f-754f-421e-94a2-092f092b4947",
+					"attributeSetKey": null,
+					"attributeKey": "4fb212bb-ff1a-46d7-8fce-e341e7f08376",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "0e3d705a-1171-4fac-a962-97ad8f35a656",
+				"data": {
+					"nameInternal": "relation_attribute_global-Crop_19p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "1f5cf9d2-58cc-4463-8ef7-bcc0c4932a08",
+					"placeKey": null,
+					"attributeDataSourceKey": "34721403-3ffd-4845-b6d4-da3593181604",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "577b253f-754f-421e-94a2-092f092b4947",
+					"attributeSetKey": null,
+					"attributeKey": "73e3bd86-8701-47e4-b27b-9d2555d68304",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "260f4353-985c-4e26-88f2-56d8d51b4ba1",
+				"data": {
+					"nameInternal": "relation_attribute_global-Irig_19",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "2a293769-d7ba-4c83-800e-8184b457ac85",
+					"placeKey": null,
+					"attributeDataSourceKey": "516f0956-f2a4-4f76-998f-eaffbed2cbc7",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "66f490a6-d8df-45a3-adcb-d3648715ddd5",
+					"attributeSetKey": null,
+					"attributeKey": "901ff005-2a62-41d4-afc4-e8d1b1f5d088",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "090b9396-6972-41cf-b3c4-213a5ceef6c5",
+				"data": {
+					"nameInternal": "relation_attribute_global-Irig_19p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "2a293769-d7ba-4c83-800e-8184b457ac85",
+					"placeKey": null,
+					"attributeDataSourceKey": "da3bd541-1f9d-46e1-a9db-45d7c6f7b32d",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "66f490a6-d8df-45a3-adcb-d3648715ddd5",
+					"attributeSetKey": null,
+					"attributeKey": "934a9fa2-ddb9-49a8-b4b2-170e39ef531e",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "88ee4913-91d4-4573-88d8-1896b0020b06",
+				"data": {
+					"nameInternal": "relation_attribute_global-Maize_19",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "2a293769-d7ba-4c83-800e-8184b457ac85",
+					"placeKey": null,
+					"attributeDataSourceKey": "79443846-6a34-4e36-a452-fd2747c46169",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "33caa296-cf88-4d5c-a67d-ffba11376d4a",
+					"attributeSetKey": null,
+					"attributeKey": "55cb5a4a-8ce3-40a1-9f12-1a6b211f4255",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "3eff8674-6313-43e6-a0aa-6374e764b518",
+				"data": {
+					"nameInternal": "relation_attribute_global-Maize_19p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "2a293769-d7ba-4c83-800e-8184b457ac85",
+					"placeKey": null,
+					"attributeDataSourceKey": "f0dfa5a3-8d30-46a5-ab6e-82a64e68dbb7",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "33caa296-cf88-4d5c-a67d-ffba11376d4a",
+					"attributeSetKey": null,
+					"attributeKey": "8e71e4da-5a90-4222-9350-f1c1f1bad5c5",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "f65b0f33-6e23-4ba9-8a39-7fb5fc22db83",
+				"data": {
+					"nameInternal": "relation_attribute_global-Spring_19",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "2a293769-d7ba-4c83-800e-8184b457ac85",
+					"placeKey": null,
+					"attributeDataSourceKey": "c580256a-79be-4733-98a5-933ce79a36d9",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "d439a6db-8f7b-4123-9e93-3892cad157f7",
+					"attributeSetKey": null,
+					"attributeKey": "6c8e8332-b01b-4c56-bf8e-2025a5abc465",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "1fb23f23-70b7-4649-89d3-ce01ad6c84b3",
+				"data": {
+					"nameInternal": "relation_attribute_global-Spring_19p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "2a293769-d7ba-4c83-800e-8184b457ac85",
+					"placeKey": null,
+					"attributeDataSourceKey": "c188f093-2a9a-4f75-88c4-e952ef267da0",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "d439a6db-8f7b-4123-9e93-3892cad157f7",
+					"attributeSetKey": null,
+					"attributeKey": "eb9dce86-39c6-480b-b7e3-2fac2101eac0",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "5a294bb9-f1e0-4ec2-9f24-9682dfc4ec6b",
+				"data": {
+					"nameInternal": "relation_attribute_global-Winter_19",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "df428b66-5a83-4943-93b2-56dea2805509",
+					"placeKey": null,
+					"attributeDataSourceKey": "db8605ce-7344-45da-90e0-a2b9c0781155",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "d439a6db-8f7b-4123-9e93-3892cad157f7",
+					"attributeSetKey": null,
+					"attributeKey": "6c8e8332-b01b-4c56-bf8e-2025a5abc465",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "5f3091a2-9873-4278-8e5b-d72c5f87c461",
+				"data": {
+					"nameInternal": "relation_attribute_global-Winter_19p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "df428b66-5a83-4943-93b2-56dea2805509",
+					"placeKey": null,
+					"attributeDataSourceKey": "0013ed09-cbdc-4a35-ad6f-608fcc715784",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "d439a6db-8f7b-4123-9e93-3892cad157f7",
+					"attributeSetKey": null,
+					"attributeKey": "eb9dce86-39c6-480b-b7e3-2fac2101eac0",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "d72b5993-e308-4f98-8688-0ad9eb4d83ba",
+				"data": {
+					"nameInternal": "relation_attribute_global-Crop_20",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "6a7a4193-1339-4172-b54d-817c3e8cd6f7",
+					"placeKey": null,
+					"attributeDataSourceKey": "724cbcea-6742-47db-8e3a-e8752a5275f4",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "577b253f-754f-421e-94a2-092f092b4947",
+					"attributeSetKey": null,
+					"attributeKey": "4fb212bb-ff1a-46d7-8fce-e341e7f08376",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "4cdf532b-5134-42af-ba8d-f81d478777ef",
+				"data": {
+					"nameInternal": "relation_attribute_global-Crop_20p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "6a7a4193-1339-4172-b54d-817c3e8cd6f7",
+					"placeKey": null,
+					"attributeDataSourceKey": "a6bccd1d-3d2e-421c-97c9-0442b8a1c8ab",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "577b253f-754f-421e-94a2-092f092b4947",
+					"attributeSetKey": null,
+					"attributeKey": "73e3bd86-8701-47e4-b27b-9d2555d68304",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "d1abfaa2-d07f-489c-8df4-3e08f3c2a3ee",
+				"data": {
+					"nameInternal": "relation_attribute_global-Irig_20",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "f3293b7c-4725-49a6-beeb-19718083ab6c",
+					"placeKey": null,
+					"attributeDataSourceKey": "1adfe220-3eb5-44da-8389-0898c07dfb81",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "66f490a6-d8df-45a3-adcb-d3648715ddd5",
+					"attributeSetKey": null,
+					"attributeKey": "901ff005-2a62-41d4-afc4-e8d1b1f5d088",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "f954b4c1-21bd-42d1-95a0-1bcb08936eb7",
+				"data": {
+					"nameInternal": "relation_attribute_global-Irig_20p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "f3293b7c-4725-49a6-beeb-19718083ab6c",
+					"placeKey": null,
+					"attributeDataSourceKey": "6a37851f-9e02-4856-b959-d7cce7b0b560",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "66f490a6-d8df-45a3-adcb-d3648715ddd5",
+					"attributeSetKey": null,
+					"attributeKey": "934a9fa2-ddb9-49a8-b4b2-170e39ef531e",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "4add2852-93f2-469c-a597-22a638e6003b",
+				"data": {
+					"nameInternal": "relation_attribute_global-Maize_20",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "f3293b7c-4725-49a6-beeb-19718083ab6c",
+					"placeKey": null,
+					"attributeDataSourceKey": "3f973b4b-6003-45d6-bb9d-1607d6e9176f",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "33caa296-cf88-4d5c-a67d-ffba11376d4a",
+					"attributeSetKey": null,
+					"attributeKey": "55cb5a4a-8ce3-40a1-9f12-1a6b211f4255",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "a2f7ecf4-d9b5-4d07-9733-fc75c800203b",
+				"data": {
+					"nameInternal": "relation_attribute_global-Maize_20p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "f3293b7c-4725-49a6-beeb-19718083ab6c",
+					"placeKey": null,
+					"attributeDataSourceKey": "d8b50bf5-0b53-40ae-89a5-413671b300b8",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "33caa296-cf88-4d5c-a67d-ffba11376d4a",
+					"attributeSetKey": null,
+					"attributeKey": "8e71e4da-5a90-4222-9350-f1c1f1bad5c5",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "c03430ac-52ab-4786-836a-2cc3577f5d6e",
+				"data": {
+					"nameInternal": "relation_attribute_global-Spring_20",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "f3293b7c-4725-49a6-beeb-19718083ab6c",
+					"placeKey": null,
+					"attributeDataSourceKey": "889995e0-90c2-4838-b902-ff3c8241304b",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "d439a6db-8f7b-4123-9e93-3892cad157f7",
+					"attributeSetKey": null,
+					"attributeKey": "6c8e8332-b01b-4c56-bf8e-2025a5abc465",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "6efef543-99fd-48c3-9ce1-6859f2866467",
+				"data": {
+					"nameInternal": "relation_attribute_global-Spring_20p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "f3293b7c-4725-49a6-beeb-19718083ab6c",
+					"placeKey": null,
+					"attributeDataSourceKey": "70d05f14-3a11-415d-89cf-85fc2f1baaca",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "d439a6db-8f7b-4123-9e93-3892cad157f7",
+					"attributeSetKey": null,
+					"attributeKey": "eb9dce86-39c6-480b-b7e3-2fac2101eac0",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "c81aa042-c906-4a49-a0fc-76b992cb0b45",
+				"data": {
+					"nameInternal": "relation_attribute_global-Winter_20",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "d93a6ec5-e6e2-4f9a-a368-8a8f2aa8c0fe",
+					"placeKey": null,
+					"attributeDataSourceKey": "c8f44ea7-30ab-49a4-935d-06ee9be2bbf1",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "d439a6db-8f7b-4123-9e93-3892cad157f7",
+					"attributeSetKey": null,
+					"attributeKey": "6c8e8332-b01b-4c56-bf8e-2025a5abc465",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "d658c002-51b0-4605-9d89-70eeec4e94a3",
+				"data": {
+					"nameInternal": "relation_attribute_global-Winter_20p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "d93a6ec5-e6e2-4f9a-a368-8a8f2aa8c0fe",
+					"placeKey": null,
+					"attributeDataSourceKey": "301a57bc-9357-4044-a354-e41c09b43b15",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "d439a6db-8f7b-4123-9e93-3892cad157f7",
+					"attributeSetKey": null,
+					"attributeKey": "eb9dce86-39c6-480b-b7e3-2fac2101eac0",
+					"areaTreeLevelKey": "a53a54dd-8a0b-4e28-b7aa-aa566cd2ba47",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "5360d54b-bcc4-4143-be22-0d9468854d68",
+				"data": {
+					"nameInternal": "relation_attribute_brazil-Crop_19",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "1f5cf9d2-58cc-4463-8ef7-bcc0c4932a08",
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"attributeDataSourceKey": "bf8712af-780e-42d7-8a4c-c85de5147807",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "577b253f-754f-421e-94a2-092f092b4947",
+					"attributeSetKey": null,
+					"attributeKey": "4fb212bb-ff1a-46d7-8fce-e341e7f08376",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "63bfef6e-2214-4123-b876-b98d4faea238",
+				"data": {
+					"nameInternal": "relation_attribute_brazil-Crop_19p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "1f5cf9d2-58cc-4463-8ef7-bcc0c4932a08",
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"attributeDataSourceKey": "80666a5c-90b3-479d-b4ba-84fd8b6f7827",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "577b253f-754f-421e-94a2-092f092b4947",
+					"attributeSetKey": null,
+					"attributeKey": "73e3bd86-8701-47e4-b27b-9d2555d68304",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "277af34a-c9da-451c-864c-c124e963240f",
+				"data": {
+					"nameInternal": "relation_attribute_brazil-Irig_19",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "2a293769-d7ba-4c83-800e-8184b457ac85",
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"attributeDataSourceKey": "6933796f-bd1a-46b7-b249-72a7e1da3713",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "66f490a6-d8df-45a3-adcb-d3648715ddd5",
+					"attributeSetKey": null,
+					"attributeKey": "901ff005-2a62-41d4-afc4-e8d1b1f5d088",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "d9759aac-e9eb-4a56-8381-bf760ca8ca3b",
+				"data": {
+					"nameInternal": "relation_attribute_brazil-Irig_19p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "2a293769-d7ba-4c83-800e-8184b457ac85",
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"attributeDataSourceKey": "7e52faef-0e21-46d9-9cc6-236e13fe0e77",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "66f490a6-d8df-45a3-adcb-d3648715ddd5",
+					"attributeSetKey": null,
+					"attributeKey": "934a9fa2-ddb9-49a8-b4b2-170e39ef531e",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "6b55eec1-c50e-4004-8e60-8dac3e5a7e98",
+				"data": {
+					"nameInternal": "relation_attribute_brazil-Maize_19",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "2a293769-d7ba-4c83-800e-8184b457ac85",
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"attributeDataSourceKey": "3be7d1ce-b9af-403a-904a-280f3ab8a848",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "33caa296-cf88-4d5c-a67d-ffba11376d4a",
+					"attributeSetKey": null,
+					"attributeKey": "55cb5a4a-8ce3-40a1-9f12-1a6b211f4255",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "809f8485-d4c6-4319-8428-ce174e5aedc7",
+				"data": {
+					"nameInternal": "relation_attribute_brazil-Maize_19p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "2a293769-d7ba-4c83-800e-8184b457ac85",
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"attributeDataSourceKey": "6848a697-c202-40f5-8f88-66811b95c20b",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "33caa296-cf88-4d5c-a67d-ffba11376d4a",
+					"attributeSetKey": null,
+					"attributeKey": "8e71e4da-5a90-4222-9350-f1c1f1bad5c5",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "d5450231-f6dc-47d6-99d6-6b4cba622844",
+				"data": {
+					"nameInternal": "relation_attribute_brazil-Spring_19",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "2a293769-d7ba-4c83-800e-8184b457ac85",
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"attributeDataSourceKey": "e2a0cc17-6a67-4a91-9513-2773b34a9bd5",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "d439a6db-8f7b-4123-9e93-3892cad157f7",
+					"attributeSetKey": null,
+					"attributeKey": "6c8e8332-b01b-4c56-bf8e-2025a5abc465",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "97f78dee-c51a-4779-a26a-25546867e390",
+				"data": {
+					"nameInternal": "relation_attribute_brazil-Spring_19p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "2a293769-d7ba-4c83-800e-8184b457ac85",
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"attributeDataSourceKey": "108512cf-d3c4-402a-bde4-ba2807ca6867",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "d439a6db-8f7b-4123-9e93-3892cad157f7",
+					"attributeSetKey": null,
+					"attributeKey": "eb9dce86-39c6-480b-b7e3-2fac2101eac0",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "4897b4e3-2266-42a3-9eb8-b128b39e5622",
+				"data": {
+					"nameInternal": "relation_attribute_brazil-Winter_19",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "df428b66-5a83-4943-93b2-56dea2805509",
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"attributeDataSourceKey": "401463f4-dc31-4446-93a9-ee03196bbe7b",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "d439a6db-8f7b-4123-9e93-3892cad157f7",
+					"attributeSetKey": null,
+					"attributeKey": "6c8e8332-b01b-4c56-bf8e-2025a5abc465",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "d71dafe6-ef0e-4837-9e18-42888e3854c8",
+				"data": {
+					"nameInternal": "relation_attribute_brazil-Winter_19p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "df428b66-5a83-4943-93b2-56dea2805509",
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"attributeDataSourceKey": "2b4ee5e7-4a71-4255-b0fa-15cd34890dcf",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "d439a6db-8f7b-4123-9e93-3892cad157f7",
+					"attributeSetKey": null,
+					"attributeKey": "eb9dce86-39c6-480b-b7e3-2fac2101eac0",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "33c40ae3-a7ab-4b6b-80de-ee709e15af20",
+				"data": {
+					"nameInternal": "relation_attribute_brazil-Crop_20",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "6a7a4193-1339-4172-b54d-817c3e8cd6f7",
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"attributeDataSourceKey": "0bc4870a-a177-4212-8094-09bbf1b4b365",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "577b253f-754f-421e-94a2-092f092b4947",
+					"attributeSetKey": null,
+					"attributeKey": "4fb212bb-ff1a-46d7-8fce-e341e7f08376",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "1593699e-ea0e-4e81-8927-be85540bc236",
+				"data": {
+					"nameInternal": "relation_attribute_brazil-Crop_20p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "6a7a4193-1339-4172-b54d-817c3e8cd6f7",
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"attributeDataSourceKey": "2df4eff3-966d-4098-a713-365a9a7f5d23",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "577b253f-754f-421e-94a2-092f092b4947",
+					"attributeSetKey": null,
+					"attributeKey": "73e3bd86-8701-47e4-b27b-9d2555d68304",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "016f8bce-a50e-4d40-977b-623678826d11",
+				"data": {
+					"nameInternal": "relation_attribute_brazil-Irig_20",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "f3293b7c-4725-49a6-beeb-19718083ab6c",
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"attributeDataSourceKey": "7b5eda6a-8fe0-4fd0-8004-757143b511f5",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "66f490a6-d8df-45a3-adcb-d3648715ddd5",
+					"attributeSetKey": null,
+					"attributeKey": "901ff005-2a62-41d4-afc4-e8d1b1f5d088",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "d59a8fe6-49d8-4689-b3e8-7d1c8a349207",
+				"data": {
+					"nameInternal": "relation_attribute_brazil-Irig_20p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "f3293b7c-4725-49a6-beeb-19718083ab6c",
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"attributeDataSourceKey": "c5dba55c-6c7d-4eb0-95e5-b7bbfbe7fa1c",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "66f490a6-d8df-45a3-adcb-d3648715ddd5",
+					"attributeSetKey": null,
+					"attributeKey": "934a9fa2-ddb9-49a8-b4b2-170e39ef531e",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "1fefbe42-8174-4a1d-bf04-a4cb11006e4a",
+				"data": {
+					"nameInternal": "relation_attribute_brazil-Maize_20",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "f3293b7c-4725-49a6-beeb-19718083ab6c",
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"attributeDataSourceKey": "d967b16b-ad5a-4689-89b3-e3a2cc631883",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "33caa296-cf88-4d5c-a67d-ffba11376d4a",
+					"attributeSetKey": null,
+					"attributeKey": "55cb5a4a-8ce3-40a1-9f12-1a6b211f4255",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "61d24c86-6d64-4bb4-9262-f74e87133141",
+				"data": {
+					"nameInternal": "relation_attribute_brazil-Maize_20p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "f3293b7c-4725-49a6-beeb-19718083ab6c",
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"attributeDataSourceKey": "de3a341b-6f68-4fc5-8651-4ee754a9b73a",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "33caa296-cf88-4d5c-a67d-ffba11376d4a",
+					"attributeSetKey": null,
+					"attributeKey": "8e71e4da-5a90-4222-9350-f1c1f1bad5c5",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "71189efa-be65-43a4-a80f-94883552f433",
+				"data": {
+					"nameInternal": "relation_attribute_brazil-Spring_20",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "f3293b7c-4725-49a6-beeb-19718083ab6c",
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"attributeDataSourceKey": "fac79097-ed39-44ce-af05-1f1926b36b06",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "d439a6db-8f7b-4123-9e93-3892cad157f7",
+					"attributeSetKey": null,
+					"attributeKey": "6c8e8332-b01b-4c56-bf8e-2025a5abc465",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "24b39b86-afcc-47ac-9ff3-9c9ffee87728",
+				"data": {
+					"nameInternal": "relation_attribute_brazil-Spring_20p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "f3293b7c-4725-49a6-beeb-19718083ab6c",
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"attributeDataSourceKey": "b84ad176-ba50-4e48-97cb-243876071817",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "d439a6db-8f7b-4123-9e93-3892cad157f7",
+					"attributeSetKey": null,
+					"attributeKey": "eb9dce86-39c6-480b-b7e3-2fac2101eac0",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "7ffe140a-8f19-4108-b4b2-ade1d5fbdf57",
+				"data": {
+					"nameInternal": "relation_attribute_brazil-Winter_20",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "d93a6ec5-e6e2-4f9a-a368-8a8f2aa8c0fe",
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"attributeDataSourceKey": "800e7234-9fbb-49ad-9ac7-eeeea061db0b",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "d439a6db-8f7b-4123-9e93-3892cad157f7",
+					"attributeSetKey": null,
+					"attributeKey": "6c8e8332-b01b-4c56-bf8e-2025a5abc465",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "e4568ed0-780a-4e18-a6c1-22d3ea662aa9",
+				"data": {
+					"nameInternal": "relation_attribute_brazil-Winter_20p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "d93a6ec5-e6e2-4f9a-a368-8a8f2aa8c0fe",
+					"placeKey": "eaee3d97-2938-497c-b008-b43d5d5dbe89",
+					"attributeDataSourceKey": "121852f2-0fa3-486c-ba6b-318d43b52c59",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "d439a6db-8f7b-4123-9e93-3892cad157f7",
+					"attributeSetKey": null,
+					"attributeKey": "eb9dce86-39c6-480b-b7e3-2fac2101eac0",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "e02f8ed6-b05e-4570-9de5-d8290d1ebe88",
+				"data": {
+					"nameInternal": "relation_attribute_ukraine-Crop_19",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "1f5cf9d2-58cc-4463-8ef7-bcc0c4932a08",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"attributeDataSourceKey": "968fe184-247d-4996-83f1-effa5d326b01",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "577b253f-754f-421e-94a2-092f092b4947",
+					"attributeSetKey": null,
+					"attributeKey": "4fb212bb-ff1a-46d7-8fce-e341e7f08376",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "79a10491-75d2-4815-a768-c820c0d42307",
+				"data": {
+					"nameInternal": "relation_attribute_ukraine-Crop_19p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "1f5cf9d2-58cc-4463-8ef7-bcc0c4932a08",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"attributeDataSourceKey": "3ead00ba-8325-4069-a3e9-cdbc852974ee",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "577b253f-754f-421e-94a2-092f092b4947",
+					"attributeSetKey": null,
+					"attributeKey": "73e3bd86-8701-47e4-b27b-9d2555d68304",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "61d0eaa5-08b0-491b-a8bf-d2fc280e7563",
+				"data": {
+					"nameInternal": "relation_attribute_ukraine-Irig_19",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "2a293769-d7ba-4c83-800e-8184b457ac85",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"attributeDataSourceKey": "1b688dd8-d4f4-48fb-a139-f2ecbbca4bf6",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "66f490a6-d8df-45a3-adcb-d3648715ddd5",
+					"attributeSetKey": null,
+					"attributeKey": "901ff005-2a62-41d4-afc4-e8d1b1f5d088",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "73f84f1a-8bc5-488b-87da-4583add87f0e",
+				"data": {
+					"nameInternal": "relation_attribute_ukraine-Irig_19p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "2a293769-d7ba-4c83-800e-8184b457ac85",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"attributeDataSourceKey": "46bab1e7-b5d6-428a-b584-ffeb4eca1230",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "66f490a6-d8df-45a3-adcb-d3648715ddd5",
+					"attributeSetKey": null,
+					"attributeKey": "934a9fa2-ddb9-49a8-b4b2-170e39ef531e",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "caf86407-ea82-46d0-8ba1-f9527c812914",
+				"data": {
+					"nameInternal": "relation_attribute_ukraine-Maize_19",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "2a293769-d7ba-4c83-800e-8184b457ac85",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"attributeDataSourceKey": "00caeefe-7caa-4972-9b21-02b7cb72f397",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "33caa296-cf88-4d5c-a67d-ffba11376d4a",
+					"attributeSetKey": null,
+					"attributeKey": "55cb5a4a-8ce3-40a1-9f12-1a6b211f4255",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "bd9144e9-a4d0-42ff-97da-2a564236f170",
+				"data": {
+					"nameInternal": "relation_attribute_ukraine-Maize_19p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "2a293769-d7ba-4c83-800e-8184b457ac85",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"attributeDataSourceKey": "b92b5142-87da-4798-9bfb-875dab1e769d",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "33caa296-cf88-4d5c-a67d-ffba11376d4a",
+					"attributeSetKey": null,
+					"attributeKey": "8e71e4da-5a90-4222-9350-f1c1f1bad5c5",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "9a0a8aa6-d2e6-4596-acde-00b61fe8b334",
+				"data": {
+					"nameInternal": "relation_attribute_ukraine-Spring_19",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "2a293769-d7ba-4c83-800e-8184b457ac85",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"attributeDataSourceKey": "bf2cc395-614e-41f3-920c-983ae29e0f5b",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "d439a6db-8f7b-4123-9e93-3892cad157f7",
+					"attributeSetKey": null,
+					"attributeKey": "6c8e8332-b01b-4c56-bf8e-2025a5abc465",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "35087f2b-70df-43dc-b145-9a863398623e",
+				"data": {
+					"nameInternal": "relation_attribute_ukraine-Spring_19p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "2a293769-d7ba-4c83-800e-8184b457ac85",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"attributeDataSourceKey": "5ced8cef-9eec-42f2-942a-307788e368a0",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "d439a6db-8f7b-4123-9e93-3892cad157f7",
+					"attributeSetKey": null,
+					"attributeKey": "eb9dce86-39c6-480b-b7e3-2fac2101eac0",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "1d3f6f25-fc70-4f64-8a3e-dc8294fce611",
+				"data": {
+					"nameInternal": "relation_attribute_ukraine-Winter_19",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "df428b66-5a83-4943-93b2-56dea2805509",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"attributeDataSourceKey": "9546a29b-d9e2-4d09-8c11-8ccc8a63d270",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "d439a6db-8f7b-4123-9e93-3892cad157f7",
+					"attributeSetKey": null,
+					"attributeKey": "6c8e8332-b01b-4c56-bf8e-2025a5abc465",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "4cade25d-238c-45c2-afb9-da889132e98a",
+				"data": {
+					"nameInternal": "relation_attribute_ukraine-Winter_19p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "df428b66-5a83-4943-93b2-56dea2805509",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"attributeDataSourceKey": "709b0d99-b690-452c-a0ad-8d419b904410",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "d439a6db-8f7b-4123-9e93-3892cad157f7",
+					"attributeSetKey": null,
+					"attributeKey": "eb9dce86-39c6-480b-b7e3-2fac2101eac0",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "15c52f39-97d8-4762-be7f-e6b1feebb9af",
+				"data": {
+					"nameInternal": "relation_attribute_ukraine-Crop_20",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "6a7a4193-1339-4172-b54d-817c3e8cd6f7",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"attributeDataSourceKey": "0ea96fec-1e70-44ca-abd9-967e8cb90954",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "577b253f-754f-421e-94a2-092f092b4947",
+					"attributeSetKey": null,
+					"attributeKey": "4fb212bb-ff1a-46d7-8fce-e341e7f08376",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "8e87bd8d-b6f2-4a42-85b3-4594e2be8f59",
+				"data": {
+					"nameInternal": "relation_attribute_ukraine-Crop_20p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "6a7a4193-1339-4172-b54d-817c3e8cd6f7",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"attributeDataSourceKey": "256020f4-6d3e-4064-8dc9-5c3b809bf07a",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "577b253f-754f-421e-94a2-092f092b4947",
+					"attributeSetKey": null,
+					"attributeKey": "73e3bd86-8701-47e4-b27b-9d2555d68304",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "01ef87c9-e763-4f98-8340-09dc88eb4533",
+				"data": {
+					"nameInternal": "relation_attribute_ukraine-Irig_20",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "f3293b7c-4725-49a6-beeb-19718083ab6c",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"attributeDataSourceKey": "9f4d4028-01e0-4484-8bc1-38c2f461b2fe",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "66f490a6-d8df-45a3-adcb-d3648715ddd5",
+					"attributeSetKey": null,
+					"attributeKey": "901ff005-2a62-41d4-afc4-e8d1b1f5d088",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "8d746d16-61c7-4408-8573-fcf9dbba8669",
+				"data": {
+					"nameInternal": "relation_attribute_ukraine-Irig_20p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "f3293b7c-4725-49a6-beeb-19718083ab6c",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"attributeDataSourceKey": "45c611ec-cbbc-4310-be5e-327f29b9e60f",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "66f490a6-d8df-45a3-adcb-d3648715ddd5",
+					"attributeSetKey": null,
+					"attributeKey": "934a9fa2-ddb9-49a8-b4b2-170e39ef531e",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "1034ac82-904c-4619-8add-666af85d6576",
+				"data": {
+					"nameInternal": "relation_attribute_ukraine-Maize_20",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "f3293b7c-4725-49a6-beeb-19718083ab6c",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"attributeDataSourceKey": "abf4d633-2f61-46fe-b881-7bda3f0bba4c",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "33caa296-cf88-4d5c-a67d-ffba11376d4a",
+					"attributeSetKey": null,
+					"attributeKey": "55cb5a4a-8ce3-40a1-9f12-1a6b211f4255",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "1288587e-a711-4776-801c-53e23a0acd33",
+				"data": {
+					"nameInternal": "relation_attribute_ukraine-Maize_20p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "f3293b7c-4725-49a6-beeb-19718083ab6c",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"attributeDataSourceKey": "45f4a2d3-4512-4a86-8f9f-6ce7e7abd5b9",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "33caa296-cf88-4d5c-a67d-ffba11376d4a",
+					"attributeSetKey": null,
+					"attributeKey": "8e71e4da-5a90-4222-9350-f1c1f1bad5c5",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "565694ea-09cb-48a3-b24e-3706c99dec64",
+				"data": {
+					"nameInternal": "relation_attribute_ukraine-Spring_20",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "f3293b7c-4725-49a6-beeb-19718083ab6c",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"attributeDataSourceKey": "3842cd78-0991-41d2-9073-5a87d2675c08",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "d439a6db-8f7b-4123-9e93-3892cad157f7",
+					"attributeSetKey": null,
+					"attributeKey": "6c8e8332-b01b-4c56-bf8e-2025a5abc465",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "f8ec0913-1329-4df2-8bb9-ad176c975d06",
+				"data": {
+					"nameInternal": "relation_attribute_ukraine-Spring_20p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "f3293b7c-4725-49a6-beeb-19718083ab6c",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"attributeDataSourceKey": "8f1c86d9-4362-4382-8012-46049189db3f",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "d439a6db-8f7b-4123-9e93-3892cad157f7",
+					"attributeSetKey": null,
+					"attributeKey": "eb9dce86-39c6-480b-b7e3-2fac2101eac0",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "e097198b-c51d-4299-83e0-6483d5cdd331",
+				"data": {
+					"nameInternal": "relation_attribute_ukraine-Winter_20",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "d93a6ec5-e6e2-4f9a-a368-8a8f2aa8c0fe",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"attributeDataSourceKey": "7ef6e078-ea79-4740-a349-6b7d0dd6bb4f",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "d439a6db-8f7b-4123-9e93-3892cad157f7",
+					"attributeSetKey": null,
+					"attributeKey": "6c8e8332-b01b-4c56-bf8e-2025a5abc465",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			},
+			{
+				"key": "32b8e90c-9edf-44b0-b7d8-f34d6ac88a28",
+				"data": {
+					"nameInternal": "relation_attribute_ukraine-Winter_20p",
+					"scopeKey": "10de783b-810b-4f8a-aceb-4c9e9f91d4d3",
+					"periodKey": "d93a6ec5-e6e2-4f9a-a368-8a8f2aa8c0fe",
+					"placeKey": "b1a913a9-a1f3-4fe7-9932-73d376a2f95a",
+					"attributeDataSourceKey": "20144815-0533-454d-99e4-6756e939be63",
+					"layerTemplateKey": null,
+					"scenarioKey": null,
+					"caseKey": "d439a6db-8f7b-4123-9e93-3892cad157f7",
+					"attributeSetKey": null,
+					"attributeKey": "eb9dce86-39c6-480b-b7e3-2fac2101eac0",
+					"areaTreeLevelKey": "b8a2f8d0-41b6-4afc-ba3f-a0df21632975",
+					"applicationKey": "esaWorldCerealProductViewer"
+				}
+			}
+		]
+	}
+}

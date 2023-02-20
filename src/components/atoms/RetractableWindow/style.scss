@@ -1,6 +1,6 @@
 @import '../../../styles/variables';
 
-$background: rgba(var(--base0rgb), .8);
+$background: rgba(var(--base0rgb), .75);
 $opaqueBackground: var(--base0);
 $borderRadius: .25rem;
 $boxShadowSpread: 3px;
@@ -37,6 +37,7 @@ $boxShadow: 0 0 $boxShadowSpread rgba(0,0,0,.3);
 
 .ptr-dark .ptr-RetractableWindowControlBar {
   background: $background;
+  @include frozenGlassEffect();
 }
 
 .ptr-RetractableWindowControlBar:after {
@@ -94,6 +95,7 @@ $boxShadow: 0 0 $boxShadowSpread rgba(0,0,0,.3);
 
 .ptr-dark .ptr-RetractableWindowBody {
   background: $background;
+  @include frozenGlassEffect();
 }
 
 .ptr-RetractableWindow.is-retracted .ptr-RetractableWindowBody {

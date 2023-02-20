@@ -1,7 +1,8 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
-import Helmet from 'react-helmet';
+import Favicon from 'react-favicon';
 
-import {connects} from '@gisatcz/ptr-state';
+import {connects, setFetch} from '@gisatcz/ptr-state';
 import {create as createRouter} from '@gisatcz/ptr-router';
 import {AppContainer} from '@gisatcz/ptr-components';
 
@@ -15,16 +16,51 @@ import '@gisatcz/ptr-core/lib/styles/base.scss';
 import './styles/index.scss';
 
 import AppContent from './components/AppContent';
+import favicon from './assets/favicon.ico';
 
 const path = process.env.PUBLIC_URL;
 
-function createRoutes(Store, isPreloaded) {
+function createRoutes() {
 	return {
 		'': {
 			name: 'home',
 		},
 	};
 }
+
+/**
+ * Modify every fetch call
+ * Add X-User-Info header for autentization
+ * @param {*} getXUser
+ * TODO solve it better. Not every fetch has to be authorised
+ */
+// eslint-disable-next-line no-unused-vars
+const setWindowFetch = getXUser => {
+	if (typeof window !== 'undefined') {
+		window.fetch = new Proxy(window.fetch, {
+			apply(fetch, that, args) {
+				// Forward function call to the original fetch
+				if (args.length > 1) {
+					if (!args[1].headers) {
+						args[1].headers = {};
+					}
+
+					if (typeof args[1].headers.append === 'function') {
+						args[1].headers.append('X-User-Info', getXUser());
+					} else {
+						args[1].headers['X-User-Info'] = getXUser();
+					}
+				}
+
+				const result = fetch.apply(that, args);
+
+				return result;
+			},
+		});
+
+		setFetch(window.fetch);
+	}
+};
 
 function initApp(Store, {absPath, isPreloaded, currentUrl, navHandler}) {
 	/**
@@ -44,6 +80,10 @@ function initApp(Store, {absPath, isPreloaded, currentUrl, navHandler}) {
 
 	initCore({router});
 
+	// Uncomment to allow modification of the request headers
+	// add utils to modify header
+	// setWindowFetch(() => Select.users.getActiveKey(Store.getState()));
+
 	if (isPreloaded) {
 		return;
 	}
@@ -56,7 +96,7 @@ const ConnectedAppContainer = connects.AppContainer(AppContainer);
 const App = () => {
 	return (
 		<>
-			<Helmet defaultTitle="WorldCereal | Product Viewer" />
+			<Favicon url={favicon} />
 			<ConnectedAppContainer appKey={appKey}>
 				<AppContent />
 			</ConnectedAppContainer>

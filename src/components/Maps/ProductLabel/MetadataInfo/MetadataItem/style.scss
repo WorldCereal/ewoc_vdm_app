@@ -1,0 +1,77 @@
+@use "sass:math";
+@import '../../../../../styles/variables';
+
+.worldCereal-MetadataInfoItem {
+  max-width: 60rem;
+}
+
+.worldCereal-MetadataInfoItem:not(:last-child) {
+  margin-bottom: m(2);
+}
+
+// header
+.worldCereal-MetadataInfoItemHeader {
+  display: flex;
+  margin-bottom: m(math.div(1,3));
+}
+
+.worldCereal-MetadataInfoItemHeader-title {
+  margin: 0;
+  flex: 1;
+  word-break: break-word;
+}
+
+.worldCereal-MetadataInfoItemHeader-tools {
+  margin-left: 1rem;
+  min-width: 7rem;
+}
+
+.worldCereal-MetadataInfoItemHeader-download.disabled .ptr-icon .line {
+  stroke: var(--base35);
+}
+
+// basics
+.worldCereal-MetadataInfoItemBasics {
+  column-count: 2;
+  column-gap: m(2);
+}
+
+.worldCereal-MetadataInfoItemRec  {
+  font-size: $b1;
+}
+
+.worldCereal-MetadataInfoItemRec-label {
+  font-weight: bold;
+  display: inline-block;
+  margin-right: .25rem;
+}
+
+.worldCereal-MetadataInfoItemRec-label:first-letter{
+  text-transform: uppercase;
+}
+
+.worldCereal-MetadataInfoItemRec .worldCereal-MetadataInfoItemRec-value {
+  overflow-wrap: break-word;
+}
+
+.worldCereal-MetadataInfoItemUrl {
+	margin-top: m(math.div(1,3));
+}
+
+.worldCereal-MetadataInfoItemTiles-BtnShowTiles {
+	transition: 0.5s;
+}
+
+.worldCereal-MetadataInfoItemTiles-BtnShowTiles > .ptr-IconTool {
+	width: 1.3rem;
+	height: 1.3rem;
+}
+
+.worldCereal-MetadataInfoItemTiles-content {
+	font-size: $b1;
+	margin: 0 .5rem 0 0;
+}
+
+.worldCereal-MetadataInfoItemTiles-content:hover {
+	color: black;
+}

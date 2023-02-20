@@ -1,0 +1,26 @@
+@use 'sass:math';
+@import '../../../../../styles/variables';
+
+$border: 2px dashed var(--base70);
+
+.worldCereal-YearColumn {
+  border-left: $border;
+}
+
+.worldCereal-YearColumn:nth-last-child(2) {
+  border-right: $border;
+}
+
+.worldCereal-YearHeader {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--accent30);
+  font-size: $a1;
+}
+
+.worldCereal-YearCell {
+  padding: 0 m(1);
+  display: flex;
+  grid-gap: .5rem;
+}

@@ -1,0 +1,131 @@
+@use 'sass:math';
+@import '../../styles/variables';
+
+.worldCereal-Intro {
+  position: relative;
+  background-image: url("../../../src/assets/cereals.jpg");
+  background-size: cover;
+  background-position: center top;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.worldCereal-Intro-content {
+  min-height: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.8));
+}
+
+.worldCereal-Intro-topSection {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: m(3) m(1) 0 m(1);
+}
+
+.worldCereal-Intro-header {
+  display: flex;
+  align-items: center;
+}
+
+.worldCereal-Intro-logo {
+  max-width: 8rem;
+  margin: 0 m(1);
+}
+
+.worldCereal-Intro-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.worldCereal-Intro-title h1 {
+  color: var(--base10);
+  font-family: "Sen" , "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: $b4;
+  max-width: 50rem;
+  line-height: 1.05;
+  margin: 0 0 1rem;
+  letter-spacing: -.5px;
+}
+
+.worldCereal-Intro-title h1 > em {
+  font-weight: 700;
+  color: var(--accent50);
+}
+
+.worldCereal-Intro-header p {
+  color: var(--base30);
+  max-width: 40rem;
+  font-family: "Sen" , "Roboto", sans-serif;
+}
+
+.worldCereal-Intro-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  grid-gap: m(1);
+  margin: m(3) 0;
+}
+
+.worldCereal-Intro-tourIcon {
+	position: absolute;
+	right: 0.8rem;
+	top: 0.8rem;
+	color: white;
+}
+
+.worldCereal-Intro-tourIcon:hover {
+	color: var(--accent50);
+	background-color: transparent;
+}
+
+.worldCereal-Intro-tourIcon .ptr-react-icon {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+
+	animation-name: tourAnimationIcon;
+	animation-duration: 0.65s;
+	animation-iteration-count: 15;
+	animation-direction: alternate;
+	animation-timing-function: ease;
+}
+
+@keyframes tourAnimationIcon {
+	from {
+		transform: scale(1);
+		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+	  }
+	to {
+		transform: scale(1.3);
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+	}
+}
+
+.worldCereal-Intro-footer {
+	min-height: 4rem;
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(255, 255, 255);
+	opacity: 0.65;
+	backdrop-filter: blur(6px) saturate(180%);
+	flex-wrap: wrap;
+}
+
+.worldCereal-Intro-footer-logo {
+	width: 7rem;
+	height: 3.5rem;
+	margin: 0.5rem;
+}

@@ -1,0 +1,96 @@
+@use 'sass:math';
+@import '../../../styles/variables';
+
+// Zoom controls
+.ptr-ZoomControls > .ptr-map-controls {
+  position: relative;
+  bottom: auto;
+  right: auto;
+}
+
+.ptr-ZoomControls .zoom-control.control {
+  background: var(--base05);
+  box-shadow: $floatingElementShadow;
+  display: flex;
+  flex-direction: column;
+}
+
+.ptr-ZoomControls.is-horizontal .zoom-control.control {
+  flex-direction: row-reverse;
+}
+
+.ptr-dark .ptr-ZoomControls .zoom-control.control {
+  border: .05rem solid var(--base30);
+}
+
+.ptr-ZoomControls.zoom-control.control .ptr-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: none;
+  background: var(--base05);
+  width: $iconToolSize_medium;
+  height: $iconToolSize_medium;
+}
+
+.ptr-ZoomControls .zoom-control.control {
+  border-radius: math.div($iconToolSize_medium,2);
+}
+
+.ptr-ZoomControls .zoom-control.control .ptr-button:hover {
+  background: $hoverBackgroundColor;
+}
+
+.ptr-dark .ptr-ZoomControls .zoom-control.control .ptr-button:hover {
+  background: $hoverBackgroundColor-dark;
+}
+
+.ptr-ZoomControls.is-horizontal .ptr-map-controls .control > .ptr-button:not(:first-child) {
+  border: 0;
+}
+
+.ptr-ZoomControls .zoom-control.control .ptr-button:first-child,
+.ptr-ZoomControls .zoom-control.control .ptr-button:first-child:hover {
+  border-radius: math.div($iconToolSize_medium,2) math.div($iconToolSize_medium,2) 0 0;
+}
+
+.ptr-ZoomControls.is-horizontal .zoom-control.control .ptr-button:first-child,
+.ptr-ZoomControls.is-horizontal .zoom-control.control .ptr-button:first-child:hover {
+  border-radius: 0 math.div($iconToolSize_medium,2) math.div($iconToolSize_medium,2) 0;
+}
+
+.ptr-ZoomControls .zoom-control.control .ptr-button:last-child,
+.ptr-ZoomControls .zoom-control.control .ptr-button:last-child:hover {
+  border-radius: 0 0 math.div($iconToolSize_medium,2) math.div($iconToolSize_medium,2);
+}
+
+.ptr-ZoomControls.is-horizontal .zoom-control.control .ptr-button:last-child,
+.ptr-ZoomControls.is-horizontal .zoom-control.control .ptr-button:last-child:hover {
+  border-radius: math.div($iconToolSize_medium,2) 0 0 math.div($iconToolSize_medium,2);
+}
+
+.ptr-ZoomControls .zoom-control.control .ptr-button > .ptr-icon {
+  width: $iconSize;
+  height: $iconSize;
+  color: $secondaryIconColor;
+}
+
+.ptr-ZoomControls .zoom-control.control .ptr-button:first-child > .ptr-icon {
+  margin-top: .5rem;
+}
+
+.ptr-ZoomControls.is-horizontal .zoom-control.control .ptr-button:first-child > .ptr-icon {
+  margin-top: .35rem;
+}
+
+.ptr-ZoomControls .zoom-control.control .ptr-button:last-child > .ptr-icon {
+  margin-bottom: .5rem;
+}
+
+.ptr-ZoomControls.is-horizontal .zoom-control.control .ptr-button:last-child > .ptr-icon {
+  margin-bottom: .35rem;
+}
+
+.ptr-ZoomControls .zoom-control.control .ptr-button:hover > .ptr-icon {
+  color: $baseIconColor;
+}

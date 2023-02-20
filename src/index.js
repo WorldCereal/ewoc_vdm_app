@@ -1,26 +1,26 @@
+//eslint-disable-next-line no-unused-vars
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {createRoot} from 'react-dom/client';
 import {Provider} from '@gisatcz/ptr-state';
-import {isServer} from '@gisatcz/ptr-core';
-import {proj} from '@gisatcz/ptr-maps';
 
 import createStore from './state/Store';
 import {App} from './app';
+import AppTour from './components/AppTour';
 
-proj.addProjections(proj.projections.utms);
 const {store} = createStore();
 
-const ConnectedApp = () => (
+const Application = () => (
 	<Provider store={store}>
-		<App />
+		<AppTour>
+			<App />
+		</AppTour>
 	</Provider>
 );
 
 function renderApp() {
-	const rootEl = document.getElementById('root');
-	const render =
-		isServer || rootEl.hasChildNodes() ? ReactDOM.hydrate : ReactDOM.render;
-	render(<ConnectedApp />, rootEl);
+	const container = document.getElementById('root');
+	const root = createRoot(container); // createRoot(container!) if you use TypeScript
+	root.render(<Application />);
 }
 
 renderApp();

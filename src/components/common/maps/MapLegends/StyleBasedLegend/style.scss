@@ -1,0 +1,22 @@
+@use 'sass:math';
+@import '../../../../../styles/variables';
+
+.worldCereal-StyleBasedLegend {
+  @include frozenGlassEffect();
+  background: rgba(var(--base0rgb), .8);
+  border-radius: .25rem;
+  box-shadow: $floatingElementShadow;
+  width: 20rem;
+
+  display: flex;
+  flex-direction: column;
+  padding: .35rem .5rem .5rem .35rem;
+  &.expandable{
+    cursor: pointer;
+  }
+}
+
+.worldCereal-StyleBasedLegend.is-expanded {
+  padding: .5rem .75rem .75rem .5rem;
+}
+

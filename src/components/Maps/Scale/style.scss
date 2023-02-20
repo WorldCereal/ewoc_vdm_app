@@ -1,0 +1,22 @@
+@use 'sass:math';
+@import '../../../styles/variables';
+
+.ptr-MapScale.ptr-Scale {
+  position: relative;
+  left: auto;
+  bottom: auto;
+  z-index: 1;
+}
+
+.ptr-Scale > .ptr-MapScale-content {
+  border: 1px solid var(--base50);
+  border-top-width: 0;
+  background: none;
+}
+
+
+.ptr-Scale > .ptr-MapScale-content span {
+  font-size: $a0;
+  color: var(--base50);
+}
+

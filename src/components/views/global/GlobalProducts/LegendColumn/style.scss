@@ -1,0 +1,15 @@
+@use 'sass:math';
+@import '../../../../../styles/variables';
+
+.worldCereal-LegendCell {
+  padding: 0 2rem 0 .7rem;
+  display: flex;
+  align-items: center;
+}
+
+.worldCereal-LegendCell-icon {
+  width: .8rem;
+  height: .8rem;
+  border-radius: .5rem;
+  margin: 0 .5rem .1rem 0;
+}

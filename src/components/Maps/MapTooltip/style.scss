@@ -1,0 +1,78 @@
+@import '../../../styles/variables';
+
+.ptr-DeckTooltip {
+	@include frozenGlassEffect();
+	background-color: rgba(17, 25, 40, 0.75);
+	border-radius: 0.25rem;
+	border: 1px solid rgba(255, 255, 255, 0.125);
+	max-width: 20rem;
+	box-shadow: $floatingElementShadow;
+	border-left: none;
+	color: var(--base30);
+
+	.worldCereal-ProductLabelHeader {
+		// width: 100%;
+	}
+
+	.worldCereal-ProductLabelHeader-body {
+		width: 100%;
+	}
+
+	.worldCereal-ProductLabelLegendItem {
+		color: var(--base20);
+	}
+
+	.worldCereal-ProductLabelHeader {
+		border-right: none;
+	}
+
+	.worldCereal-ProductLabelHeader-color {
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 0px;
+	}
+
+	.ptr-FeatureTooltip-content:first-of-type {
+		.worldCereal-ProductLabelHeader-color {
+			border-top-left-radius: 0.25rem;
+		}
+	}
+
+	.ptr-FeatureTooltip-content:last-of-type .worldCereal-ProductLabelHeader-color {
+		border-bottom-left-radius: 0.25rem;
+	}
+
+	.info {
+		display: flex;
+		padding: 0.5rem;
+		font-size: $b1;
+		font-style: italic;
+	}
+
+	.VectorMapTooltip-layer {
+
+    	display: flex;
+		padding: .75rem 1rem .75rem .75rem;
+		flex-direction: column;
+		
+		h4{
+			color: var(--base20);
+			margin: 0 0 .2rem;
+		}
+
+		>div{
+			display: flex;
+			align-items: flex-end;
+		}
+	}
+
+	.VectorMapTooltip-attribute {
+		color: var(--base25);
+		font-size: $b1;
+		margin-right: .2rem;
+	}
+	.VectorMapTooltip-value{
+		color: var(--base25);
+		font-size: $b1;
+		font-weight: bold;
+	}
+}

@@ -1,5 +1,7 @@
 @import '~@gisatcz/ptr-core/lib/styles/_variables';
 
+$analyticsPanelHorizontalPadding: .75rem;
+
 @function hexToRGB($color) {
     // @return rgb(red($color), green($color), blue($color))
     @return red($color), green($color), blue($color);
@@ -16,14 +18,16 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    background: rgba(0,0,0,.75);
+    background: rgba(0,0,0,1);
     z-index: 1;
     top: 0;
     left: 0;
 }
 
-$a0: .6875rem;
-$b0: .5625rem;
+@mixin frozenGlassEffect {
+    backdrop-filter: blur(6px) saturate(180%);
+    -webkit-backdrop-filter: blur(6px) saturate(180%);
+}
 
 $lightAccent0: hsl(40, 100%, 99.41%);
 $lightAccent05: hsl(42.5, 85.71%, 94.51%);
@@ -68,3 +72,38 @@ $darkAccent85: hsl(44.31, 82.28%, 84.51%);
 $darkAccent90: hsl(44, 84.91%, 89.61%);
 $darkAccent95: hsl(42.5, 85.71%, 94.51%);
 $darkAccent100: hsl(40, 100%, 99.41%);
+
+// colors
+$baseTextColor: var(--base85);
+$secondaryTextColor: var(--base65);
+$accentedTextColor: var(--accent55);
+$accentedDarkTextColor: var(--accent75);
+$disabledTextColor: var(--base30);
+
+$baseIconColor: var(--base80);
+$secondaryIconColor: var(--base60);
+$accentedIconColor: var(--accent55);
+$disabledIconColor: var(--base25);
+
+$baseBorderColor: var(--base75);
+$secondaryBorderColor: var(--base55);
+$accentedBorderColor: var(--accent45);
+$disabledBorderColor: var(--base25);
+
+$disabledBackgroundColor: var(--base10);
+$accentedBackgroundLightColor: var(--accent10);
+$accentedBackgroundDarkColor: var(--accent25);
+
+$hoverBackgroundColor: rgba(var(--base50rgb), 0.12);
+$hoverBackgroundColor-dark: rgba(var(--base50rgb), 0.25);
+
+/* Elements */
+$floatingElementShadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+
+// icons
+$iconToolSize: 2.25rem;
+$iconToolSize_medium: 2rem;
+
+$iconSize: 1.25rem;
+$mediumIconSize: 1.125rem;
+$smallIconSize: 1rem;

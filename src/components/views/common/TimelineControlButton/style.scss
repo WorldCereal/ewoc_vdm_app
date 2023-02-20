@@ -1,0 +1,35 @@
+@use 'sass:math';
+@import '../../../../styles/variables';
+
+.worldCereal-TimelineControlButton {
+  position: absolute;
+  top: 0;
+  left: .5rem;
+  background: var(--base30);
+  width: 2rem;
+  height: 1.25rem;
+  border-radius: 1rem 1rem 0 0;
+  margin-top: -1.25rem;
+  display: flex;
+  justify-content: center;
+  padding-top: .1rem;
+  color: $baseIconColor;
+  cursor: pointer;
+  border: 1px solid var(--base30);
+  border-bottom-width: 0;
+  z-index: 99;
+}
+
+.worldCereal-TimelineControlButton:hover {
+  background: var(--base35);
+}
+.worldCereal-TimelineControlButton:hover:after {
+  content: "";
+  border-radius: 1rem 1rem 0 0;
+  @include positionFill();
+  background: $hoverBackgroundColor;
+}
+
+.worldCereal-TimelineControlButton.is-collapsed > .ptr-react-icon {
+  transform: rotate(180deg);
+}

@@ -1,10 +1,11 @@
 import {commonActions, Action as CommonAction} from '@gisatcz/ptr-state';
+import {GL} from '@gisatcz/ptr-maps';
 import {find as _find} from 'lodash';
 import utils from '../../../utils';
 import productMetadataModel from '../../../models/productMetadata';
 import Select from '../../Select';
 import ActionTypes from '../../../constants/ActionTypes';
-import {mapSetKey, defaultStyleKey} from '../../../constants/app';
+import Action from '../../Action';
 
 const setActiveKeys = commonActions.setActiveKeys(
 	ActionTypes.WORLD_CEREAL.PRODUCT_METADATA
@@ -29,6 +30,7 @@ function add(items) {
 function loadForMapSetView() {
 	return (dispatch, getState) => {
 		const state = getState();
+		const mapSetKey = Select.maps.getActiveSetKey(state);
 		const viewAsFeature =
 			Select.worldCereal.productMetadata.getMapSetActiveMapExtentAsFeature(
 				state,
@@ -49,7 +51,6 @@ function loadForMapSetView() {
 				.then(data => {
 					if (data) {
 						dispatch(handleLoadResponse(data));
-						dispatch(checkExistingLayers());
 					}
 				})
 				.catch(
@@ -60,80 +61,10 @@ function loadForMapSetView() {
 }
 
 /**
- * Go through layers present in all maps and compare them with a list of active (visible) tiles. If some tile is missing, add a corresponding layer to given map.
- */
-function checkExistingLayers() {
-	return (dispatch, getState) => {
-		const state = getState();
-		const maps = Select.maps.getMapSetMaps(state, mapSetKey);
-		const activeProductsKeys =
-			Select.worldCereal.productMetadata.getActiveKeys(state);
-		const activeTiles =
-			Select.worldCereal.productMetadata.getActiveTiles(state);
-
-		if (maps && activeProductsKeys?.length && activeTiles?.length) {
-			maps.forEach(map => {
-				const mapKey = map.key;
-
-				// Get product metadata relevant for given map only
-				const productMetadataList =
-					Select.worldCereal.productMetadata.getModelsByMapKey(state, mapKey);
-				const layersToAdd = [];
-				const layers = map.data?.layers;
-				if (layers?.length) {
-					// Go through all available productMetadata for current map view
-					activeProductsKeys.forEach(productMetadataKey => {
-						const productMetadataModel = _find(productMetadataList, {
-							key: productMetadataKey,
-						});
-						const productTiles = productMetadataModel?.data?.tiles;
-
-						// If product present (as layer) in given map
-						if (productTiles) {
-							// Go through all tiles present in current map view
-							activeTiles.forEach(tileKey => {
-								const relevantTile = getProductTileByTileKey(
-									productTiles,
-									tileKey
-								);
-
-								// If for given tile is a record in productMetadata tile list and the layer for this tile is not present in the map at the same time, then add the tile (as layer) to the map
-								if (relevantTile) {
-									const existingLayer = getLayerByProductMetadataKeyAndTileKey(
-										layers,
-										productMetadataKey,
-										tileKey
-									);
-									if (!existingLayer) {
-										const layer = getCogLayerDefinition(
-											state,
-											productMetadataKey,
-											relevantTile,
-											productMetadataModel.data.product
-										);
-										if (layer) {
-											layersToAdd.push(layer);
-										}
-									}
-								}
-							});
-						}
-					});
-				}
-
-				if (layersToAdd.length) {
-					dispatch(CommonAction.maps.addMapLayers(map.key, layersToAdd));
-				}
-			});
-		}
-	};
-}
-
-/**
  * @param data {products: Array, tiles: Array} products: A collection of products metadata. tiles: List of S2 tiles for given mapView.
  **/
 function handleLoadResponse(data) {
-	return (dispatch, getState) => {
+	return dispatch => {
 		const {products, tiles} = data;
 
 		let models = [];
@@ -159,223 +90,111 @@ function handleLoadResponse(data) {
 }
 
 /**
+ *
+ * @param {string} mapKey
+ * @param {string} spatialDataSourceKey
+ * @param {string} productMetadataKey
+ * @returns {Promise}
+ */
+function handleDataSourceAndAddtoMap(
+	mapKey,
+	spatialDataSourceKey,
+	productMetadataKey
+) {
+	return (dispatch, getState) => {
+		const dataQueryActive = Select.worldCereal.dataQueryActiveByMapKey(
+			getState(),
+			mapKey
+		);
+		dispatch(
+			Action.data.spatialDataSources.useKeys([spatialDataSourceKey])
+		).then(() => {
+			//add ds
+			const layerKey = spatialDataSourceKey;
+			const ds =
+				Select.data.spatialDataSources.getByKeyObserver(spatialDataSourceKey);
+			const layer = {
+				key: layerKey,
+				layerKey: productMetadataKey,
+				spatialDataSourceKey,
+				type: 'wms',
+				options: {
+					pickable: dataQueryActive,
+					hoverable: true,
+					transparentColor: [255, 255, 255, 0], // white border, transparent background
+					params: {
+						layers: ds.data.layers,
+					},
+					url: ds.data.url,
+					textureParameters: {
+						[GL.TEXTURE_MIN_FILTER]: GL.NEAREST,
+						[GL.TEXTURE_MAG_FILTER]: GL.NEAREST,
+						[GL.TEXTURE_WRAP_S]: GL.CLAMP_TO_EDGE,
+						[GL.TEXTURE_WRAP_T]: GL.CLAMP_TO_EDGE,
+					},
+				},
+			};
+
+			const existingLayer = Select.maps.getLayerStateByLayerKeyAndMapKey(
+				getState(),
+				mapKey,
+				layerKey
+			);
+
+			// Because of async, spatialDataSources could receive at the time, when layer wes already aggain removed
+			// It is important to check if layer should be in map (OutlineLayer is indicator)
+			if (!existingLayer) {
+				dispatch(CommonAction.maps.addMapLayers(mapKey, [layer]));
+			}
+		});
+	};
+}
+
+/**
  * Add/remove the product to/from active map
  * @param productMetadataKey {string} unique key of product metadata
  */
-function handleProductInActiveMap(productMetadataKey) {
+function handleProductInActiveMap(layerKey, spatialDataSourceKey) {
 	return (dispatch, getState) => {
-		const map = Select.maps.getMapSetActiveMap(getState(), mapSetKey);
-		const productMetadata = Select.worldCereal.productMetadata.getByKey(
-			getState(),
-			productMetadataKey
-		);
-
-		const {tiles} = productMetadata.data;
+		const state = getState();
+		const mapSetKey = Select.maps.getActiveSetKey(state);
+		const map = Select.maps.getMapSetActiveMap(state, mapSetKey);
+		// const productMetadata = Select.worldCereal.productMetadata.getByKey(
+		// 	state,
+		// 	productMetadataKey
+		// );
 
 		const isLayerPresent =
 			map?.data?.layers &&
-			!!_find(
-				map.data.layers,
-				layer => layer.productMetadataKey === productMetadataKey
-			);
+			!!_find(map.data.layers, layer => layer.layerKey === layerKey);
 
 		// Remove or add layer(s)
 		if (isLayerPresent) {
-			dispatch(removeProductOutlineLayer(map.key, productMetadataKey));
-			dispatch(removeLayersForTiles(productMetadataKey, tiles, map.key));
+			const existingLayer = Select.maps.getLayerStateByLayerKeyAndMapKey(
+				state,
+				map.key,
+				spatialDataSourceKey
+			);
+
+			//remove data layer only if is in map
+			if (existingLayer) {
+				dispatch(removeLayersDatasourceLayer(map.key, spatialDataSourceKey));
+			}
 		} else {
-			dispatch(addProductOutlineLayer(map.key, productMetadata));
 			dispatch(
-				addLayersForTiles(
-					productMetadataKey,
-					tiles,
-					productMetadata?.data.product,
-					map.key
-				)
+				handleDataSourceAndAddtoMap(map.key, spatialDataSourceKey, layerKey)
 			);
 		}
 	};
 }
 
-/**
- * @param productMetadataKey {string} unique key of product metadata
- * @param tiles {Array} A collection of tiles
- * @param mapKey {string}
- */
-function removeLayersForTiles(productMetadataKey, tiles, mapKey) {
-	return (dispatch, getState) => {
-		tiles.forEach(tile => {
-			const layerKey = getUniqueCogLayerKey(productMetadataKey, tile);
-			const existingLayer = Select.maps.getMapLayerStateByMapKeyAndLayerKey(
-				getState(),
-				mapKey,
-				layerKey
-			);
-			if (existingLayer) {
-				// TODO remove multiple layers at once?
-				dispatch(CommonAction.maps.removeMapLayer(mapKey, layerKey));
-			}
-		});
-	};
-}
-
-/**
- * @param mapKey {string}
- * @param productMetadataKey {string} unique key of product metadata
- */
-function removeProductOutlineLayer(mapKey, productMetadataKey) {
-	return (dispatch, getState) => {
-		dispatch(CommonAction.maps.removeMapLayer(mapKey, productMetadataKey));
-	};
-}
-
-/**
- * @param productMetadataKey {string} unique key of product metadata
- * @param tiles {Array} A collection of tiles
- * @param product {string} key of product (case)
- * @param mapKey {string}
- */
-function addLayersForTiles(productMetadataKey, tiles, product, mapKey) {
-	return (dispatch, getState) => {
-		const layers = [];
-		const activeTiles = Select.worldCereal.productMetadata.getActiveTiles(
-			getState()
-		);
-
-		tiles.forEach(tile => {
-			if (activeTiles.indexOf(tile.tile) > -1) {
-				layers.push(
-					getCogLayerDefinition(getState(), productMetadataKey, tile, product)
-				);
-			}
-		});
-
-		dispatch(CommonAction.maps.addMapLayers(mapKey, layers));
-	};
-}
-
-/**
- * @param mapKey {string}
- * @param productMetadata {Object}
- */
-function addProductOutlineLayer(mapKey, productMetadata) {
-	return (dispatch, getState) => {
-		const outlineLayer = getProductOutlineLayerDefinition(
-			getState(),
-			productMetadata
-		);
-		dispatch(CommonAction.maps.addMapLayerToIndex(mapKey, outlineLayer));
+function removeLayersDatasourceLayer(mapKey, spatialDataSourceKey) {
+	return dispatch => {
+		dispatch(CommonAction.maps.removeMapLayer(mapKey, spatialDataSourceKey));
 	};
 }
 
 // helpers ---------------------------------------------------------------------------------------
-/**
- * Create unique layer key. Each product has several tiles. Each tile should be an unique map layer.
- * @param productMetadataKey {string} uuid of product metadata
- * @param tile {tile: Object, path: string}
- * @returns {string}
- */
-function getUniqueCogLayerKey(productMetadataKey, tile) {
-	return `${productMetadataKey}_${tile.tile}`;
-}
-
-/**
- * Get COG layer definition
- * @param state {Object}
- * @param productMetadataKey {string} uuid of product metadata
- * @param tile {tile: Object, path: string}
- * @param product {string}
- * @returns {Object} Panther.Layer
- */
-function getCogLayerDefinition(state, productMetadataKey, tile, product) {
-	return {
-		key: getUniqueCogLayerKey(productMetadataKey, tile),
-		layerKey: productMetadataKey,
-		productMetadataKey,
-		tileKey: tile.tile,
-		type: 'cog',
-		options: {
-			url: tile.product,
-			style: Select.worldCereal.getStyleDefinitionByProductTemplateKey(
-				state,
-				product
-			),
-		},
-	};
-}
-
-/**
- * Get product outline layer definition
- * @param state {Object}
- * @param productMetadata {Object}
- * @returns {Object} Panther.Layer
- */
-function getProductOutlineLayerDefinition(state, productMetadata) {
-	const {key, data} = productMetadata;
-	const {geometry} = data;
-	const outline = {
-		type: 'Feature',
-		geometry,
-	};
-
-	const cogStyle = Select.worldCereal.getStyleDefinitionByProductTemplateKey(
-		state,
-		productMetadata.data.product
-	);
-
-	return {
-		key,
-		layerKey: key,
-		productMetadataKey: key,
-		type: 'vector',
-		options: {
-			style: {
-				rules: [
-					{
-						styles: [
-							{
-								fill: null,
-								outlineWidth: 1,
-								outlineColor: cogStyle?.rules?.[0]?.styles?.[0].color,
-							},
-						],
-					},
-				],
-			},
-			features: [outline],
-		},
-	};
-}
-
-/**
- * Find a tile in the list of product tiles
- * @param productTiles {Array} A collection of product tiles
- * @param tileKey {string} S2 tile code
- * @returns {Object || null} Selected tile
- */
-function getProductTileByTileKey(productTiles, tileKey) {
-	return _find(productTiles, tile => tile.tile === tileKey) || null;
-}
-
-/**
- * @param layers {Array} A collection of map layers definitions
- * @param productMetadataKey {string}
- * @param tileKey {string} S2 tile code
- * @returns {Object || null} Selected tile
- */
-function getLayerByProductMetadataKeyAndTileKey(
-	layers,
-	productMetadataKey,
-	tileKey
-) {
-	return _find(
-		layers,
-		layer =>
-			layer.productMetadataKey === productMetadataKey &&
-			layer.tileKey === tileKey
-	);
-}
-
 // Creators --------------------------------------------------------------------------------------
 /**
  * Set active tiles
@@ -390,7 +209,6 @@ const actionSetActiveTiles = tiles => {
 
 export default {
 	add,
-	addLayersForTiles,
 	loadForMapSetView,
 
 	handleProductInActiveMap,

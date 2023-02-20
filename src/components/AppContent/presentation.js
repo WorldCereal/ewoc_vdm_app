@@ -1,69 +1,67 @@
-import React, {useEffect} from 'react';
-import {connects} from '@gisatcz/ptr-state';
-import {
-	ReactLeafletMap,
-	MapControls,
-	MapSet,
-	MapScale,
-	PresentationMap,
-} from '@gisatcz/ptr-maps';
-import Header from '../Header';
-import MapContainer from '../MapContainer';
-import MapWrapper from '../MapWrapper';
-import MapAttribution from '../MapAttribution';
-import RetractableWindow from '../atoms/RetractableWindow';
-import SimpleLayersControl from '../SimpleLayersControl';
-import Timeline from '../Timeline';
-import ActiveFilterInfo from '../ActiveFilterInfo';
-import ProductFilter from '../ProductFilter';
-
-const ConnectedMap = MapContainer(PresentationMap);
-const ConnectedMapSet = connects.MapSet(MapSet);
+// eslint-disable-next-line no-unused-vars
+import Helmet from 'react-helmet';
+import PropTypes from 'prop-types';
+import Maps from '../Maps';
+import IntroOverlay from '../IntroOverlay';
+import Header from '../views/common/Header';
+import Filter from '../views/detailedExploarion/Filter';
+import Timeline from '../views/detailedExploarion/Timeline';
+import GlobalProducts from '../views/global/GlobalProducts';
+import StatisticsPanel from '../views/statistics/StatisticsPanel';
 
 import './style.scss';
 
-const App = ({onMount, onUnmount, viewLimits}) => {
-	useEffect(() => {
-		if (typeof onMount === 'function') {
-			onMount();
-		}
-		if (typeof onUnmount === 'function') {
-			return onUnmount();
-		}
-	}, []);
+const getContent = view => {
+	switch (view) {
+		case 'detailedExploration':
+			return (
+				<>
+					<Header />
+					<Maps />
+					<Filter />
+					<Timeline />
+				</>
+			);
+		case 'globalView':
+			return (
+				<>
+					<Header />
+					<Maps />
+					<GlobalProducts />
+				</>
+			);
+		case 'statistics':
+			return (
+				<div className="worldCereal-statistics">
+					<StatisticsPanel />
+					<Maps />
+				</div>
+			);
+		default:
+			return null;
+	}
+};
+
+const App = ({activeView, open}) => {
+	const view = activeView?.data?.nameInternal;
+	const title = activeView?.data?.nameDisplay;
 
 	return (
-		<div className="worldCereal-ProductViewer">
-			<Header />
-			<ConnectedMapSet
-				stateMapSetKey="productViewer-mapSet"
-				mapComponent={ReactLeafletMap}
-				connectedMapComponent={ConnectedMap}
-				wrapper={MapWrapper}
-			>
-				<SimpleLayersControl />
-				<MapControls
-					levelsBased
-					zoomOnly
-					viewLimits={viewLimits} //hack for synced maps, viewLimits are not implemented for mapSet yet
-				/>
-				<MapScale className="worldCereal-MapScale" />
-				<MapAttribution />
-			</ConnectedMapSet>
-			<RetractableWindow
-				className="worldCereal-FilterWindow ptr-dark"
-				retracted
-				centered
-				bottomPosition={10}
-				bodyHeight={14}
-				controlBarContent={<ActiveFilterInfo />}
-			>
-				<ProductFilter />
-			</RetractableWindow>
-			<Timeline />
-			{/*<ControlPanel />*/}
-		</div>
+		<>
+			<Helmet
+				defaultTitle={`WorldCereal ${title && !open ? `| ${title}` : ''}`}
+			/>
+			<div className="worldCereal-ProductViewer">
+				<IntroOverlay />
+				{getContent(view)}
+			</div>
+		</>
 	);
+};
+
+App.propTypes = {
+	activeView: PropTypes.object,
+	open: PropTypes.bool,
 };
 
 export default App;

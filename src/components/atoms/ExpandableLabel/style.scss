@@ -1,0 +1,98 @@
+@import '../../../styles/variables';
+
+$ExpandableLabelBorderRadius: .25rem;
+
+// container
+.ptr-ExpandableLabelsContainer {
+  display: block;
+}
+
+.ptr-ExpandableLabelsContainer > .ptr-ExpandableLabel {
+  float: left;
+  margin: 0 .35rem .35rem 0;
+}
+
+.ptr-ExpandableLabelsContainer.is-right > .ptr-ExpandableLabel {
+  margin: 0 0 .35rem .35rem;
+}
+
+// label
+.ptr-ExpandableLabel {
+  border-radius: $ExpandableLabelBorderRadius;
+  max-width: 20rem;
+  position: relative;
+}
+
+.ptr-ExpandableLabel.is-floating {
+  box-shadow: 0 3px 3px rgba(0,0,0,.25);
+}
+
+.ptr-ExpandableLabelHeader {
+  display: flex;
+  width: 100%;
+  border-radius: $ExpandableLabelBorderRadius;
+}
+
+.ptr-ExpandableLabelHeader-content {
+  flex: 1;
+}
+
+.ptr-ExpandableLabelHeader-controlButton {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 .15rem;
+  border-top-right-radius: $ExpandableLabelBorderRadius;
+  border-bottom-right-radius: $ExpandableLabelBorderRadius;
+}
+
+.ptr-ExpandableLabelHeader-controlButton .ptr-icon {
+  transition: transform .5s ease-in-out;
+  transform: rotate(270deg);
+  width: .85rem;
+  height: 100%;
+}
+
+.ptr-ExpandableLabelBody {
+  width: 100%;
+  height: 0;
+  overflow-y: hidden;
+  transition: height .5s ease-in-out;
+  border-bottom-left-radius: $ExpandableLabelBorderRadius;
+  border-bottom-right-radius: $ExpandableLabelBorderRadius;
+  position: absolute;
+  z-index: 2;
+}
+
+.ptr-ExpandableLabel.is-floating .ptr-ExpandableLabelBody {
+  box-shadow: 0 3px 3px rgba(0,0,0,.35);
+}
+
+.ptr-ExpandableLabelBody > div {
+  width: 100%;
+}
+
+// Expanded
+.ptr-ExpandableLabel.is-expanded {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.ptr-ExpandableLabelHeader.is-expanded {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.ptr-ExpandableLabelHeader.is-expanded .ptr-ExpandableLabelHeader-controlButton  .ptr-icon {
+  transform: rotate(90deg);
+}
+
+.ptr-ExpandableLabelBody.is-expanded {
+  display: flex;
+  height: 10rem;
+}
+
+.ptr-ExpandableLabelBody > div {
+  height: 10rem;
+  overflow-y: auto;
+}

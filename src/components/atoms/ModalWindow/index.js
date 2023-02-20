@@ -1,4 +1,6 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Button} from '@gisatcz/ptr-atoms';
 import Modal from 'react-modal';
 
@@ -30,6 +32,14 @@ const ModalWindow = ({isOpen, onClose, title, className, children}) => {
 			</div>
 		</Modal>
 	);
+};
+
+ModalWindow.propTypes = {
+	children: PropTypes.node,
+	className: PropTypes.string,
+	isOpen: PropTypes.bool,
+	onClose: PropTypes.func,
+	title: PropTypes.object,
 };
 
 export default ModalWindow;

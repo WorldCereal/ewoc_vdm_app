@@ -1,0 +1,55 @@
+@use 'sass:math';
+@import '../../../styles/variables';
+
+.ptr-ChartWrapper {
+  width: 100%;
+  padding: 1rem;
+  background: var(--base10);
+}
+
+.ptr-ChartWrapper.is-small {
+  width: calc(50% - .5rem);
+}
+
+.ptr-ChartWrapper:last-child {
+  border-bottom: 0;
+}
+
+.ptr-ChartWrapper-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.ptr-ChartWrapper-header > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ptr-ChartWrapper-header > div:last-child {
+
+}
+
+.ptr-ChartWrapper-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--base90);
+}
+
+.ptr-ChartWrapper.is-small .ptr-ChartWrapper-title {
+  font-size: .85rem;
+}
+
+.ptr-ChartWrapper-subtitle {
+  font-size: .8rem;
+  color: var(--base70);
+}
+
+.ptr-ChartWrapper-body {
+  height: 12rem;
+  padding-top: .5rem;
+}
+
+.ptr-ChartWrapper.is-small .ptr-ChartWrapper-body {
+  height: 8rem;
+}

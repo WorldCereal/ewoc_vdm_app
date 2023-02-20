@@ -1,0 +1,144 @@
+@import '../../../../styles/variables';
+
+.worldCereal-ProductViewer{
+  .worldCereal-Timeline {
+    position: relative;
+    background: var(--base100);
+    min-height: 10rem;
+    max-width: 100%;
+    z-index: 4;
+    border-top: 1px solid var(--base70);
+
+    .ptr-timeline-x-titles{
+      height: 1.75rem;
+
+      svg{
+        width: 100%;
+      }
+    }
+
+    .ptr-timeline-content{
+      background: rgba(var(--base50rgb), 0.1)
+    }
+
+    .ptr-maptimeline-scrollable{
+      height: 8rem;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  }
+
+  .worldCereal-Timeline.is-collapsed {
+    height: 0;
+    min-height: 0;
+  }
+
+  .worldCereal-Timeline.is-collapsed.disabled:after {
+    display: none;
+  }
+
+  .worldCereal-Timeline.disabled {
+    border-top: 1px solid var(--base95);
+  }
+
+  .worldCereal-Timeline.disabled:after {
+    content: "Zoom in the map to work with layers.";
+    @include disabledOverlay();
+  }
+
+
+  .ptr-maptimeline-legenditem {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0 1rem;
+    color: var(--base40);
+    font-size: $a0;
+  }
+
+  .ptr-maptimeline-legenditem > em {
+    color: var(--base10);
+    font-size: $b1;
+  }
+
+
+  .ptr-timeline-legend-placeholder{
+    flex: 0 1 auto;
+    display: flex;
+    flex-flow: column;
+    min-width: 16rem;
+  }
+
+
+  .ptr-maptimelinelegend {
+    flex: 0 1 auto;
+    display: flex;
+    flex-flow: column;
+    // uncomment
+    // line-height: $a1;
+    // font-size: $a1;
+    font-size: $b1;
+    line-height: $b1;
+    min-width: 16rem;
+    width: 16rem;
+
+    span{
+      height: 1rem;
+    }
+  }
+
+  g.ptr-timeline-year,
+  .ptr-timeline-year > line,
+  g.ptr-timeline-month,
+  g.ptr-timeline-month > line,
+  g.ptr-timeline-day,
+  g.ptr-timeline-hour,
+  g.ptr-timeline-hour > line,
+  g.ptr-timeline-minute,
+  g.ptr-timeline-minute > line {
+      stroke: var(--accent80);
+    fill: var(--base95);
+  }
+
+  .ptr-timeline-month-label {
+    font-size: $a0;
+  }
+
+  .ptr-timeline-year>line, g.ptr-timeline-year {
+    stroke-width: 2px;
+    stroke: var(--accent65);
+  }
+
+
+  g.ptr-timeline-month.secondary>line {
+    stroke: var(--accent85);
+    stroke-dasharray: 0;
+  }
+
+  .worldCereal-Timeline-noDataInfo {
+    @include disabledOverlay();
+  }
+
+}
+
+.ptr-maptimeline .ptr-popup{
+    @include frozenGlassEffect();
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: .25rem;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+
+    color: var(--base30);
+    
+    .ptr-timeline-tooltip-layer{
+      color: var(--base30);
+    }
+
+    .ptr-timeline-tooltip-layer > div:nth-child(2) {
+      color: var(--base50);
+      
+      em{
+        color: var(--base30);
+
+      }
+    }
+}

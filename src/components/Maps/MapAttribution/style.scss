@@ -1,0 +1,13 @@
+@import '../../../styles/variables';
+
+.ptr-MapAttribution {
+  z-index: 2;
+  position: relative;
+  font-size: $a0;
+  color: var(--base50);
+  padding: .1rem .35rem;
+}
+
+.ptr-MapAttribution a {
+  color: var(--base50);
+}

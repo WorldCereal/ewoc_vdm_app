@@ -29,7 +29,7 @@ const getFilterParametersOrdered = createSelector(
 	[
 		getFilterParametersAsObject,
 		state =>
-			CommonSelect.components.get(state, 'productFilter', 'parameterOrder'),
+			CommonSelect.components.get(state, 'ProductFilter', 'parameterOrder'),
 	],
 	(parameters, order) => {
 		if (parameters) {

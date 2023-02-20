@@ -1,0 +1,24 @@
+@import '../../../styles/variables';
+
+.ptr-deckGl-map-tooltip {
+  min-width: auto;
+}
+
+.ptr-FeatureTooltip-content {
+  background: var(--base0);
+  max-width: 20rem;
+  border-radius: .25rem;
+  padding: .5rem;
+  box-shadow: $floatingElementShadow;
+  color: $baseTextColor;
+  border: 1px solid var(--base30);
+}
+
+.ptr-FeatureTooltip-header {
+  font-size: $a1;
+  font-weight: bold;
+}
+
+.ptr-FeatureTooltip-item {
+  font-size: $b1;
+}

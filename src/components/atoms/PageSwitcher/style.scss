@@ -14,12 +14,12 @@
 }
 
 .ptr-PageSwitcherMenuItem:hover {
-  background: var(--base20);
+  background: rgba(var(--accent50rgb), .5);
 }
 
 .ptr-PageSwitcherMenuItem.is-active {
-  background: var(--accent65);
-  color: var(--accent10);
+  background: var(--accent50);
+  color: var(--accent0);
 }
 
 .ptr-PageSwitcherMenuItem.is-disabled {

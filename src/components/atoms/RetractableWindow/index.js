@@ -1,4 +1,7 @@
-import React, {useState, useEffect} from 'react';
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
+import {useState, useEffect, useRef} from 'react';
+import PropTypes from 'prop-types';
 import useSize from '@react-hook/size';
 import classnames from 'classnames';
 import {Icon} from '@gisatcz/ptr-atoms';
@@ -11,8 +14,8 @@ const RetractableWindowControlBar = ({
 	onClick,
 	onHeightChange,
 }) => {
-	const ref = React.useRef(null);
-	const [width, height] = useSize(ref);
+	const ref = useRef(null);
+	const [, height] = useSize(ref);
 
 	const classes = classnames(`ptr-RetractableWindowControlBar`, {
 		'is-centered': centered,
@@ -40,6 +43,13 @@ const RetractableWindowControlBar = ({
 	);
 };
 
+RetractableWindowControlBar.propTypes = {
+	centered: PropTypes.bool,
+	children: PropTypes.node,
+	onClick: PropTypes.func,
+	onHeightChange: PropTypes.func,
+};
+
 const RetractableWindowBody = ({children, centered, height}) => {
 	const style = {
 		height: `${height}rem`,
@@ -56,6 +66,12 @@ const RetractableWindowBody = ({children, centered, height}) => {
 	);
 };
 
+RetractableWindowBody.propTypes = {
+	centered: PropTypes.bool,
+	children: PropTypes.node,
+	height: PropTypes.number,
+};
+
 const RetractableWindow = ({
 	children,
 	centered,
@@ -63,14 +79,20 @@ const RetractableWindow = ({
 	retracted,
 	bottomPosition,
 	bodyHeight,
+	tourGuideFilterExpanded,
+	tourGuideIsOpen,
 	className,
 }) => {
-	const ref = React.useRef(null);
-	const [width, height] = useSize(ref);
+	const ref = useRef(null);
+	const [width] = useSize(ref);
 
 	const [isRetracted, handleRetraction] = useState(retracted);
 	const [verticalPositionOffset, handleVerticalPosition] = useState(0);
 	const [horizontalPositionOffset, handleHorizontalPosition] = useState(0);
+
+	useEffect(() => {
+		handleRetraction(!tourGuideFilterExpanded);
+	}, [tourGuideFilterExpanded, tourGuideIsOpen]);
 
 	const classes = classnames(`ptr-RetractableWindow ${className}`, {
 		'is-retracted': isRetracted,
@@ -104,6 +126,18 @@ const RetractableWindow = ({
 			</RetractableWindowBody>
 		</div>
 	);
+};
+
+RetractableWindow.propTypes = {
+	children: PropTypes.node,
+	centered: PropTypes.bool,
+	controlBarContent: PropTypes.node,
+	retracted: PropTypes.bool,
+	bottomPosition: PropTypes.number,
+	bodyHeight: PropTypes.number,
+	tourGuideFilterExpanded: PropTypes.bool,
+	tourGuideIsOpen: PropTypes.bool,
+	className: PropTypes.string,
 };
 
 export default RetractableWindow;
